@@ -1,14 +1,30 @@
-import { Link, LinkProps } from "react-router-dom";
+import { Link, LinkProps, useParams } from "react-router-dom";
 import styled from "styled-components";
 
-const StyledLink = styled(Link)``;
+const Wrapper = styled(Link)`
+  all: unset;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  :hover {
+    ::after {
+      transform-origin: left;
+      scale: 1 1;
+    }
+  }
+  ::after {
+    content: "";
+    display: block;
+    height: 2.5px;
+    width: 100%;
+    background-color: var(--color-white);
+    transition: scale 0.3s;
+    transform-origin: right;
+    scale: 0 1;
+  }
+`;
 
-type Props = {
-  externalLink?: boolean;
-} & LinkProps;
-
-const Wrapper = styled(Link)``;
-
-export default function NavLink({ externalLink, ...props }: Props) {
+export default function NavLink({ style, ...props }: LinkProps) {
   return <Wrapper {...props} />;
 }

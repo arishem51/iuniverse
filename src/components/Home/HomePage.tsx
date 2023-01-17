@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   gap: 16px;
 `;
 
-const Text = styled.h1`
+const HeadingText = styled.h1`
   color: var(--color-white);
   font-size: 56px;
 `;
@@ -28,15 +28,15 @@ const ButtonLink = styled(Link)`
 export default function HomePage() {
   return (
     <Wrapper>
-      <Text>
+      <HeadingText>
         This project is for learning purpose inspired by{" "}
         <ExternalLink href="https://uiverse.io/" target="_blank">
           uiverse
         </ExternalLink>
-      </Text>
-      <Button>
-        <ButtonLink to="/all">Go to the components</ButtonLink>
-      </Button>
+      </HeadingText>
+      <ButtonLink to="/all">
+        <Button>Go to the components</Button>
+      </ButtonLink>
     </Wrapper>
   );
 }
