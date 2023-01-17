@@ -6,25 +6,15 @@ const Wrapper = styled.a`
   position: relative;
   display: inline-block;
   vertical-align: bottom;
+  background: linear-gradient(
+    141deg,
+    rgba(191, 102, 255, 1) 0%,
+    rgba(98, 72, 255, 1) 50%,
+    rgba(0, 221, 235, 1) 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
   cursor: pointer;
-  :hover {
-    &::after {
-      transform-origin: left;
-      scale: 1 1;
-    }
-  }
-  ::after {
-    content: "";
-    width: 100%;
-    height: 0.1em;
-    display: block;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    scale: 0 1;
-    transform-origin: right;
-    transition: scale 0.3s;
-  }
 `;
 
 type Props = React.AnchorHTMLAttributes<HTMLAnchorElement>;
