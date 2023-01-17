@@ -1,4 +1,9 @@
 import { createGlobalStyle } from "styled-components";
+import { COLORS } from "../constants";
+import { generateCSSVarColor } from "../utils";
+import Header from "./Header";
+import ListComponent from "./ListComponent";
+import Sidebar from "./Sidebar";
 
 const GlobalStyles = createGlobalStyle`
   /*
@@ -20,6 +25,12 @@ const GlobalStyles = createGlobalStyle`
 */
 html, body {
   height: 100%;
+
+  /* --colors-dark: ${COLORS.dark}; */
+
+  // Automatic generate CSS variables
+  ${generateCSSVarColor(COLORS)}
+  
 }
 
 /*
@@ -65,10 +76,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 function App() {
   return (
-    <div>
+    <>
       <GlobalStyles />
-      Hello World
-    </div>
+      <Header />
+      <Sidebar />
+      <ListComponent />
+    </>
   );
 }
 
