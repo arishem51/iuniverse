@@ -1,4 +1,5 @@
 import { createContext, PropsWithChildren, useContext } from "react";
+import KeyboardButton from "../components/ListComponent/Buttons/KeyboardButton";
 import ShadowButton from "../components/ListComponent/Buttons/ShadowButton";
 import CardShadowHover from "../components/ListComponent/Cards/CardShadowHover";
 import DotWave from "../components/ListComponent/Loaders/DotWave";
@@ -135,6 +136,10 @@ const List: UIItem[] = [
   {
     component: <ThreeDotAround />,
     type: "loader",
+  },
+  {
+    component: <KeyboardButton children="Click me" />,
+    type: "button",
   },
 ];
 
