@@ -10,7 +10,7 @@ const up = keyframes`
     from {
         translate: 0 0;
     } to {
-        translate: 0 -30px;
+        translate: 0 -20px;
     }
 `;
 
@@ -19,7 +19,7 @@ const Dot = styled.div`
   height: 10px;
   background-color: var(--color-lightGray);
   border-radius: 50%;
-  animation: ${up} 500ms alternate ease-in-out infinite
+  animation: ${up} 300ms alternate ease-in-out infinite
     calc(var(--index) * 100ms);
 `;
 
@@ -30,8 +30,6 @@ export default function DotWave() {
       return <Dot style={styles} key={index} />;
     });
   }
-
-  console.log(renderItem());
 
   return <Wrapper>{renderItem()}</Wrapper>;
 }
