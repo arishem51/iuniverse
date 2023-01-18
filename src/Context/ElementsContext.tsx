@@ -133,9 +133,11 @@ const Context = createContext<{ elements: UIItem[] }>({ elements: [] });
 type Props = PropsWithChildren;
 
 export default function ElementsContext({ children }: Props) {
-  return (
-    <Context.Provider value={{ elements: List }}>{children}</Context.Provider>
-  );
+  const elements = [
+    ...List.filter((item) => item.type !== "shapes"),
+    ...List.filter((item) => item.type === "shapes"),
+  ];
+  return <Context.Provider value={{ elements }}>{children}</Context.Provider>;
 }
 
 export function useElements() {
