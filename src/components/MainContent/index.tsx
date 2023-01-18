@@ -9,8 +9,6 @@ const Wrapper = styled.div`
 `;
 
 export default function MainContent() {
-  const { id } = useParams();
-
   return (
     <Wrapper>
       <Sidebar />

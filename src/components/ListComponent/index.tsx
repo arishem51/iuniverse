@@ -148,15 +148,20 @@ const List: UIItem[] = [
 export default function ListComponent() {
   const { id } = useParams();
 
+  const elements =
+    id === "all" ? List : List.filter((item) => item.type === id);
+
+  console.log(id, elements);
+
   function renderItem() {
-    return List.map((item, index) => (
+    return elements.map((item, index) => (
       <ListItem key={`${item.type} - ${index + 1}`}>{item.component}</ListItem>
     ));
   }
 
   return (
     <Wrapper>
-      <Text>{List.length} components</Text>
+      <Text>{elements.length} components</Text>
       <ListWrapper>{renderItem()}</ListWrapper>
     </Wrapper>
   );
