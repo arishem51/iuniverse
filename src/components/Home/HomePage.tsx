@@ -9,9 +9,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   background-color: var(--color-dark);
   gap: 16px;
+  min-height: 95vh;
 `;
 
 const HeadingText = styled.h1`

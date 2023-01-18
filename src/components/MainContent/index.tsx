@@ -6,7 +6,6 @@ import Sidebar from "../Sidebar";
 
 const Wrapper = styled.div`
   display: flex;
-  height: 100%;
 `;
 
 export default function MainContent() {
