@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
+import { Type } from "../../types";
 
 const SidebarWrapper = styled.div`
   display: flex;
@@ -39,8 +40,6 @@ const SidebarLink = styled(Link)`
   all: unset;
 `;
 
-type Type = "all" | "shape";
-
 const Items: Type[] = ["all", "shape"];
 
 export default function Sidebar() {
@@ -52,8 +51,8 @@ export default function Sidebar() {
       } as React.CSSProperties;
 
       return (
-        <SidebarLink to={`/${item}`}>
-          <SidebarItem key={item} style={styles}>
+        <SidebarLink to={`/${item}`} key={item}>
+          <SidebarItem style={styles}>
             <SidebarItemText>{item}</SidebarItemText>
           </SidebarItem>
         </SidebarLink>

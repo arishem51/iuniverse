@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+import { UIItem } from "../../types";
 import BurstShape from "./BurstShape";
 import CurvedTailArrowShape from "./CurvedTailArrowShape";
 import DiamondNarrowShape from "./DiamondNarrowShape";
@@ -45,38 +46,112 @@ const ListItem = styled.div`
   border-radius: 1rem;
 `;
 
-const List = [
-  <BurstShape />,
-  <CurvedTailArrowShape />,
-  <DiamondNarrowShape />,
-  <EggShape />,
-  <HeartShape />,
-  <HexagonShape />,
-  <InfinityShape />,
-  <Moustache />,
-  <OctagonShape />,
-  <OvalShape />,
-  <PacManShape />,
-  <YinYangShape />,
-  <TritangleShape.BottomLeft />,
-  <TritangleShape.BottomRight />,
-  <TritangleShape.Left />,
-  <TritangleShape.Right />,
-  <TritangleShape.TopLeft />,
-  <TritangleShape.TopRight />,
-  <PentagonShape />,
-  <RectangleShape />,
-  <SquareShape />,
-  <Star.FivePoints />,
-  <Star.SixPoints />,
-  <TrapezoidShape />,
+const List: UIItem[] = [
+  {
+    component: <BurstShape />,
+    type: "shape",
+  },
+  {
+    component: <CurvedTailArrowShape />,
+    type: "shape",
+  },
+  {
+    component: <DiamondNarrowShape />,
+    type: "shape",
+  },
+  {
+    component: <EggShape />,
+    type: "shape",
+  },
+  {
+    component: <HeartShape />,
+    type: "shape",
+  },
+  {
+    component: <HexagonShape />,
+    type: "shape",
+  },
+  {
+    component: <InfinityShape />,
+    type: "shape",
+  },
+  {
+    component: <Moustache />,
+    type: "shape",
+  },
+  {
+    component: <OctagonShape />,
+    type: "shape",
+  },
+  {
+    component: <OvalShape />,
+    type: "shape",
+  },
+  {
+    component: <PacManShape />,
+    type: "shape",
+  },
+  {
+    component: <YinYangShape />,
+    type: "shape",
+  },
+  {
+    component: <TritangleShape.BottomLeft />,
+    type: "shape",
+  },
+  {
+    component: <TritangleShape.BottomRight />,
+    type: "shape",
+  },
+  {
+    component: <TritangleShape.Left />,
+    type: "shape",
+  },
+  {
+    component: <TritangleShape.Right />,
+    type: "shape",
+  },
+  {
+    component: <TritangleShape.TopLeft />,
+    type: "shape",
+  },
+  {
+    component: <TritangleShape.TopRight />,
+    type: "shape",
+  },
+  {
+    component: <PentagonShape />,
+    type: "shape",
+  },
+  {
+    component: <RectangleShape />,
+    type: "shape",
+  },
+  {
+    component: <SquareShape />,
+    type: "shape",
+  },
+  {
+    component: <Star.FivePoints />,
+    type: "shape",
+  },
+  {
+    component: <Star.SixPoints />,
+    type: "shape",
+  },
+  {
+    component: <TrapezoidShape />,
+    type: "shape",
+  },
 ];
 
 export default function ListComponent() {
   const { id } = useParams();
 
   function renderItem() {
-    return List.map((item, index) => <ListItem key={index}>{item}</ListItem>);
+    return List.map((item, index) => (
+      <ListItem key={`${item.type} - ${index + 1}`}>{item.component}</ListItem>
+    ));
   }
 
   return (
