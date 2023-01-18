@@ -32,7 +32,7 @@ const FivePoints = styled.div`
     content: "";
     position: absolute;
     top: 145px;
-    left: -97px;
+    left: -102px;
     width: 0;
     height: 0;
     border-left: 100px solid transparent;
