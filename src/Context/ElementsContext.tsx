@@ -1,8 +1,8 @@
 import { createContext, PropsWithChildren, useContext } from "react";
 import ShadowButton from "../components/ListComponent/Buttons/ShadowButton";
 import CardShadowHover from "../components/ListComponent/Cards/CardShadowHover";
-import Card3DHover from "../components/ListComponent/Cards/CardShadowHover";
 import DotWave from "../components/ListComponent/Loaders/DotWave";
+import ThreeDotAround from "../components/ListComponent/Loaders/ThreeDotAround";
 import BurstShape from "../components/ListComponent/Shapes/BurstShape";
 import CurvedTailArrowShape from "../components/ListComponent/Shapes/CurvedTailArrowShape";
 import DiamondNarrowShape from "../components/ListComponent/Shapes/DiamondNarrowShape";
@@ -131,6 +131,10 @@ const List: UIItem[] = [
   {
     component: <CardShadowHover />,
     type: "card",
+  },
+  {
+    component: <ThreeDotAround />,
+    type: "loader",
   },
 ];
 
