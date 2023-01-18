@@ -40,7 +40,16 @@ const SidebarLink = styled(Link)`
   all: unset;
 `;
 
-const Items: Type[] = ["all", "shapes", "buttons", "loaders"];
+const Items: Type[] = [
+  "all",
+  "shape",
+  "button",
+  "loader",
+  "card",
+  "checkboxe",
+  "toogle witche",
+  "input",
+];
 
 export default function Sidebar() {
   const { id } = useParams();
@@ -53,7 +62,7 @@ export default function Sidebar() {
       return (
         <SidebarLink to={`/${item}`} key={item}>
           <SidebarItem style={styles}>
-            <SidebarItemText>{item}</SidebarItemText>
+            <SidebarItemText>{item + "s"}</SidebarItemText>
           </SidebarItem>
         </SidebarLink>
       );

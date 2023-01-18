@@ -1,5 +1,7 @@
 import { createContext, PropsWithChildren, useContext } from "react";
 import ShadowButton from "../components/ListComponent/Buttons/ShadowButton";
+import CardShadowHover from "../components/ListComponent/Cards/CardShadowHover";
+import Card3DHover from "../components/ListComponent/Cards/CardShadowHover";
 import DotWave from "../components/ListComponent/Loaders/DotWave";
 import BurstShape from "../components/ListComponent/Shapes/BurstShape";
 import CurvedTailArrowShape from "../components/ListComponent/Shapes/CurvedTailArrowShape";
@@ -24,107 +26,111 @@ import { UIItem } from "../types";
 const List: UIItem[] = [
   {
     component: <BurstShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <CurvedTailArrowShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <DiamondNarrowShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <EggShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <HeartShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <HexagonShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <InfinityShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <Moustache />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <OctagonShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <OvalShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <PacManShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <YinYangShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <TritangleShape.BottomLeft />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <TritangleShape.BottomRight />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <TritangleShape.Left />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <TritangleShape.Right />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <TritangleShape.TopLeft />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <TritangleShape.TopRight />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <PentagonShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <RectangleShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <SquareShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <Star.FivePoints />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <Star.SixPoints />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <TrapezoidShape />,
-    type: "shapes",
+    type: "shape",
   },
   {
     component: <ShadowButton children="uiverse" />,
-    type: "buttons",
+    type: "button",
   },
   {
     component: <DotWave />,
-    type: "loaders",
+    type: "loader",
+  },
+  {
+    component: <CardShadowHover />,
+    type: "card",
   },
 ];
 
@@ -134,8 +140,8 @@ type Props = PropsWithChildren;
 
 export default function ElementsContext({ children }: Props) {
   const elements = [
-    ...List.filter((item) => item.type !== "shapes"),
-    ...List.filter((item) => item.type === "shapes"),
+    ...List.filter((item) => item.type !== "shape"),
+    ...List.filter((item) => item.type === "shape"),
   ];
   return <Context.Provider value={{ elements }}>{children}</Context.Provider>;
 }

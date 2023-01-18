@@ -24,9 +24,10 @@ const ListItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 250px;
+  min-height: 250px;
   background-color: var(--color-lightDark);
   border-radius: 1rem;
+  padding: 3rem 0;
 `;
 
 export default function ListComponent() {

@@ -3,4 +3,12 @@ export type UIItem = {
   type: Type;
 };
 
-export type Type = "all" | "shapes" | "buttons" | "loaders";
+export type Type =
+  | "all"
+  | "shape"
+  | "button"
+  | "loader"
+  | "card"
+  | "checkboxe"
+  | "toogle witche"
+  | "input";
