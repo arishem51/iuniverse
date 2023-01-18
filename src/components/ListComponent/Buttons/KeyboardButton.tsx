@@ -16,7 +16,7 @@ const Wrapper = styled.button`
   cursor: pointer;
   user-select: none;
   box-shadow: 0 5px 0 0 #a29bfe;
-  transition: translate 0.2s, box-shadow 0.2s;
+  transition: all 0.1s ease;
   :active {
     translate: 0 5px;
     box-shadow: 0 0 0 0 #a29bfe;
