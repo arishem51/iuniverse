@@ -22,99 +22,99 @@ import { UIItem } from "../types";
 const List: UIItem[] = [
   {
     component: <BurstShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <CurvedTailArrowShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <DiamondNarrowShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <EggShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <HeartShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <HexagonShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <InfinityShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <Moustache />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <OctagonShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <OvalShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <PacManShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <YinYangShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <TritangleShape.BottomLeft />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <TritangleShape.BottomRight />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <TritangleShape.Left />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <TritangleShape.Right />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <TritangleShape.TopLeft />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <TritangleShape.TopRight />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <PentagonShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <RectangleShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <SquareShape />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <Star.FivePoints />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <Star.SixPoints />,
-    type: "shape",
+    type: "shapes",
   },
   {
     component: <TrapezoidShape />,
-    type: "shape",
+    type: "shapes",
   },
 ];
 
