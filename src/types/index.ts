@@ -3,4 +3,4 @@ export type UIItem = {
   type: Type;
 };
 
-export type Type = "all" | "shape";
+export type Type = "all" | "shape" | "button" | "loading";

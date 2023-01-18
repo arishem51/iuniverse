@@ -40,7 +40,7 @@ const SidebarLink = styled(Link)`
   all: unset;
 `;
 
-const Items: Type[] = ["all", "shape"];
+const Items: Type[] = ["all", "shape", "button", "loading"];
 
 export default function Sidebar() {
   const { id } = useParams();

@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+import { useElements } from "../../Context/ElementsContext";
 import { UIItem } from "../../types";
 import BurstShape from "./BurstShape";
 import CurvedTailArrowShape from "./CurvedTailArrowShape";
@@ -46,112 +47,12 @@ const ListItem = styled.div`
   border-radius: 1rem;
 `;
 
-const List: UIItem[] = [
-  {
-    component: <BurstShape />,
-    type: "shape",
-  },
-  {
-    component: <CurvedTailArrowShape />,
-    type: "shape",
-  },
-  {
-    component: <DiamondNarrowShape />,
-    type: "shape",
-  },
-  {
-    component: <EggShape />,
-    type: "shape",
-  },
-  {
-    component: <HeartShape />,
-    type: "shape",
-  },
-  {
-    component: <HexagonShape />,
-    type: "shape",
-  },
-  {
-    component: <InfinityShape />,
-    type: "shape",
-  },
-  {
-    component: <Moustache />,
-    type: "shape",
-  },
-  {
-    component: <OctagonShape />,
-    type: "shape",
-  },
-  {
-    component: <OvalShape />,
-    type: "shape",
-  },
-  {
-    component: <PacManShape />,
-    type: "shape",
-  },
-  {
-    component: <YinYangShape />,
-    type: "shape",
-  },
-  {
-    component: <TritangleShape.BottomLeft />,
-    type: "shape",
-  },
-  {
-    component: <TritangleShape.BottomRight />,
-    type: "shape",
-  },
-  {
-    component: <TritangleShape.Left />,
-    type: "shape",
-  },
-  {
-    component: <TritangleShape.Right />,
-    type: "shape",
-  },
-  {
-    component: <TritangleShape.TopLeft />,
-    type: "shape",
-  },
-  {
-    component: <TritangleShape.TopRight />,
-    type: "shape",
-  },
-  {
-    component: <PentagonShape />,
-    type: "shape",
-  },
-  {
-    component: <RectangleShape />,
-    type: "shape",
-  },
-  {
-    component: <SquareShape />,
-    type: "shape",
-  },
-  {
-    component: <Star.FivePoints />,
-    type: "shape",
-  },
-  {
-    component: <Star.SixPoints />,
-    type: "shape",
-  },
-  {
-    component: <TrapezoidShape />,
-    type: "shape",
-  },
-];
-
 export default function ListComponent() {
   const { id } = useParams();
+  const { elements: list } = useElements();
 
   const elements =
-    id === "all" ? List : List.filter((item) => item.type === id);
-
-  console.log(id, elements);
+    id === "all" ? list : list.filter((item) => item.type === id);
 
   function renderItem() {
     return elements.map((item, index) => (
