@@ -5,6 +5,6 @@ export default styled.div`
   height: 100px;
   position: relative;
   left: 30px;
-  background-color: black;
+  background-color: var(--color-lightGray);
   transform: skewX(30deg);
 `;

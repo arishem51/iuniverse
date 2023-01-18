@@ -2,6 +2,23 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import BurstShape from "./BurstShape";
 import CurvedTailArrowShape from "./CurvedTailArrowShape";
+import DiamondNarrowShape from "./DiamondNarrowShape";
+import EggShape from "./EggShape";
+import HeartShape from "./HeartShape";
+import HexagonShape from "./HexagonShape";
+import InfinityShape from "./InfinityShape";
+import Moustache from "./Moustache";
+import OctagonShape from "./OctagonShape";
+import OvalShape from "./OvalShape";
+import PacManShape from "./PacManShape";
+import ParallelogramShape from "./ParallelogramShape";
+import PentagonShape from "./PentagonShape";
+import RectangleShape from "./RectangleShape";
+import SquareShape from "./SquareShape";
+import Star from "./Star";
+import TrapezoidShape from "./TrapezoidShape";
+import TritangleShape from "./TriangleShape";
+import YinYangShape from "./YinYangShape";
 
 const Wrapper = styled.div`
   flex: 1;
@@ -28,7 +45,32 @@ const ListItem = styled.div`
   border-radius: 1rem;
 `;
 
-const List = [<BurstShape />, <CurvedTailArrowShape />];
+const List = [
+  <BurstShape />,
+  <CurvedTailArrowShape />,
+  <DiamondNarrowShape />,
+  <EggShape />,
+  <HeartShape />,
+  <HexagonShape />,
+  <InfinityShape />,
+  <Moustache />,
+  <OctagonShape />,
+  <OvalShape />,
+  <PacManShape />,
+  <YinYangShape />,
+  <TritangleShape.BottomLeft />,
+  <TritangleShape.BottomRight />,
+  <TritangleShape.Left />,
+  <TritangleShape.Right />,
+  <TritangleShape.TopLeft />,
+  <TritangleShape.TopRight />,
+  <PentagonShape />,
+  <RectangleShape />,
+  <SquareShape />,
+  <Star.FivePoints />,
+  <Star.SixPoints />,
+  <TrapezoidShape />,
+];
 
 export default function ListComponent() {
   const { id } = useParams();

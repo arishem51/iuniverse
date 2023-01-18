@@ -17,7 +17,7 @@ export default styled.div`
     position: absolute;
     border-radius: 50%;
     background-color: black;
-    border: 20px solid white;
+    border: 20px solid var(--color-lightGray);
     top: 50%;
     right: 0px;
   }
@@ -28,7 +28,7 @@ export default styled.div`
     height: var(--size-sm);
     position: absolute;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--color-lightGray);
     border: 20px solid black;
     top: 50%;
   }

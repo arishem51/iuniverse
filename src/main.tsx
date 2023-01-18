@@ -24,8 +24,6 @@ const GlobalStyles = createGlobalStyle`
   3. Allow percentage-based heights in the application
 */
 html, body {
-  height: 100%;
-
   /* --colors-dark: ${COLORS.dark}; */
 
   // Automatic generate CSS variables
@@ -71,7 +69,6 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
-  height: 100%;
 }
 `;
 

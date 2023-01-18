@@ -4,10 +4,8 @@ export default styled.div`
   width: 50px;
   height: 50px;
   position: relative;
-  background-color: black;
+  background-color: var(--color-lightGray);
   rotate: 45deg;
-  left: 10%;
-  top: 10%;
   ::after {
     content: "";
     width: inherit;

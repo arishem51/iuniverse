@@ -4,13 +4,12 @@ export default styled.div`
   width: 100px;
   height: 100px;
   position: relative;
-  left: 15%;
   ::after {
     content: "";
     position: absolute;
     width: inherit;
     height: inherit;
-    border: 20px solid black;
+    border: 20px solid var(--color-lightGray);
     left: -60%;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
@@ -22,7 +21,7 @@ export default styled.div`
     position: absolute;
     width: inherit;
     height: inherit;
-    border: 20px solid black;
+    border: 20px solid var(--color-lightGray);
     left: 60%;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;

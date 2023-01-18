@@ -6,8 +6,8 @@ export default styled.div`
   position: relative;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 40px solid black;
-  top: -30%;
+  border-bottom: 40px solid var(--color-lightGray);
+  top: -25%;
   ::after {
     content: "";
     width: 100px;
@@ -15,7 +15,7 @@ export default styled.div`
     position: absolute;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 50px solid black;
+    border-top: 50px solid var(--color-lightGray);
     bottom: -150%;
     left: -50px;
   }

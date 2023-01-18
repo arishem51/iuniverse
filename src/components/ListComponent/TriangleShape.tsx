@@ -7,7 +7,7 @@ const RightShape = styled.div`
   left: var(--size);
   border-top: calc(var(--border-size) / 1.5) solid transparent;
   border-bottom: calc(var(--border-size) / 1.5) solid transparent;
-  border-left: var(--border-size) solid black;
+  border-left: var(--border-size) solid var(--color-lightGray);
 `;
 
 const UpShape = styled.div`
@@ -17,7 +17,7 @@ const UpShape = styled.div`
   left: var(--size);
   border-left: calc(var(--border-size) / 1.5) solid transparent;
   border-right: calc(var(--border-size) / 1.5) solid transparent;
-  border-bottom: var(--border-size) solid black;
+  border-bottom: var(--border-size) solid var(--color-lightGray);
 `;
 
 const DownShape = styled.div`
@@ -27,7 +27,7 @@ const DownShape = styled.div`
   left: var(--size);
   border-left: calc(var(--border-size) / 1.5) solid transparent;
   border-right: calc(var(--border-size) / 1.5) solid transparent;
-  border-top: var(--border-size) solid black;
+  border-top: var(--border-size) solid var(--color-lightGray);
 `;
 
 const LeftShape = styled.div`
@@ -37,7 +37,7 @@ const LeftShape = styled.div`
   left: var(--size);
   border-top: calc(var(--border-size) / 1.5) solid transparent;
   border-bottom: calc(var(--border-size) / 1.5) solid transparent;
-  border-right: var(--border-size) solid black;
+  border-right: var(--border-size) solid var(--color-lightGray);
 `;
 
 const TopLeftShape = styled.div`
@@ -47,8 +47,8 @@ const TopLeftShape = styled.div`
   left: var(--size);
   border-right: var(--border-size) solid transparent;
   border-bottom: var(--border-size) solid transparent;
-  border-top: var(--border-size) solid black;
-  border-left: var(--border-size) solid black;
+  border-top: var(--border-size) solid var(--color-lightGray);
+  border-left: var(--border-size) solid var(--color-lightGray);
 `;
 
 const TopRightShape = styled.div`
@@ -58,8 +58,8 @@ const TopRightShape = styled.div`
   left: var(--size);
   border-left: var(--border-size) solid transparent;
   border-bottom: var(--border-size) solid transparent;
-  border-top: var(--border-size) solid black;
-  border-right: var(--border-size) solid black;
+  border-top: var(--border-size) solid var(--color-lightGray);
+  border-right: var(--border-size) solid var(--color-lightGray);
 `;
 
 const BottomLeftShape = styled.div`
@@ -69,8 +69,8 @@ const BottomLeftShape = styled.div`
   left: var(--size);
   border-right: var(--border-size) solid transparent;
   border-top: var(--border-size) solid transparent;
-  border-bottom: var(--border-size) solid black;
-  border-left: var(--border-size) solid black;
+  border-bottom: var(--border-size) solid var(--color-lightGray);
+  border-left: var(--border-size) solid var(--color-lightGray);
 `;
 
 const BottomRightShape = styled.div`
@@ -80,8 +80,8 @@ const BottomRightShape = styled.div`
   left: var(--size);
   border-left: var(--border-size) solid transparent;
   border-top: var(--border-size) solid transparent;
-  border-bottom: var(--border-size) solid black;
-  border-right: var(--border-size) solid black;
+  border-bottom: var(--border-size) solid var(--color-lightGray);
+  border-right: var(--border-size) solid var(--color-lightGray);
 `;
 
 function Up() {
