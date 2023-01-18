@@ -1,4 +1,5 @@
 import { createContext, PropsWithChildren, useContext } from "react";
+import ShadowButton from "../components/ListComponent/Buttons/ShadowButton";
 import BurstShape from "../components/ListComponent/Shapes/BurstShape";
 import CurvedTailArrowShape from "../components/ListComponent/Shapes/CurvedTailArrowShape";
 import DiamondNarrowShape from "../components/ListComponent/Shapes/DiamondNarrowShape";
@@ -115,6 +116,10 @@ const List: UIItem[] = [
   {
     component: <TrapezoidShape />,
     type: "shapes",
+  },
+  {
+    component: <ShadowButton children="uiverse" />,
+    type: "buttons",
   },
 ];
 
