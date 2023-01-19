@@ -63,7 +63,9 @@ export default function Sidebar() {
       return (
         <SidebarLink to={`/${item}`} key={item}>
           <SidebarItem style={styles}>
-            <SidebarItemText>{item + "s"}</SidebarItemText>
+            <SidebarItemText>
+              {item === "all" ? item : item + "s"}
+            </SidebarItemText>
           </SidebarItem>
         </SidebarLink>
       );
