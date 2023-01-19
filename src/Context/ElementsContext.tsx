@@ -127,7 +127,7 @@ const List: UIItem[] = [
     type: "shape",
   },
   {
-    component: <ShadowButton children="uiverse" />,
+    component: <ShadowButton children="Hover me" />,
     type: "button",
   },
   {
@@ -143,7 +143,7 @@ const List: UIItem[] = [
     type: "loader",
   },
   {
-    component: <KeyboardButton children="Click me" />,
+    component: <KeyboardButton />,
     type: "button",
   },
   {

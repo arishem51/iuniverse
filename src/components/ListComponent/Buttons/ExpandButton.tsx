@@ -76,7 +76,7 @@ export default function ExpandButton() {
       <ExpandRadius>
         <Icon />
       </ExpandRadius>
-      <Text>learn more</Text>
+      <Text>hover me</Text>
     </Wrapper>
   );
 }

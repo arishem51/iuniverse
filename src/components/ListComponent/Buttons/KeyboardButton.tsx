@@ -27,6 +27,9 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   className?: string;
 };
 
-export default function KeyboardButton(props: Props) {
-  return <Wrapper {...props} />;
+export default function KeyboardButton({
+  children = "Click me",
+  ...props
+}: Props) {
+  return <Wrapper children={children} {...props} />;
 }
