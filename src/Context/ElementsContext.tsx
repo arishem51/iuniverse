@@ -27,6 +27,7 @@ import TrapezoidShape from "../components/ListComponent/Shapes/TrapezoidShape";
 import TritangleShape from "../components/ListComponent/Shapes/TriangleShape";
 import YinYangShape from "../components/ListComponent/Shapes/YinYangShape";
 import { UIItem } from "../types";
+import FlipCard from "../components/ListComponent/Cards/FlipCard";
 
 const List: UIItem[] = [
   {
@@ -171,6 +172,10 @@ const List: UIItem[] = [
   {
     component: <Cube />,
     type: "loader",
+  },
+  {
+    component: <FlipCard />,
+    type: "card",
   },
 ];
 
