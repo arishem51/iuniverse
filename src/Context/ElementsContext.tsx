@@ -2,6 +2,7 @@ import { createContext, PropsWithChildren, useContext } from "react";
 import Hamster from "../components/ListComponent/Animals/Hamster";
 import KeyboardButton from "../components/ListComponent/Buttons/KeyboardButton";
 import ShadowButton from "../components/ListComponent/Buttons/ShadowButton";
+import Card3DHoverEffect from "../components/ListComponent/Cards/Card3DHoverEffect";
 import CardShadowHover from "../components/ListComponent/Cards/CardShadowHover";
 import DotWave from "../components/ListComponent/Loaders/DotWave";
 import ThreeDotAround from "../components/ListComponent/Loaders/ThreeDotAround";
@@ -145,6 +146,20 @@ const List: UIItem[] = [
   {
     component: <Hamster />,
     type: "animal",
+  },
+  {
+    component: <Card3DHoverEffect />,
+    type: "card",
+  },
+  {
+    component: (
+      <Card3DHoverEffect
+        backgroungImg="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg"
+        visibleImg="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp"
+        textImg="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png"
+      />
+    ),
+    type: "card",
   },
 ];
 
