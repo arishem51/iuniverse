@@ -1,4 +1,5 @@
 import { createContext, PropsWithChildren, useContext } from "react";
+import Hamster from "../components/ListComponent/Animals/Hamster";
 import KeyboardButton from "../components/ListComponent/Buttons/KeyboardButton";
 import ShadowButton from "../components/ListComponent/Buttons/ShadowButton";
 import CardShadowHover from "../components/ListComponent/Cards/CardShadowHover";
@@ -140,6 +141,10 @@ const List: UIItem[] = [
   {
     component: <KeyboardButton children="Click me" />,
     type: "button",
+  },
+  {
+    component: <Hamster />,
+    type: "animal",
   },
 ];
 

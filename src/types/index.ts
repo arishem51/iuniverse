@@ -11,4 +11,5 @@ export type Type =
   | "card"
   | "checkboxe"
   | "toogle witche"
-  | "input";
+  | "input"
+  | "animal";

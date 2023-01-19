@@ -49,6 +49,7 @@ const Items: Type[] = [
   "checkboxe",
   "toogle witche",
   "input",
+  "animal",
 ];
 
 export default function Sidebar() {

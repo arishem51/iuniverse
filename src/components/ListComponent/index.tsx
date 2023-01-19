@@ -15,7 +15,7 @@ const Text = styled.h1`
 
 const ListWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-columns: repeat(auto-fill, minmax(300px, min-content));
   gap: 1rem;
   padding-bottom: 4rem;
 `;
