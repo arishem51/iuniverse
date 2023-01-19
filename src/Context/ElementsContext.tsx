@@ -1,5 +1,6 @@
 import { createContext, PropsWithChildren, useContext } from "react";
 import Hamster from "../components/ListComponent/Animals/Hamster";
+import ExpandButton from "../components/ListComponent/Buttons/ExpandButton";
 import KeyboardButton from "../components/ListComponent/Buttons/KeyboardButton";
 import ShadowButton from "../components/ListComponent/Buttons/ShadowButton";
 import Card3DHoverEffect from "../components/ListComponent/Cards/Card3DHoverEffect";
@@ -159,7 +160,12 @@ const List: UIItem[] = [
         textImg="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png"
       />
     ),
+
     type: "card",
+  },
+  {
+    component: <ExpandButton />,
+    type: "button",
   },
 ];
 
