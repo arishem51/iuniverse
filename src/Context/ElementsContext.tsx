@@ -8,6 +8,7 @@ import CardShadowHover from "../components/ListComponent/Cards/CardShadowHover";
 import DotWave from "../components/ListComponent/Loaders/DotWave";
 import ThreeDotAround from "../components/ListComponent/Loaders/ThreeDotAround";
 import BurstShape from "../components/ListComponent/Shapes/BurstShape";
+import Cube from "../components/ListComponent/Loaders/Cube";
 import CurvedTailArrowShape from "../components/ListComponent/Shapes/CurvedTailArrowShape";
 import DiamondNarrowShape from "../components/ListComponent/Shapes/DiamondNarrowShape";
 import EggShape from "../components/ListComponent/Shapes/EggShape";
@@ -166,6 +167,10 @@ const List: UIItem[] = [
   {
     component: <ExpandButton />,
     type: "button",
+  },
+  {
+    component: <Cube />,
+    type: "loader",
   },
 ];
 
