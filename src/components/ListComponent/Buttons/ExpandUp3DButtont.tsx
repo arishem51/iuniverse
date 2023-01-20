@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Flex } from "../../Base";
+import { ButtonBase, Flex } from "../../Base";
 
 const Overlay = styled(Flex)`
   position: absolute;
@@ -14,13 +14,13 @@ const Overlay = styled(Flex)`
   transition: all 0.5s;
 `;
 
-const Wrapper = styled.button`
+const Wrapper = styled(ButtonBase)`
   position: relative;
   width: 100px;
   height: 32px;
-  cursor: pointer;
   rotate: -25deg;
   transform: skewX(25deg);
+  background: transparent;
   ::after {
     content: "";
     position: absolute;

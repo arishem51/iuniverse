@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { ButtonBase } from "../../Base";
 
-export default styled.button`
+export default styled(ButtonBase)`
   --color: rgb(0, 140, 255);
   padding: 10px 20px;
   background-color: var(--color);
@@ -11,8 +12,6 @@ export default styled.button`
   text-transform: uppercase;
   letter-spacing: 8px;
   font-weight: 700;
-  border: none;
-  cursor: pointer;
   :hover {
     box-shadow: 0 0 5px var(--color), 0 0 25px var(--color),
       0 0 50px var(--color), 0 0 100px var(--color);

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Flex } from "../Base";
-import Button from "../Button";
+import { ButtonBase, Flex } from "../Base";
 import ExternalLink from "../ExternalLink";
 
 const Wrapper = styled(Flex)`
@@ -21,6 +20,13 @@ const ButtonLink = styled(Link)`
   color: var(--color-dark);
 `;
 
+const ButtonStyled = styled(ButtonBase)`
+  padding: 12px 24px;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  border-radius: 30px;
+`;
+
 export default function HomePage() {
   return (
     <Wrapper center>
@@ -31,7 +37,7 @@ export default function HomePage() {
         </ExternalLink>
       </HeadingText>
       <ButtonLink to="/all">
-        <Button>Go to the components</Button>
+        <ButtonStyled>Go to the components</ButtonStyled>
       </ButtonLink>
     </Wrapper>
   );

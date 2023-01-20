@@ -13,3 +13,17 @@ type FlexProps = { center?: boolean } & PropsWithChildren &
 export function Flex({ ...props }: FlexProps) {
   return <FlexWrapper {...props} />;
 }
+
+const ButtonWrapper = styled.button`
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+`;
+
+type ButtonProps = {} & PropsWithChildren &
+  React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+export function ButtonBase({ ...props }: ButtonProps) {
+  return <ButtonWrapper {...props} />;
+}
