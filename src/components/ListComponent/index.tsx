@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   flex: 1;
   background-color: var(--color-dark);
   min-height: 100vh;
+  padding-left: 3rem;
 `;
 
 const Text = styled.h1`

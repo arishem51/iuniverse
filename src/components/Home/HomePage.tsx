@@ -4,7 +4,6 @@ import { ButtonBase, Flex } from "../Base";
 import ExternalLink from "../ExternalLink";
 
 const Wrapper = styled(Flex)`
-  flex-direction: column;
   background-color: var(--color-dark);
   gap: 16px;
   min-height: 95vh;
@@ -29,7 +28,7 @@ const ButtonStyled = styled(ButtonBase)`
 
 export default function HomePage() {
   return (
-    <Wrapper center>
+    <Wrapper center column>
       <HeadingText>
         This project is for learning purpose inspired by{" "}
         <ExternalLink href="https://uiverse.io/" target="_blank">

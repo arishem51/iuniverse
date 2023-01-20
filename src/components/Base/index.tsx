@@ -1,13 +1,14 @@
 import { PropsWithChildren } from "react";
 import styled from "styled-components";
 
-const FlexWrapper = styled.div<{ center?: boolean }>`
+const FlexWrapper = styled.div<{ center?: boolean; column?: boolean }>`
   display: flex;
   justify-content: ${(props) => (props.center ? "center" : "start")};
   align-items: ${(props) => (props.center ? "center" : "stretch")};
+  flex-direction: ${(props) => (props.column ? "column" : "row")};
 `;
 
-type FlexProps = { center?: boolean } & PropsWithChildren &
+type FlexProps = { center?: boolean; column?: boolean } & PropsWithChildren &
   React.HTMLAttributes<HTMLDivElement>;
 
 export function Flex({ ...props }: FlexProps) {

@@ -5,7 +5,6 @@ import { Type } from "../../types";
 import { Flex } from "../Base";
 
 const SidebarWrapper = styled(Flex)`
-  flex-direction: column;
   padding: 1rem;
   background: var(--color-dark);
   gap: 0.5rem;
@@ -70,5 +69,5 @@ export default function Sidebar() {
       );
     });
   };
-  return <SidebarWrapper>{renderItem()}</SidebarWrapper>;
+  return <SidebarWrapper column>{renderItem()}</SidebarWrapper>;
 }
