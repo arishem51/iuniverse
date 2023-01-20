@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { Flex } from "../../Base";
+import { FlexContainer } from "../../Base";
 
 const Rotate = keyframes`
     from { transform: rotateY(0) rotateX(0) rotateZ(0); }
@@ -7,7 +7,7 @@ const Rotate = keyframes`
 
 `;
 
-const Container = styled(Flex)`
+const Container = styled(FlexContainer)`
   width: 200px;
   height: 200px;
   perspective: 800px;

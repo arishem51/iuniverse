@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { Flex } from "../../Base";
+import { FlexContainer } from "../../Base";
 
 const LeftDotAnim = keyframes`
    0%{
@@ -24,7 +24,7 @@ const RightDotAnim = keyframes`
    }
 `;
 
-const Dot = styled(Flex)`
+const Dot = styled(FlexContainer)`
   width: 10px;
   height: 50px;
   transform-origin: 50% 0%;
@@ -39,7 +39,7 @@ const Dot = styled(Flex)`
   }
 `;
 
-const Wrapper = styled(Flex)`
+const Wrapper = styled(FlexContainer)`
   position: relative;
   ${Dot}:first-child {
     animation: ${LeftDotAnim} 1.2s linear infinite;

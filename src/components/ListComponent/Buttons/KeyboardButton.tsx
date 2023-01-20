@@ -1,8 +1,7 @@
-import { ButtonHTMLAttributes } from "react";
 import styled from "styled-components";
-import { Flex } from "../../Base";
+import { FlexContainer } from "../../Base";
 
-const Wrapper = styled(Flex)`
+const Wrapper = styled(FlexContainer)`
   border: none;
   position: relative;
   padding: 8px 16px;

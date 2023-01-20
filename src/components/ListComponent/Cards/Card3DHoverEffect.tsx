@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Flex } from "../../Base";
+import { FlexContainer } from "../../Base";
 
 const HoverWrapper = styled.div`
   position: relative;
@@ -43,7 +43,7 @@ const VisibleImg = styled.img`
   opacity: 0;
 `;
 
-const Wrapper = styled(Flex)`
+const Wrapper = styled(FlexContainer)`
   position: relative;
   height: 300px;
   width: calc(300px / 1.5);

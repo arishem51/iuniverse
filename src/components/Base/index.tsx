@@ -11,7 +11,7 @@ const FlexWrapper = styled.div<{ center?: boolean; column?: boolean }>`
 type FlexProps = { center?: boolean; column?: boolean } & PropsWithChildren &
   React.HTMLAttributes<HTMLDivElement>;
 
-export function Flex({ ...props }: FlexProps) {
+export function FlexContainer({ ...props }: FlexProps) {
   return <FlexWrapper {...props} />;
 }
 
@@ -25,6 +25,6 @@ const ButtonWrapper = styled.button`
 type ButtonProps = {} & PropsWithChildren &
   React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export function ButtonBase({ ...props }: ButtonProps) {
+export function ButtonContainer({ ...props }: ButtonProps) {
   return <ButtonWrapper {...props} />;
 }

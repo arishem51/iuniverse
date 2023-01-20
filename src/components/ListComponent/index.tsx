@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { useElements } from "../../Context/ElementsContext";
-import { Flex } from "../Base";
+import { FlexContainer } from "../Base";
 
 const Wrapper = styled.div`
   flex: 1;
@@ -22,7 +22,7 @@ const ListWrapper = styled.div`
   padding-bottom: 4rem;
 `;
 
-const ListItem = styled(Flex)`
+const ListItem = styled(FlexContainer)`
   min-height: 250px;
   background-color: var(--color-lightDark);
   border-radius: 1rem;

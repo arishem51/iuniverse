@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ButtonBase, Flex } from "../Base";
+import { ButtonContainer, FlexContainer } from "../Base";
 import ExternalLink from "../ExternalLink";
 
-const Wrapper = styled(Flex)`
+const Wrapper = styled(FlexContainer)`
   background-color: var(--color-dark);
   gap: 16px;
   min-height: 95vh;
@@ -19,7 +19,7 @@ const ButtonLink = styled(Link)`
   color: var(--color-dark);
 `;
 
-const ButtonStyled = styled(ButtonBase)`
+const ButtonStyled = styled(ButtonContainer)`
   padding: 12px 24px;
   background-color: var(--color-white);
   color: var(--color-dark);

@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { Type } from "../../types";
-import { Flex } from "../Base";
+import { FlexContainer } from "../Base";
 
-const SidebarWrapper = styled(Flex)`
+const SidebarWrapper = styled(FlexContainer)`
   padding: 1rem;
   background: var(--color-dark);
   gap: 0.5rem;

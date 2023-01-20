@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Flex } from "../Base";
+import { FlexContainer } from "../Base";
 import NavLink from "../NavLink";
 
-const Wrapper = styled(Flex)`
+const Wrapper = styled(FlexContainer)`
   gap: 3rem;
   height: 5vh;
   width: 100%;

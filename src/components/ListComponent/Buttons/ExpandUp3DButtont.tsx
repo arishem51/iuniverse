@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ButtonBase, Flex } from "../../Base";
+import { ButtonContainer, FlexContainer } from "../../Base";
 
-const Overlay = styled(Flex)`
+const Overlay = styled(FlexContainer)`
   position: absolute;
   top: -5px;
   left: 10px;
@@ -14,7 +14,7 @@ const Overlay = styled(Flex)`
   transition: all 0.5s;
 `;
 
-const Wrapper = styled(ButtonBase)`
+const Wrapper = styled(ButtonContainer)`
   position: relative;
   width: 100px;
   height: 32px;

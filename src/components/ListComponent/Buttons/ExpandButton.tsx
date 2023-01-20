@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Flex } from "../../Base";
+import { FlexContainer } from "../../Base";
 
-const ExpandRadius = styled(Flex)`
+const ExpandRadius = styled(FlexContainer)`
   position: absolute;
   left: -16px;
   align-items: center;
@@ -45,7 +45,7 @@ const Text = styled.h4`
   transition: opacity 0.8s;
 `;
 
-const Wrapper = styled(Flex)`
+const Wrapper = styled(FlexContainer)`
   position: relative;
   left: -28px;
   cursor: pointer;

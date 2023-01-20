@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
-import { Flex } from "../../Base";
+import { FlexContainer } from "../../Base";
 
-const Wrapper = styled(Flex)`
+const Wrapper = styled(FlexContainer)`
   position: relative;
   gap: 5px;
 `;

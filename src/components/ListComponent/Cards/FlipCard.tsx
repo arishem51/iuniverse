@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Flex } from "../../Base";
+import { FlexContainer } from "../../Base";
 
-const Side = styled(Flex)`
+const Side = styled(FlexContainer)`
   position: absolute;
   inset: 0;
   background-color: var(--color-lightGray);
