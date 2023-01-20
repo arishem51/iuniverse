@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { Flex } from "../../Base";
 
 const LeftDotAnim = keyframes`
    0%{
@@ -23,14 +24,11 @@ const RightDotAnim = keyframes`
    }
 `;
 
-const Dot = styled.div`
+const Dot = styled(Flex)`
   width: 10px;
   height: 50px;
   transform-origin: 50% 0%;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   ::after {
     content: "";
     position: absolute;
@@ -41,26 +39,23 @@ const Dot = styled.div`
   }
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled(Flex)`
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   ${Dot}:first-child {
-    animation: ${LeftDotAnim} 1.5s linear infinite;
+    animation: ${LeftDotAnim} 1.2s linear infinite;
   }
   ${Dot}:last-child {
-    animation: ${RightDotAnim} 1.5s linear infinite;
+    animation: ${RightDotAnim} 1.2s linear infinite;
   }
 `;
 
 export default function Component() {
   return (
     <Wrapper>
-      <Dot />
-      <Dot />
-      <Dot />
-      <Dot />
+      <Dot center />
+      <Dot center />
+      <Dot center />
+      <Dot center />
     </Wrapper>
   );
 }

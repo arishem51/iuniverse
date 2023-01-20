@@ -1,9 +1,9 @@
 import styled from "styled-components";
+import { Flex } from "../../Base";
 
-const ExpandRadius = styled.div`
+const ExpandRadius = styled(Flex)`
   position: absolute;
   left: -16px;
-  display: flex;
   align-items: center;
   padding-left: 21px;
   width: 56px;
@@ -45,18 +45,14 @@ const Text = styled.h4`
   transition: opacity 0.8s;
 `;
 
-const Wrapper = styled.div`
-  all: unset;
+const Wrapper = styled(Flex)`
   position: relative;
   left: -28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
   user-select: none;
   :hover {
     ${ExpandRadius} {
-      width: 210px;
+      width: 170px;
     }
     ${Icon} {
       translate: 20px 0;
@@ -72,7 +68,7 @@ const Wrapper = styled.div`
 
 export default function ExpandButton() {
   return (
-    <Wrapper>
+    <Wrapper center>
       <ExpandRadius>
         <Icon />
       </ExpandRadius>

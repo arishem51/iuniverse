@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Flex } from "../../Base";
 
 const HoverWrapper = styled.div`
   position: relative;
@@ -42,11 +43,8 @@ const VisibleImg = styled.img`
   opacity: 0;
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled(Flex)`
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 300px;
   width: calc(300px / 1.5);
   cursor: pointer;
@@ -83,7 +81,7 @@ export default function Card3DHoverEffect({
   textImg = "https://ggayane.github.io/css-experiments/cards/force_mage-title.png",
 }: Props) {
   return (
-    <Wrapper>
+    <Wrapper center>
       <HoverWrapper>
         <img src={backgroungImg} />
       </HoverWrapper>

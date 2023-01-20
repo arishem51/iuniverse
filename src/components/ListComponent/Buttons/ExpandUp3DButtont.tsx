@@ -1,12 +1,10 @@
 import styled from "styled-components";
+import { Flex } from "../../Base";
 
-const Overlay = styled.div`
+const Overlay = styled(Flex)`
   position: absolute;
   top: -5px;
   left: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100px;
   height: 32px;
   padding: 10px;
@@ -62,11 +60,12 @@ export default function ExpandUp3DButton() {
             "--index": 1,
           } as React.CSSProperties
         }
+        center
       />
-      <Overlay style={{ "--index": 2 } as React.CSSProperties} />
-      <Overlay style={{ "--index": 3 } as React.CSSProperties} />
-      <Overlay style={{ "--index": 4 } as React.CSSProperties} />
-      <Overlay style={{ "--index": 5 } as React.CSSProperties}>
+      <Overlay center style={{ "--index": 2 } as React.CSSProperties} />
+      <Overlay center style={{ "--index": 3 } as React.CSSProperties} />
+      <Overlay center style={{ "--index": 4 } as React.CSSProperties} />
+      <Overlay center style={{ "--index": 5 } as React.CSSProperties}>
         Hover Me
       </Overlay>
     </Wrapper>

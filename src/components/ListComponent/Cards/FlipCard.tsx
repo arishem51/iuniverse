@@ -1,11 +1,9 @@
 import styled from "styled-components";
+import { Flex } from "../../Base";
 
-const Side = styled.div`
+const Side = styled(Flex)`
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--color-lightGray);
   font-size: 32px;
 `;
@@ -41,8 +39,8 @@ export default function FlipCard() {
   return (
     <HoverContainer>
       <Wrapper>
-        <Front>Front</Front>
-        <Back>Back</Back>
+        <Front center>Front</Front>
+        <Back center>Back</Back>
       </Wrapper>
     </HoverContainer>
   );

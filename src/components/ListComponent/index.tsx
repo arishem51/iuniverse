@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { useElements } from "../../Context/ElementsContext";
+import { Flex } from "../Base";
 
 const Wrapper = styled.div`
   flex: 1;
@@ -20,10 +21,7 @@ const ListWrapper = styled.div`
   padding-bottom: 4rem;
 `;
 
-const ListItem = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const ListItem = styled(Flex)`
   min-height: 250px;
   background-color: var(--color-lightDark);
   border-radius: 1rem;
@@ -42,7 +40,9 @@ export default function ListComponent() {
       return <Text>No component yet</Text>;
     }
     return elements.map((item, index) => (
-      <ListItem key={`${item.type} - ${index + 1}`}>{item.component}</ListItem>
+      <ListItem center key={`${item.type} - ${index + 1}`}>
+        {item.component}
+      </ListItem>
     ));
   }
 

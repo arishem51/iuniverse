@@ -1,10 +1,8 @@
 import styled from "styled-components";
+import { Flex } from "../Base";
 import NavLink from "../NavLink";
 
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const Wrapper = styled(Flex)`
   gap: 3rem;
   height: 5vh;
   width: 100%;
@@ -14,7 +12,7 @@ const Wrapper = styled.div`
 
 export default function Header() {
   return (
-    <Wrapper>
+    <Wrapper center>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/all">Components</NavLink>
     </Wrapper>

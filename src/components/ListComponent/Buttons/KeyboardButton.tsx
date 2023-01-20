@@ -1,12 +1,10 @@
 import { ButtonHTMLAttributes } from "react";
 import styled from "styled-components";
+import { Flex } from "../../Base";
 
-const Wrapper = styled.button`
-  all: unset;
+const Wrapper = styled(Flex)`
+  border: none;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 8px 16px;
   background-color: #6c5ce7;
   border-radius: 4px;
@@ -23,13 +21,6 @@ const Wrapper = styled.button`
   }
 `;
 
-type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  className?: string;
-};
-
-export default function KeyboardButton({
-  children = "Click me",
-  ...props
-}: Props) {
-  return <Wrapper children={children} {...props} />;
+export default function KeyboardButton() {
+  return <Wrapper as="button">Click Me</Wrapper>;
 }

@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Flex } from "../Base";
 import Button from "../Button";
 import ExternalLink from "../ExternalLink";
-import NavLink from "../NavLink";
 
-const Wrapper = styled.div`
-  display: flex;
+const Wrapper = styled(Flex)`
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: var(--color-dark);
   gap: 16px;
   min-height: 95vh;
@@ -27,7 +24,7 @@ const ButtonLink = styled(Link)`
 
 export default function HomePage() {
   return (
-    <Wrapper>
+    <Wrapper center>
       <HeadingText>
         This project is for learning purpose inspired by{" "}
         <ExternalLink href="https://uiverse.io/" target="_blank">
