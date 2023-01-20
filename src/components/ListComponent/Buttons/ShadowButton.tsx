@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ButtonBase } from "../../Base";
+import { ButtonContainer } from "../../Base";
 
-export default styled(ButtonBase)`
+export default styled(ButtonContainer)`
   --color: rgb(0, 140, 255);
   padding: 10px 20px;
   background-color: var(--color);
