@@ -17,7 +17,6 @@ const HeadingText = styled.h1`
 `;
 
 const ButtonLink = styled(Link)`
-  all: unset;
   font-weight: 700;
   color: var(--color-dark);
 `;

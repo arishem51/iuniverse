@@ -15,7 +15,6 @@ const Overlay = styled(Flex)`
 `;
 
 const Wrapper = styled.button`
-  all: unset;
   position: relative;
   width: 100px;
   height: 32px;
@@ -26,6 +25,7 @@ const Wrapper = styled.button`
     content: "";
     position: absolute;
     top: 0;
+    left: 0;
     height: 32px;
     width: 10px;
     background-color: var(--color-dark);

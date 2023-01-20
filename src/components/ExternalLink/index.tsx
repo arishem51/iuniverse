@@ -1,8 +1,6 @@
-import { useState } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.a`
-  all: unset;
   position: relative;
   display: inline-block;
   vertical-align: bottom;

@@ -26,7 +26,6 @@ const SidebarItem = styled.div`
 `;
 
 const SidebarItemText = styled.h6`
-  all: unset;
   position: relative;
   z-index: 2;
   color: var(--color-white);
@@ -37,7 +36,7 @@ const SidebarItemText = styled.h6`
 `;
 
 const SidebarLink = styled(Link)`
-  all: unset;
+  text-decoration: none;
 `;
 
 const Items: Type[] = [

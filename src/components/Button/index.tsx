@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Wrapper = styled.button`
-  all: unset;
   padding: 12px 24px;
   background-color: var(--color-white);
   color: var(--color-dark);

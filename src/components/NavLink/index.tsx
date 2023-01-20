@@ -2,11 +2,11 @@ import { Link, LinkProps, useParams } from "react-router-dom";
 import styled from "styled-components";
 
 const Wrapper = styled(Link)`
-  all: unset;
   color: var(--color-white);
   font-weight: 700;
   font-size: 18px;
   cursor: pointer;
+  text-decoration: none;
   :hover {
     ::after {
       transform-origin: left;

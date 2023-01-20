@@ -7,7 +7,6 @@ const Text = styled.h3`
 const Wrapper = styled.div`
   --scaleTime: 0.3s;
   --translateTime: 0.5s;
-  all: unset;
   position: relative;
   padding: 12px 24px;
   cursor: pointer;
