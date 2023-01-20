@@ -30,6 +30,7 @@ import { UIItem } from "../types";
 import FlipCard from "../components/ListComponent/Cards/FlipCard";
 import ExpandUp3DButton from "../components/ListComponent/Buttons/ExpandUp3DButtont";
 import LineUpButton from "../components/ListComponent/Buttons/LineUpButton";
+import NewtonsCardleDot from "../components/ListComponent/Loaders/NewtonsCardleDot";
 
 const List: UIItem[] = [
   {
@@ -186,6 +187,10 @@ const List: UIItem[] = [
   {
     component: <LineUpButton />,
     type: "button",
+  },
+  {
+    component: <NewtonsCardleDot />,
+    type: "loader",
   },
 ];
 
