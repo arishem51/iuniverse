@@ -28,6 +28,7 @@ import TritangleShape from "../components/ListComponent/Shapes/TriangleShape";
 import YinYangShape from "../components/ListComponent/Shapes/YinYangShape";
 import { UIItem } from "../types";
 import FlipCard from "../components/ListComponent/Cards/FlipCard";
+import ExpandUp3DButton from "../components/ListComponent/Buttons/ExpandUp3DButtont";
 
 const List: UIItem[] = [
   {
@@ -176,6 +177,10 @@ const List: UIItem[] = [
   {
     component: <FlipCard />,
     type: "card",
+  },
+  {
+    component: <ExpandUp3DButton />,
+    type: "button",
   },
 ];
 
