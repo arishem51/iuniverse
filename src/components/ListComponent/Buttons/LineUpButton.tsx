@@ -1,0 +1,50 @@
+import styled from "styled-components";
+
+const Text = styled.h3`
+  position: relative;
+  color: white;
+  z-index: 2;
+  transition: color 0.1s var(--scaleTime);
+`;
+
+const Wrapper = styled.div`
+  --scaleTime: 0.3s;
+  --translateTime: 0.5s;
+  all: unset;
+  position: relative;
+  padding: 12px 24px;
+  cursor: pointer;
+  background: transparent;
+  overflow: hidden;
+  ::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #ffc506;
+    translate: 0 95%;
+    transition: scale var(--scaleTime) var(--translateTime),
+      translate var(--translateTime);
+    scale: 0 1;
+    transform-origin: left;
+    z-index: 1;
+  }
+  :hover {
+    ::after {
+      scale: 1 1;
+      translate: 0 0;
+      transition: scale var(--scaleTime),
+        translate var(--translateTime) var(--scaleTime);
+    }
+    ${Text} {
+      color: var(--color-dark);
+    }
+  }
+`;
+
+export default function LineUpButton() {
+  return (
+    <Wrapper>
+      <Text>Hover Me</Text>
+    </Wrapper>
+  );
+}
