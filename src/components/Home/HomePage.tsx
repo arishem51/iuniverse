@@ -11,7 +11,8 @@ const Wrapper = styled(FlexContainer)`
 
 const HeadingText = styled.h1`
   color: var(--color-white);
-  font-size: 56px;
+  font-size: var(--step-3);
+  text-align: center;
 `;
 
 const ButtonLink = styled(Link)`

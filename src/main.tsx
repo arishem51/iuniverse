@@ -28,7 +28,12 @@ html, body {
 
   // Automatic generate CSS variables
   ${generateCSSVarColor(COLORS)}
-
+  --step-0: clamp(0.75rem, calc(0.69rem + 0.26vw), 1.00rem);
+  --step-1: clamp(0.90rem, calc(0.75rem + 0.62vw), 1.50rem);
+  --step-2: clamp(1.08rem, calc(0.80rem + 1.21vw), 2.25rem);
+  --step-3: clamp(1.30rem, calc(0.79rem + 2.15vw), 3.38rem);
+  --step-4: clamp(1.56rem, calc(0.70rem + 3.63vw), 5.06rem);
+  --step-5: clamp(1.87rem, calc(0.48rem + 5.93vw), 7.59rem);
 }
 
 /*
@@ -70,6 +75,7 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
 `;
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
