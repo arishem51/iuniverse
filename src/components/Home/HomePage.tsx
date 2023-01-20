@@ -5,7 +5,8 @@ import ExternalLink from "../ExternalLink";
 
 const Wrapper = styled(FlexContainer)`
   background-color: var(--color-dark);
-  gap: 16px;
+  gap: var(--space-m);
+  padding: 0 var(--space-m);
   min-height: 95vh;
 `;
 
