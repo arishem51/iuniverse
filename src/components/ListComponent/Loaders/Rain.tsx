@@ -22,7 +22,7 @@ const Raindrops = styled.div`
   height: 9px;
   background-color: var(--color-white);
   border-radius: 50%;
-  animation: ${rain} 1s linear infinite;
+  animation: ${rain} 0.5s linear infinite;
   animation-delay: ${Math.random}s;
 `;
 
