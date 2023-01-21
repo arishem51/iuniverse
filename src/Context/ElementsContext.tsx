@@ -31,6 +31,7 @@ import FlipCard from "../components/ListComponent/Cards/FlipCard";
 import ExpandUp3DButton from "../components/ListComponent/Buttons/ExpandUp3DButtont";
 import LineUpButton from "../components/ListComponent/Buttons/LineUpButton";
 import NewtonsCardleDot from "../components/ListComponent/Loaders/NewtonsCardleDot";
+import BouncingCircle from "../components/ListComponent/Loaders/BouncingBall";
 
 const List: UIItem[] = [
   {
@@ -190,6 +191,10 @@ const List: UIItem[] = [
   },
   {
     component: <NewtonsCardleDot />,
+    type: "loader",
+  },
+  {
+    component: <BouncingCircle />,
     type: "loader",
   },
 ];
