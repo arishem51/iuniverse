@@ -32,6 +32,7 @@ import ExpandUp3DButton from "../components/ListComponent/Buttons/ExpandUp3DButt
 import LineUpButton from "../components/ListComponent/Buttons/LineUpButton";
 import NewtonsCardleDot from "../components/ListComponent/Loaders/NewtonsCardleDot";
 import BouncingCircle from "../components/ListComponent/Loaders/BouncingBall";
+import Rain from "../components/ListComponent/Loaders/Rain";
 
 const List: UIItem[] = [
   {
@@ -195,6 +196,10 @@ const List: UIItem[] = [
   },
   {
     component: <BouncingCircle />,
+    type: "loader",
+  },
+  {
+    component: <Rain />,
     type: "loader",
   },
 ];
