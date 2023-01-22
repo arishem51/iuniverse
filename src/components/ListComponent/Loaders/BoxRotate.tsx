@@ -22,9 +22,9 @@ const rotate = keyframes`
 `;
 
 const shadow = keyframes`
-    0%{
+    0%,100%{
         scale: 1 1
-    }100%{
+    }50%{
         scale: 1.2 1.2
     }
 `;
@@ -49,7 +49,7 @@ const Wrapper = styled.div<{ index: number }>`
     width: 100%;
     background: #f0808050;
     border-radius: 50%;
-    animation: ${shadow} 0.25s linear infinite alternate;
+    animation: ${shadow} 0.5s linear infinite alternate;
   }
 `;
 
