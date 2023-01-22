@@ -37,6 +37,7 @@ import BoxHoverButton from "../components/ListComponent/Buttons/BoxHoverButton";
 import BoxRotate from "../components/ListComponent/Loaders/BoxRotate";
 import Glitch from "../components/ListComponent/Text/Glitch";
 import { sortShapeElements } from "../helpers";
+import Hover3DButton from "../components/ListComponent/Buttons/Hover3DButton";
 
 const List: UIItem[] = [
   {
@@ -217,6 +218,10 @@ const List: UIItem[] = [
   {
     component: <Glitch />,
     type: "text",
+  },
+  {
+    component: <Hover3DButton />,
+    type: "button",
   },
 ];
 
