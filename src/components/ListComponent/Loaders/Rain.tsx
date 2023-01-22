@@ -59,7 +59,12 @@ const Wrapper = styled.div`
 
 function renderItem() {
   return new Array(24).fill(" ").map((_, index) => {
-    return <Raindrops style={{ "--index": index } as React.CSSProperties} />;
+    return (
+      <Raindrops
+        key={index}
+        style={{ "--index": index } as React.CSSProperties}
+      />
+    );
   });
 }
 

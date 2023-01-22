@@ -71,7 +71,7 @@ export default function BoxHoverButton() {
     <Wrapper>
       <FlexContainer>
         {"hover".split("").map((item) => (
-          <Box center children={item.toUpperCase()} />
+          <Box key={item} center children={item.toUpperCase()} />
         ))}
       </FlexContainer>
     </Wrapper>
