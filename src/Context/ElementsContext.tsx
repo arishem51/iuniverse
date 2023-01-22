@@ -35,6 +35,7 @@ import BouncingCircle from "../components/ListComponent/Loaders/BouncingBall";
 import Rain from "../components/ListComponent/Loaders/Rain";
 import BoxHoverButton from "../components/ListComponent/Buttons/BoxHoverButton";
 import BoxRotate from "../components/ListComponent/Loaders/BoxRotate";
+import Glitch from "../components/ListComponent/Loaders/GlitchLoader";
 
 const List: UIItem[] = [
   {
@@ -210,6 +211,10 @@ const List: UIItem[] = [
   },
   {
     component: <BoxRotate />,
+    type: "loader",
+  },
+  {
+    component: <Glitch />,
     type: "loader",
   },
 ];
