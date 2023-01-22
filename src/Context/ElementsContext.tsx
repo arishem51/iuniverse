@@ -36,6 +36,7 @@ import Rain from "../components/ListComponent/Loaders/Rain";
 import BoxHoverButton from "../components/ListComponent/Buttons/BoxHoverButton";
 import BoxRotate from "../components/ListComponent/Loaders/BoxRotate";
 import Glitch from "../components/ListComponent/Text/Glitch";
+import { sortShapeElements } from "../helpers";
 
 const List: UIItem[] = [
   {
@@ -224,10 +225,7 @@ const Context = createContext<{ elements: UIItem[] }>({ elements: [] });
 type Props = PropsWithChildren;
 
 export default function ElementsContext({ children }: Props) {
-  const elements = [
-    ...List.filter((item) => item.type !== "shape"),
-    ...List.filter((item) => item.type === "shape"),
-  ];
+  const elements = sortShapeElements(List);
   return <Context.Provider value={{ elements }}>{children}</Context.Provider>;
 }
 
