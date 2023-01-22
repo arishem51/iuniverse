@@ -4,7 +4,7 @@ const random = () => Math.random() * 100;
 
 const generateClipPath = () => {
   let string = "";
-  for (let i = 0; i <= 100; i += 5) {
+  for (let i = 0; i <= 100; i += 4) {
     string += `
         ${i}%{
             clip-path: inset(${random()}% 0 ${random()}% 0);
