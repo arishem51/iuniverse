@@ -34,6 +34,7 @@ import NewtonsCardleDot from "../components/ListComponent/Loaders/NewtonsCardleD
 import BouncingCircle from "../components/ListComponent/Loaders/BouncingBall";
 import Rain from "../components/ListComponent/Loaders/Rain";
 import BoxHoverButton from "../components/ListComponent/Buttons/BoxHoverButton";
+import BoxRotate from "../components/ListComponent/Loaders/BoxRotate";
 
 const List: UIItem[] = [
   {
@@ -206,6 +207,10 @@ const List: UIItem[] = [
   {
     component: <BoxHoverButton />,
     type: "button",
+  },
+  {
+    component: <BoxRotate />,
+    type: "loader",
   },
 ];
 
