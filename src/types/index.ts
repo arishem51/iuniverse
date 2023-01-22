@@ -10,7 +10,7 @@ export type Type =
   | "loader"
   | "card"
   | "checkboxe"
-  | "toogle witche"
+  | "toogle"
   | "input"
   | "animal"
   | "text";
