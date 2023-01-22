@@ -48,6 +48,7 @@ const Items: Type[] = [
   "toogle witche",
   "input",
   "animal",
+  "text",
 ];
 
 export default function Sidebar() {

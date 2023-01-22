@@ -12,4 +12,5 @@ export type Type =
   | "checkboxe"
   | "toogle witche"
   | "input"
-  | "animal";
+  | "animal"
+  | "text";
