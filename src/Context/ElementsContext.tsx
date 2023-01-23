@@ -38,6 +38,7 @@ import BoxRotate from "../components/ListComponent/Loaders/BoxRotate";
 import Glitch from "../components/ListComponent/Text/Glitch";
 import { sortShapeElements } from "../helpers";
 import Hover3DButton from "../components/ListComponent/Buttons/Hover3DButton";
+import Navarog21 from "../components/ListComponent/Loaders/Navarog21";
 
 const List: UIItem[] = [
   {
@@ -222,6 +223,10 @@ const List: UIItem[] = [
   {
     component: <Hover3DButton />,
     type: "button",
+  },
+  {
+    component: <Navarog21 />,
+    type: "loader",
   },
 ];
 
