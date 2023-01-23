@@ -1,11 +1,13 @@
 import styled, { keyframes } from "styled-components";
 
+// This shape made by Wenting Zhang --> Link: https://www.youtube.com/watch?v=CsD7C9KKFa4
+
 const right = keyframes`
     from {
         rotate: 30deg;
     }
     to {
-        rotate: 18deg;
+        rotate: 18deg; 
     }
 `;
 

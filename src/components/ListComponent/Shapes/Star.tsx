@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+// Allmost shapes are made by the following link: https://css-tricks.com/the-shapes-of-css/
+
 const SixPoints = styled.div`
   width: 0;
   height: 0;
