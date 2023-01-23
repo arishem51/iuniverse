@@ -1,6 +1,8 @@
 import styled, { keyframes } from "styled-components";
 import { FlexContainer } from "../../Base";
 
+// Made by @mobinkakei --> https://uiverse.io/mobinkakei/grumpy-turtle-41
+
 const bouncing = keyframes`
     0%{
         translate: 0 0 0;

@@ -1,5 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
+// Made by @Nawsome --> https://uiverse.io/Nawsome/wet-mayfly-23
+
 const Wrapper = styled.div`
   width: 110px;
   height: 60px;

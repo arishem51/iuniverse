@@ -1,5 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
+// Made by @alexruix --> https://uiverse.io/alexruix/white-cat-50
+
 const rotate = keyframes`
     25%{
         translate: 0 0;

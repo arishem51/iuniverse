@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+// Made by @Tiagoadag --> https://uiverse.io/Tiagoadag/cuddly-catfish-6
+
 const Wrapper = styled.div`
   position: relative;
   width: 200px;

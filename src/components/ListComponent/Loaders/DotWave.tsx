@@ -1,6 +1,8 @@
 import styled, { keyframes } from "styled-components";
 import { FlexContainer } from "../../Base";
 
+// Made by @G4b4131 --> https://uiverse.io/G4b413l/jolly-kangaroo-36
+
 const Wrapper = styled(FlexContainer)`
   position: relative;
   gap: 5px;

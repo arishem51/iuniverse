@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { FlexContainer } from "../../Base";
 
+// Made by Gayane --> https://codepen.io/gayane-gasparyan/pen/wvxewXO
+
 const HoverWrapper = styled.div`
   position: relative;
   transition: all 0.5s;
