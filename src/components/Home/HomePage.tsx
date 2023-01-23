@@ -1,45 +1,68 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ButtonContainer, FlexContainer } from "../Base";
-import ExternalLink from "../ExternalLink";
+import { useElements } from "../../Context/ElementsContext";
+import { FlexContainer } from "../Base";
+import { CodePenLink, CssTrickLink, UiVerseLink } from "../ExternalLink";
+import PreviewComponent from "./PreviewComponents";
 
 const Wrapper = styled(FlexContainer)`
   background-color: var(--color-dark);
   gap: var(--space-m);
   padding: 0 var(--space-m);
-  min-height: 95vh;
 `;
 
-const HeadingText = styled.h1`
+const Heading = styled.h1`
   color: var(--color-white);
-  font-size: var(--step-3);
+  font-size: var(--step-5);
+  line-height: var(--step-5);
   text-align: center;
 `;
 
-const ButtonLink = styled(Link)`
-  font-weight: 700;
-  color: var(--color-dark);
+const Title = styled.h6`
+  color: var(--color-white);
+  font-size: var(--step-2);
+  text-align: center;
 `;
 
-const ButtonStyled = styled(ButtonContainer)`
-  padding: 12px 24px;
-  background-color: var(--color-white);
-  color: var(--color-dark);
-  border-radius: 30px;
+const OpacityTitle = styled(Title)`
+  opacity: 0.3;
+`;
+const FlexTextWrapper = styled(FlexContainer)`
+  align-items: flex-end;
+  gap: 1rem;
+`;
+
+const TextWrapper = styled.div`
+  margin: 6rem 0;
 `;
 
 export default function HomePage() {
+  const { elements } = useElements();
+
   return (
     <Wrapper center column>
-      <HeadingText>
-        This project is for learning purpose inspired by{" "}
-        <ExternalLink href="https://uiverse.io/" target="_blank">
-          uiverse
-        </ExternalLink>
-      </HeadingText>
-      <ButtonLink to="/all">
-        <ButtonStyled>Go to the components</ButtonStyled>
-      </ButtonLink>
+      <TextWrapper>
+        <FlexTextWrapper center>
+          <Heading>{elements.length}</Heading>
+          <OpacityTitle>UI Elements</OpacityTitle>
+        </FlexTextWrapper>
+        <Title>
+          This website for learning purposes, inspired and referenced by{" "}
+          <UiVerseLink href="https://uiverse.io/">uiverse</UiVerseLink> ,
+          <CssTrickLink href="https://codepen.io/trending">
+            css-tricks
+          </CssTrickLink>{" "}
+          ,<CodePenLink href="https://css-tricks.com/">codepen</CodePenLink>{" "}
+          ,...
+        </Title>
+      </TextWrapper>
+      <PreviewComponent type="button" />
+      <PreviewComponent type="loader" />
+      <PreviewComponent type="card" />
+      <Footer />
     </Wrapper>
   );
+}
+
+function Footer() {
+  return <footer>This is footer</footer>;
 }

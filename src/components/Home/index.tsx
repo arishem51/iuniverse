@@ -1,12 +1,15 @@
 import { Outlet } from "react-router-dom";
+import ElementsContext from "../../Context/ElementsContext";
 import { FlexContainer } from "../Base";
 import Header from "../Header";
 
 export default function Home() {
   return (
-    <FlexContainer column>
-      <Header />
-      <Outlet />
-    </FlexContainer>
+    <ElementsContext>
+      <FlexContainer column>
+        <Header />
+        <Outlet />
+      </FlexContainer>
+    </ElementsContext>
   );
 }
