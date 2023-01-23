@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ButtonContainer } from "../../Base";
 
-export default styled(ButtonContainer)`
+const Wrapper = styled(ButtonContainer)`
   --color: rgb(0, 140, 255);
   padding: 10px 20px;
   background-color: var(--color);
@@ -17,3 +17,7 @@ export default styled(ButtonContainer)`
       0 0 50px var(--color), 0 0 100px var(--color);
   }
 `;
+
+export default function Component() {
+  return <Wrapper>Hover Me</Wrapper>;
+}

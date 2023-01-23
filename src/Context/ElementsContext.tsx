@@ -138,7 +138,7 @@ const List: UIItem[] = [
     type: "shape",
   },
   {
-    component: <ShadowButton children="Hover me" />,
+    component: <ShadowButton />,
     type: "button",
   },
   {
