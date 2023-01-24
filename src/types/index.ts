@@ -13,4 +13,5 @@ export type Type =
   | "toogle"
   | "input"
   | "animal"
-  | "text";
+  | "text"
+  | "3d Shape";

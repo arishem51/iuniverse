@@ -50,6 +50,7 @@ const Items: Type[] = [
   "input",
   "animal",
   "text",
+  "3d Shape",
 ];
 
 export default function Sidebar() {

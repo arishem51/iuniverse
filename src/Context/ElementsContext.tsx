@@ -8,7 +8,7 @@ import CardShadowHover from "../components/ListComponent/Cards/CardShadowHover";
 import DotWave from "../components/ListComponent/Loaders/DotWave";
 import ThreeDotAround from "../components/ListComponent/Loaders/ThreeDotAround";
 import BurstShape from "../components/ListComponent/Shapes/BurstShape";
-import Cube from "../components/ListComponent/Loaders/Cube";
+import Cube from "../components/ListComponent/3DShapes/Cube";
 import CurvedTailArrowShape from "../components/ListComponent/Shapes/CurvedTailArrowShape";
 import DiamondNarrowShape from "../components/ListComponent/Shapes/DiamondNarrowShape";
 import EggShape from "../components/ListComponent/Shapes/EggShape";
@@ -40,6 +40,7 @@ import { sortShapeElements } from "../helpers";
 import Hover3DButton from "../components/ListComponent/Buttons/Hover3DButton";
 import Navarog21 from "../components/ListComponent/Loaders/Navarog21";
 import Switch from "../components/ListComponent/Toggle/Swtich";
+import Cone from "../components/ListComponent/3DShapes/Cone";
 
 const List: UIItem[] = [
   {
@@ -183,7 +184,7 @@ const List: UIItem[] = [
   },
   {
     component: <Cube />,
-    type: "loader",
+    type: "3d Shape",
   },
   {
     component: <FlipCard />,
@@ -232,6 +233,10 @@ const List: UIItem[] = [
   {
     component: <Switch />,
     type: "toogle",
+  },
+  {
+    component: <Cone />,
+    type: "3d Shape",
   },
 ];
 
