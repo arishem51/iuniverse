@@ -47,7 +47,7 @@ export default function HomePage() {
           <OpacityTitle>UI Elements</OpacityTitle>
         </FlexTextWrapper>
         <Title>
-          This website for learning purposes, inspired and referenced by{" "}
+          This website is for learning purposes, inspired and referenced by{" "}
           <UiVerseLink href="https://uiverse.io/">uiverse</UiVerseLink> ,
           <CssTrickLink href="https://codepen.io/trending">
             css-tricks
