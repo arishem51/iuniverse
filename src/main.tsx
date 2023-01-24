@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
 */
 html, body {
   /* --colors-dark: ${COLORS.dark}; */
-
+  height: 100%;
   // Automatic generate CSS variables
   ${generateCSSVarColor(COLORS)}
   --step-0: clamp(0.75rem, calc(0.58rem + 0.87vw), 1.25rem);
@@ -86,6 +86,7 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+  height: 100%;
 }
 
 `;
