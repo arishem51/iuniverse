@@ -11,7 +11,6 @@ const Bottom = styled.div`
   height: 100px;
   border-radius: 50%;
   background: #304ffe;
-  opacity: 0.7;
   transform: skewX(20deg) skewY(20deg);
   border: 1px solid white;
 `;
