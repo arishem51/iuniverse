@@ -40,8 +40,11 @@ const Button = styled(ButtonContainer)`
 
 const NavLink = styled(Link)`
   all: unset;
-
   align-self: center;
+`;
+
+const TypeText = styled.span`
+  text-transform: capitalize;
 `;
 
 type Props = {
@@ -68,18 +71,11 @@ export default function PreviewComponent({ type }: Props) {
   return (
     <Wrapper>
       <Heading>{type}s</Heading>
-      <List>
-        {elements
-          .filter((item) => item.type === type)
-          .slice(0, 4)
-          .map((item, index) => (
-            <Child center key={index}>
-              {item.component}
-            </Child>
-          ))}
-      </List>
+      <List>{renderItem()}</List>
       <NavLink to={`/${type}`}>
-        <Button>See all buttons</Button>
+        <Button>
+          See all <TypeText>{type}s</TypeText>
+        </Button>
       </NavLink>
     </Wrapper>
   );
