@@ -25,9 +25,9 @@ const ListWrapper = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
   padding-bottom: 4rem;
+  padding: 0 2rem;
   @media (width < 1300px) {
     justify-content: center;
-    padding: 0 2rem;
   }
 `;
 
