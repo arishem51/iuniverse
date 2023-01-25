@@ -8,6 +8,10 @@ const Wrapper = styled(FlexContainer)`
   flex-direction: column;
   width: 60%;
   margin: 1rem auto;
+  flex-wrap: wrap;
+  @media (width < 1300px) {
+    width: 80%;
+  }
 `;
 
 const Heading = styled.h2`
@@ -24,10 +28,14 @@ const Child = styled(FlexContainer)`
   padding: 3rem 0;
   background-color: var(--color-lightDark);
   border-radius: 1rem;
+  @media (width < 1300px) {
+    flex: 200px;
+  }
 `;
 const List = styled(FlexContainer)`
   gap: 2rem;
   margin: 2rem 0;
+  flex-wrap: wrap;
 `;
 
 const Button = styled(ButtonContainer)`
