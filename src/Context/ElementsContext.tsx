@@ -41,6 +41,7 @@ import Hover3DButton from "../components/ListComponent/Buttons/Hover3DButton";
 import Navarog21 from "../components/ListComponent/Loaders/Navarog21";
 import Switch from "../components/ListComponent/Toggle/Swtich";
 import Cone from "../components/ListComponent/3DShapes/Cone";
+import Maximinodotpy from "../components/ListComponent/Inputs/Maximinodotpy";
 
 const List: UIItem[] = [
   {
@@ -237,6 +238,10 @@ const List: UIItem[] = [
   {
     component: <Cone />,
     type: "3d Shape",
+  },
+  {
+    component: <Maximinodotpy />,
+    type: "input",
   },
 ];
 
