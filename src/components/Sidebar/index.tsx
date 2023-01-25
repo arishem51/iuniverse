@@ -4,9 +4,18 @@ import { Type } from "../../types";
 import { FlexContainer } from "../Base";
 
 const SidebarWrapper = styled(FlexContainer)`
+  position: relative;
   padding: 1rem;
   background: var(--color-dark);
   gap: 0.5rem;
+  @media (width < 1300px) {
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
 `;
 
 const SidebarItem = styled.div`
@@ -21,6 +30,9 @@ const SidebarItem = styled.div`
     border-radius: 30px;
     background: var(--color-bg);
   }
+  @media (width) {
+    width: 150px;
+  }
 `;
 
 const SidebarItemText = styled.h6`
@@ -31,6 +43,7 @@ const SidebarItemText = styled.h6`
   font-size: 18px;
   text-transform: capitalize;
   letter-spacing: 0.5px;
+  white-space: nowrap;
 `;
 
 const SidebarLink = styled(Link)`

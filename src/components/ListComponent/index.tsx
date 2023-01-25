@@ -7,11 +7,17 @@ const Wrapper = styled.div`
   flex: 1;
   background-color: var(--color-dark);
   padding-left: 3rem;
+  @media (width < 1300px) {
+    padding-left: 0;
+  }
 `;
 
 const Text = styled.h1`
   margin-bottom: 3rem;
   color: var(--color-white);
+  @media (width < 1300px) {
+    text-align: center;
+  }
 `;
 
 const ListWrapper = styled.div`
@@ -19,6 +25,9 @@ const ListWrapper = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(300px, min-content));
   gap: 1rem;
   padding-bottom: 4rem;
+  @media (width < 1300px) {
+    justify-content: center;
+  }
 `;
 
 const ListItem = styled(FlexContainer)`
