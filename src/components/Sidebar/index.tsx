@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
-import { sortEmptyElement } from "../../helpers";
 import { Type } from "../../types";
 import { FlexContainer } from "../Base";
 
@@ -55,13 +53,8 @@ const Items: Type[] = [
 
 export default function Sidebar() {
   const { id } = useParams();
-  const SidebarElement = sortEmptyElement(Items, [
-    "toogle",
-    "checkboxe",
-    "input",
-  ]);
   const renderItem = () => {
-    return SidebarElement.map((item) => {
+    return Items.map((item) => {
       const styles = {
         "--color-bg": id === item ? "var(--color-lightDark)" : "transparent",
       } as React.CSSProperties;
