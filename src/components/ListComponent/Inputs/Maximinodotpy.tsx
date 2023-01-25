@@ -26,18 +26,13 @@ const Input = styled.input`
   z-index: 2;
   inset: 0;
   padding: 12px;
-  border: 2px solid var(--color-bg);
   border-radius: 30px;
   background: transparent;
+  border: 2px solid var(--color-bg);
   caret-color: var(--color-bg);
   color: var(--color-lightGray);
   outline: none;
   transition: border-color 0.3s;
-  /* :focus + ${Label}, :valid + ${Label} {
-    translate: 40% -150%;
-    z-index: 2;
-    scale: 0.9;
-  } */
   :focus,
   :valid {
     border-color: rgb(150, 150, 200);
