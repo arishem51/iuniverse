@@ -22,11 +22,12 @@ const Text = styled.h1`
 
 const ListWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, min-content));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
   padding-bottom: 4rem;
   @media (width < 1300px) {
     justify-content: center;
+    padding: 0 2rem;
   }
 `;
 
