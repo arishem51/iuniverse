@@ -58,7 +58,7 @@ const Items: Type[] = [
   "loader",
   "card",
   "toogle",
-  "checkboxe",
+  "checkbox",
   "input",
   "animal",
   "text",
