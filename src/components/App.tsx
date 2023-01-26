@@ -15,8 +15,8 @@ function App() {
         <Route path="/" element={<HomeLayout />}>
           <Route index element={<HomePage />} />
           <Route path=":id" element={<MainContent />} />
-          <Route path="*" element={<Redirect />} />
         </Route>
+        <Route path="*" element={<Redirect />} />
       </Routes>
     </BrowserRouter>
   );
