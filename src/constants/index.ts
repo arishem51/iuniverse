@@ -18,8 +18,8 @@ const DIMENSION = {
 const COMPARISON = {
   lessThan: "<",
   lessThanOrEqualTo: "<=",
-  greateThan: ">",
-  greateThanOrEualTo: ">=",
+  greaterThan: ">",
+  greaterThanOrEualTo: ">=",
 };
 
 export const MEDIAQUERY = {
