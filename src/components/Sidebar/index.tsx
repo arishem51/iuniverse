@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
+import { MEDIAQUERY } from "../../constants";
 import { Type } from "../../types";
 import { FlexContainer } from "../Base";
 
@@ -8,7 +9,7 @@ const SidebarWrapper = styled(FlexContainer)`
   padding: 1rem;
   background: var(--color-dark);
   gap: 0.5rem;
-  @media (width < 1300px) {
+  @media (${MEDIAQUERY.lessThanTablet}) {
     width: 100%;
     flex-wrap: nowrap;
     flex-direction: row;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { useElements } from "../../Context/ElementsContext";
 import { FlexContainer } from "../Base";
 import { CodePenLink, CssTrickLink, UiVerseLink } from "../ExternalLink";
-import Footer from "./Footer";
+import Footer from "../Footer";
 import PreviewComponent from "./PreviewComponents";
 
 const Wrapper = styled(FlexContainer)`
@@ -33,7 +33,7 @@ const FlexTextWrapper = styled(FlexContainer)`
 `;
 
 const TextWrapper = styled.div`
-  margin: 6rem 0;
+  margin: var(--space-2xl) 0;
 `;
 
 export default function HomePage() {

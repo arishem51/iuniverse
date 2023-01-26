@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { MEDIAQUERY } from "../../constants";
 import { useElements } from "../../Context/ElementsContext";
 import { Type } from "../../types";
 import { ButtonContainer, FlexContainer } from "../Base";
@@ -9,7 +10,7 @@ const Wrapper = styled(FlexContainer)`
   width: 60%;
   margin: 1rem auto;
   flex-wrap: wrap;
-  @media (width < 1300px) {
+  @media (${MEDIAQUERY.lessThanTablet}) {
     width: 80%;
   }
 `;
@@ -28,7 +29,7 @@ const Child = styled(FlexContainer)`
   padding: 3rem 0;
   background-color: var(--color-lightDark);
   border-radius: 1rem;
-  @media (width < 1300px) {
+  @media (${MEDIAQUERY.lessThanTablet}) {
     flex: 200px;
   }
 `;

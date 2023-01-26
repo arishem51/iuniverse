@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexContainer } from "../Base";
+import { FlexContainer } from "./Base";
 import { GoMarkGithub } from "react-icons/go";
 import { FaTwitter, FaLinkedin } from "react-icons/fa";
 

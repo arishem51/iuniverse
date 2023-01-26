@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+import { MEDIAQUERY } from "../../constants";
 import { useElements } from "../../Context/ElementsContext";
 import { FlexContainer } from "../Base";
 
@@ -7,7 +8,7 @@ const Wrapper = styled.div`
   flex: 1;
   background-color: var(--color-dark);
   padding-left: 3rem;
-  @media (width < 1300px) {
+  @media (${MEDIAQUERY.lessThanTablet}) {
     padding-left: 0;
   }
 `;
@@ -15,7 +16,7 @@ const Wrapper = styled.div`
 const Text = styled.h1`
   margin-bottom: 3rem;
   color: var(--color-white);
-  @media (width < 1300px) {
+  @media (${MEDIAQUERY.lessThanTablet}) {
     text-align: center;
   }
 `;
@@ -26,7 +27,7 @@ const ListWrapper = styled.div`
   gap: 1rem;
   padding-bottom: 4rem;
   padding: 0 2rem;
-  @media (width < 1300px) {
+  @media (${MEDIAQUERY.lessThanTablet}) {
     justify-content: center;
   }
 `;
