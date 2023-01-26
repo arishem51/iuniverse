@@ -16,7 +16,7 @@ type URLPath =
   | "text"
   | "3dShape";
 
-export type SidebarRoute = {
+export type RouteItem = {
   name: string;
   urlPath: URLPath;
 };

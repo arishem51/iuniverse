@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { MEDIAQUERY } from "../../constants";
-import { SidebarRoute } from "../../types";
+import { RouteItem } from "../../types";
 import { FlexContainer } from "../Base";
 
 const SidebarWrapper = styled(FlexContainer)`
@@ -51,7 +51,7 @@ const SidebarLink = styled(Link)`
   text-decoration: none;
 `;
 
-const SidebarRouteItem: SidebarRoute[] = [
+const SidebarRouteItem: RouteItem[] = [
   { name: "all", urlPath: "all" },
   {
     name: "Inputs",

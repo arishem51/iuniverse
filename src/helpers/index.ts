@@ -1,4 +1,4 @@
-import { UIItem } from "../types";
+import { RouteItem, UIItem } from "../types";
 
 export function sortShapeElements(elements: UIItem[]) {
   const newArr = [...elements];
@@ -10,15 +10,28 @@ export function sortShapeElements(elements: UIItem[]) {
   });
 }
 
-const PLURAL_RULE = {
-  word: {
-    x: "x",
-    s: "s",
-    z: "z",
-  },
-  words: {
-    ss: "ss",
-    sh: "sh",
-    ch: "ch",
-  },
-};
+const Items: RouteItem["urlPath"][] = [
+  "3dShape",
+  "all",
+  "animal",
+  "button",
+  "card",
+  "checkbox",
+  "input",
+  "loader",
+  "shape",
+  "text",
+  "toogle",
+];
+
+export function checkRouteId(id: string | undefined = "", func: () => void) {
+  let flag = false;
+  for (let i = 0; i < Items.length; i++) {
+    if (Items[i] === id) {
+      flag = true;
+    }
+  }
+  if (!flag) {
+    func();
+  }
+}
