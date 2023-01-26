@@ -1,9 +1,9 @@
 export type UIItem = {
   component: React.ReactElement;
-  type: Type;
+  type: URLPath;
 };
 
-export type Type =
+type URLPath =
   | "all"
   | "shape"
   | "button"
@@ -14,4 +14,9 @@ export type Type =
   | "input"
   | "animal"
   | "text"
-  | "3d Shape";
+  | "3dShape";
+
+export type SidebarRoute = {
+  name: string;
+  urlPath: URLPath;
+};

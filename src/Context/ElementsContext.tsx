@@ -186,7 +186,7 @@ const List: UIItem[] = [
   },
   {
     component: <Cube />,
-    type: "3d Shape",
+    type: "3dShape",
   },
   {
     component: <FlipCard />,
@@ -238,7 +238,7 @@ const List: UIItem[] = [
   },
   {
     component: <Cone />,
-    type: "3d Shape",
+    type: "3dShape",
   },
   {
     component: <Maximinodotpy />,

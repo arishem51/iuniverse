@@ -1,8 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { MEDIAQUERY } from "../../constants";
-import { addSuffix } from "../../helpers";
-import { Type } from "../../types";
+import { SidebarRoute } from "../../types";
 import { FlexContainer } from "../Base";
 
 const SidebarWrapper = styled(FlexContainer)`
@@ -32,7 +31,7 @@ const SidebarItem = styled.div`
     border-radius: 30px;
     background: var(--color-bg);
   }
-  @media (width) {
+  @media (${MEDIAQUERY.lessThanTablet}) {
     width: 150px;
   }
 `;
@@ -52,34 +51,63 @@ const SidebarLink = styled(Link)`
   text-decoration: none;
 `;
 
-const Items: Type[] = [
-  "all",
-  "shape",
-  "button",
-  "loader",
-  "card",
-  "toogle",
-  "checkbox",
-  "input",
-  "animal",
-  "text",
-  "3d Shape",
+const SidebarRouteItem: SidebarRoute[] = [
+  { name: "all", urlPath: "all" },
+  {
+    name: "Inputs",
+    urlPath: "input",
+  },
+  {
+    name: "Buttons",
+    urlPath: "button",
+  },
+  {
+    name: "Animals",
+    urlPath: "animal",
+  },
+  {
+    name: "Checkboxes",
+    urlPath: "checkbox",
+  },
+  {
+    name: "3D Shapes",
+    urlPath: "3dShape",
+  },
+  {
+    name: "Cards",
+    urlPath: "card",
+  },
+  {
+    name: "Loaders",
+    urlPath: "loader",
+  },
+  {
+    name: "Text Animation",
+    urlPath: "text",
+  },
+  {
+    name: "Toggle Switches",
+    urlPath: "toogle",
+  },
+  {
+    name: "Shapes",
+    urlPath: "shape",
+  },
 ];
 
 export default function Sidebar() {
   const { id } = useParams();
   const renderItem = () => {
-    return Items.map((item) => {
+    return SidebarRouteItem.map((item) => {
       const styles = {
-        "--color-bg": id === item ? "var(--color-lightDark)" : "transparent",
+        "--color-bg":
+          id === item.urlPath ? "var(--color-lightDark)" : "transparent",
       } as React.CSSProperties;
 
       return (
-        <SidebarLink to={`/${item}`} key={item}>
+        <SidebarLink to={`/${item.urlPath}`} key={item.name}>
           <SidebarItem style={styles}>
-            <SidebarItemText>
-              {item === "all" ? item : addSuffix(item)}
-            </SidebarItemText>
+            <SidebarItemText>{item.name}</SidebarItemText>
           </SidebarItem>
         </SidebarLink>
       );
