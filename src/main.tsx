@@ -88,7 +88,6 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
   height: 100%;
 }
-
 `;
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(

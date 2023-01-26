@@ -48,7 +48,7 @@ export default function ListComponent() {
 
   function renderItem() {
     if (elements.length === 0) {
-      return <Text>No component yet</Text>;
+      return null;
     }
     return elements.map((item, index) => (
       <ListItem center key={`${item.type} - ${index + 1}`}>
