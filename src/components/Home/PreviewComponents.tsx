@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { MEDIAQUERY } from "../../constants";
 import { useElements } from "../../Context/ElementsContext";
-import { Type } from "../../types";
+import { RouteItem } from "../../types";
 import { ButtonContainer, FlexContainer } from "../Base";
 
 const Wrapper = styled(FlexContainer)`
@@ -57,7 +57,7 @@ const TypeText = styled.span`
 `;
 
 type Props = {
-  type: Type;
+  type: RouteItem["urlPath"];
 };
 
 export default function PreviewComponent({ type }: Props) {
