@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { MEDIAQUERY } from "../../constants";
+import { addSuffix } from "../../helpers";
 import { Type } from "../../types";
 import { FlexContainer } from "../Base";
 
@@ -77,7 +78,7 @@ export default function Sidebar() {
         <SidebarLink to={`/${item}`} key={item}>
           <SidebarItem style={styles}>
             <SidebarItemText>
-              {item === "all" ? item : item + "s"}
+              {item === "all" ? item : addSuffix(item)}
             </SidebarItemText>
           </SidebarItem>
         </SidebarLink>
