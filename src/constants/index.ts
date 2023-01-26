@@ -23,5 +23,8 @@ const COMPARISON = {
 };
 
 export const MEDIAQUERY = {
-  lessThanTablet: `${DIMENSION.width} ${COMPARISON.lessThan} ${BREAKPOINTS.tablet}px`,
+  // lessThanTablet: `${DIMENSION.width} ${COMPARISON.lessThan} ${BREAKPOINTS.tablet}px`,
+
+  // New syntax hasn't been supported in mobile/table safari yet
+  lessThanTablet: `max-width: 1300px`,
 };
