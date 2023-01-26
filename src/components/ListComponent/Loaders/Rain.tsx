@@ -9,7 +9,7 @@ const rain = keyframes`
     }35%{
         scale:1 1
     }
-        100%{
+    100%{
         translate: 0 100px;
         scale:0 0
     }

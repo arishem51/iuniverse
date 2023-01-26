@@ -11,6 +11,7 @@ const Child = styled.div`
   background: black;
   box-shadow: inset 5px 5px 10px rgb(160, 120, 255), 0px 0px 2px white;
   border-radius: 50%;
+  will-change: translate;
 `;
 
 const rotate = keyframes`
@@ -54,14 +55,15 @@ const Wrapper = styled.div`
     inset 8px 8px 1px rgba(160, 120, 255, 0.7),
     0px 0px 1px rgba(160, 120, 255, 0.6);
   animation: ${rotate} 1s linear infinite;
-  ${Child}:nth-child(odd) {
+  will-change: rotate;
+  div:nth-child(odd) {
     left: 50%;
     translate: -50% 0;
     top: min(calc((var(--index) - 1) * 100% - 15px), 100%);
     animation: ${oddJump} calc(1s + (var(--index) * 0.25s)) linear infinite
       alternate calc((var(--index) - 1) * 1s);
   }
-  ${Child}:nth-child(even) {
+  div:nth-child(even) {
     top: 50%;
     translate: 0 -50%;
     left: min(calc((var(--index) - 2) * 100% - 15px), 100%);

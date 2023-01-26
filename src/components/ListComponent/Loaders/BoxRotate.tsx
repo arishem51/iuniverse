@@ -31,7 +31,7 @@ const shadow = keyframes`
     }
 `;
 
-const Wrapper = styled.div<{ index: number }>`
+const Wrapper = styled.div`
   position: relative;
   width: 50px;
   height: 50px;
@@ -42,6 +42,7 @@ const Wrapper = styled.div<{ index: number }>`
     background: #f08080;
     border-radius: 4px;
     animation: ${rotate} 0.5s linear infinite;
+    will-change: rotate, border-bottom-right-radius;
   }
   ::before {
     content: "";
@@ -52,9 +53,10 @@ const Wrapper = styled.div<{ index: number }>`
     background: #f0808050;
     border-radius: 50%;
     animation: ${shadow} 0.5s linear infinite alternate;
+    will-change: scale;
   }
 `;
 
-export default function BoxRotate({ index = 1 }) {
-  return <Wrapper index={index} />;
+export default function BoxRotate() {
+  return <Wrapper />;
 }
