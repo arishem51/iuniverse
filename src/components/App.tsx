@@ -1,8 +1,12 @@
-import { Route, Routes } from "react-router";
+import { Navigate, Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import HomeLayout from "./Home";
 import HomePage from "./Home/HomePage";
 import MainContent from "./MainContent";
+
+function Redirect() {
+  return <Navigate to="/all" />;
+}
 
 function App() {
   return (
@@ -11,6 +15,7 @@ function App() {
         <Route path="/" element={<HomeLayout />}>
           <Route index element={<HomePage />} />
           <Route path=":id" element={<MainContent />} />
+          <Route path="*" element={<Redirect />} />
         </Route>
       </Routes>
     </BrowserRouter>
