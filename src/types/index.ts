@@ -9,7 +9,7 @@ export type Type =
   | "button"
   | "loader"
   | "card"
-  | "checkboxe"
+  | "checkbox"
   | "toogle"
   | "input"
   | "animal"

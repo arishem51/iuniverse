@@ -8,6 +8,7 @@ const Wrapper = styled(FlexContainer)`
   width: 100%;
   padding: 2.5rem 0;
   background-color: var(--color-dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 `;
 
 export default function Header() {

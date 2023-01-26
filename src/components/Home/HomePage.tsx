@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { useElements } from "../../Context/ElementsContext";
 import { FlexContainer } from "../Base";
 import { CodePenLink, CssTrickLink, UiVerseLink } from "../ExternalLink";
-import Footer from "../Footer";
 import PreviewComponent from "./PreviewComponents";
 
 const Wrapper = styled(FlexContainer)`
@@ -59,7 +58,6 @@ export default function HomePage() {
       <PreviewComponent type="button" />
       <PreviewComponent type="loader" />
       <PreviewComponent type="card" />
-      <Footer />
     </Wrapper>
   );
 }

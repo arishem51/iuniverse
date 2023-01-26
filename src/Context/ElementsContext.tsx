@@ -42,6 +42,7 @@ import Navarog21 from "../components/ListComponent/Loaders/Navarog21";
 import Switch from "../components/ListComponent/Toggle/Swtich";
 import Cone from "../components/ListComponent/3DShapes/Cone";
 import Maximinodotpy from "../components/ListComponent/Inputs/Maximinodotpy";
+import Burger from "../components/ListComponent/Checkbox/Burger";
 
 const List: UIItem[] = [
   {
@@ -242,6 +243,10 @@ const List: UIItem[] = [
   {
     component: <Maximinodotpy />,
     type: "input",
+  },
+  {
+    component: <Burger />,
+    type: "checkbox",
   },
 ];
 

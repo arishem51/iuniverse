@@ -6,6 +6,8 @@ import { FaTwitter, FaLinkedin } from "react-icons/fa";
 const Wrapper = styled.footer`
   width: 100%;
   padding: 24px 0;
+  background: var(--color-dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
 `;
 
 const IconWrapper = styled(FlexContainer)`

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { MEDIAQUERY } from "../../constants";
 import { FlexContainer } from "../Base";
-import Footer from "../Footer";
 import ListComponent from "../ListComponent";
 import Sidebar from "../Sidebar";
 
@@ -10,6 +9,8 @@ const Flex = styled(FlexContainer)`
   @media (${MEDIAQUERY.lessThanTablet}) {
     flex-direction: column;
   }
+  padding: var(--space-s) 0;
+  background: var(--color-dark);
 `;
 
 export default function MainContent() {
@@ -17,7 +18,6 @@ export default function MainContent() {
     <Flex>
       <Sidebar />
       <ListComponent />
-      <Footer />
     </Flex>
   );
 }
