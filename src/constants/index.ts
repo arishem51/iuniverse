@@ -10,6 +10,18 @@ const BREAKPOINTS = {
   tablet: 1300,
 };
 
+const DIMENSION = {
+  width: "width",
+  height: "height",
+};
+
+const COMPARISON = {
+  lessThan: "<",
+  lessThanOrEqualTo: "<=",
+  greateThan: ">",
+  greateThanOrEualTo: ">=",
+};
+
 export const MEDIAQUERY = {
-  lessThanTablet: `width < ${BREAKPOINTS.tablet}`,
+  lessThanTablet: `${DIMENSION.width} ${COMPARISON.lessThan} ${BREAKPOINTS.tablet}px`,
 };
