@@ -23,7 +23,7 @@ const animate = keyframes`
    }25%,100%{
     scale:1
    }25%,50%{
-    translate: 30px 0;
+    translate: 25px 0;
    }50%,75%{
     scale:.5
    }
@@ -36,19 +36,21 @@ const Wrapper = styled.div`
   height: 50px;
   ::after,
   ::before {
+    --size: 50px;
     content: "";
     position: absolute;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: var(--size);
+    height: var(--size);
+    background: var(--color-bg);
     mix-blend-mode: difference;
     animation: ${animate} 2s infinite ease-in-out;
   }
   ::after {
-    background: #75e2ff;
+    --color-bg: #75e2ff;
   }
   ::before {
-    background: #ff8496;
+    --color-bg: #ff8496;
     animation-delay: 1s;
   }
 `;
