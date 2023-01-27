@@ -35,3 +35,7 @@ export function checkRouteId(id: string | undefined = "", func: () => void) {
     func();
   }
 }
+
+export function getTanFromDegrees(degrees: number) {
+  return Math.tan((degrees * Math.PI) / 180);
+}

@@ -44,6 +44,7 @@ import Cone from "../components/ListComponent/3DShapes/Cone";
 import Maximinodotpy from "../components/ListComponent/Inputs/Maximinodotpy";
 import Burger from "../components/ListComponent/Checkbox/Burger";
 import Cornerstone from "../components/ListComponent/Loaders/Cornerstone";
+import Carousel from "../components/ListComponent/3DShapes/Carousel";
 
 const List: UIItem[] = [
   {
@@ -252,6 +253,10 @@ const List: UIItem[] = [
   {
     component: <Cornerstone />,
     type: "loader",
+  },
+  {
+    component: <Carousel />,
+    type: "3dShape",
   },
 ];
 
