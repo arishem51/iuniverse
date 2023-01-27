@@ -43,6 +43,7 @@ import Switch from "../components/ListComponent/Toggle/Swtich";
 import Cone from "../components/ListComponent/3DShapes/Cone";
 import Maximinodotpy from "../components/ListComponent/Inputs/Maximinodotpy";
 import Burger from "../components/ListComponent/Checkbox/Burger";
+import Cornerstone from "../components/ListComponent/Loaders/Cornerstone";
 
 const List: UIItem[] = [
   {
@@ -247,6 +248,10 @@ const List: UIItem[] = [
   {
     component: <Burger />,
     type: "checkbox",
+  },
+  {
+    component: <Cornerstone />,
+    type: "loader",
   },
 ];
 
