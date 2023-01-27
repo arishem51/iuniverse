@@ -6,13 +6,13 @@ const Side = styled(FlexContainer)`
   inset: 0;
   background-color: var(--color-lightGray);
   font-size: 32px;
+  backface-visibility: hidden;
 `;
 
 const Front = styled(Side)``;
 
 const Back = styled(Side)`
   rotate: y 180deg;
-  backface-visibility: hidden;
 `;
 
 const Wrapper = styled.div`
