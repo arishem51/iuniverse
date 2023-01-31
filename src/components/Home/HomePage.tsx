@@ -3,7 +3,7 @@ import { useElements } from "../../Context/ElementsContext";
 import { FlexContainer } from "../Base";
 import { CodePenLink, CssTrickLink, UiVerseLink } from "../ExternalLink";
 import PreviewComponent from "./PreviewComponents";
-import { motion } from "framer-motion";
+import AnimationWrapper from "../FramerMotion";
 
 const Wrapper = styled(FlexContainer)`
   background-color: var(--color-dark);
@@ -40,11 +40,7 @@ export default function HomePage() {
   const { elements } = useElements();
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1, ease: "easeInOut" }}
-    >
+    <AnimationWrapper>
       <Wrapper center column>
         <TextWrapper>
           <FlexTextWrapper center>
@@ -65,6 +61,6 @@ export default function HomePage() {
         <PreviewComponent type="loader" />
         <PreviewComponent type="card" />
       </Wrapper>
-    </motion.div>
+    </AnimationWrapper>
   );
 }
