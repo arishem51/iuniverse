@@ -20,7 +20,7 @@ export default function MainContent() {
     <Flex
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
     >
       <Sidebar />
       <ListComponent />
