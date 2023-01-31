@@ -3,8 +3,10 @@ import { MEDIAQUERY } from "../../constants";
 import { FlexContainer } from "../Base";
 import ListComponent from "../ListComponent";
 import Sidebar from "../Sidebar";
+import { motion } from "framer-motion";
 
-const Flex = styled(FlexContainer)`
+const Flex = styled(motion.div)`
+  display: flex;
   flex: 1;
   @media (${MEDIAQUERY.lessThanTablet}) {
     flex-direction: column;
@@ -15,7 +17,11 @@ const Flex = styled(FlexContainer)`
 
 export default function MainContent() {
   return (
-    <Flex>
+    <Flex
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <Sidebar />
       <ListComponent />
     </Flex>

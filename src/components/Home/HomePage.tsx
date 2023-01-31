@@ -3,6 +3,7 @@ import { useElements } from "../../Context/ElementsContext";
 import { FlexContainer } from "../Base";
 import { CodePenLink, CssTrickLink, UiVerseLink } from "../ExternalLink";
 import PreviewComponent from "./PreviewComponents";
+import { motion } from "framer-motion";
 
 const Wrapper = styled(FlexContainer)`
   background-color: var(--color-dark);
@@ -39,25 +40,31 @@ export default function HomePage() {
   const { elements } = useElements();
 
   return (
-    <Wrapper center column>
-      <TextWrapper>
-        <FlexTextWrapper center>
-          <Heading>{elements.length}</Heading>
-          <OpacityTitle>UI Elements</OpacityTitle>
-        </FlexTextWrapper>
-        <Title>
-          This website is for learning purposes, inspired and referenced by{" "}
-          <UiVerseLink href="https://uiverse.io/">uiverse</UiVerseLink> ,
-          <CssTrickLink href="https://codepen.io/trending">
-            css-tricks
-          </CssTrickLink>{" "}
-          ,<CodePenLink href="https://css-tricks.com/">codepen</CodePenLink>{" "}
-          ,...
-        </Title>
-      </TextWrapper>
-      <PreviewComponent type="button" />
-      <PreviewComponent type="loader" />
-      <PreviewComponent type="card" />
-    </Wrapper>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <Wrapper center column>
+        <TextWrapper>
+          <FlexTextWrapper center>
+            <Heading>{elements.length}</Heading>
+            <OpacityTitle>UI Elements</OpacityTitle>
+          </FlexTextWrapper>
+          <Title>
+            This website is for learning purposes, inspired and referenced by{" "}
+            <UiVerseLink href="https://uiverse.io/">uiverse</UiVerseLink> ,
+            <CssTrickLink href="https://codepen.io/trending">
+              css-tricks
+            </CssTrickLink>{" "}
+            ,<CodePenLink href="https://css-tricks.com/">codepen</CodePenLink>{" "}
+            ,...
+          </Title>
+        </TextWrapper>
+        <PreviewComponent type="button" />
+        <PreviewComponent type="loader" />
+        <PreviewComponent type="card" />
+      </Wrapper>
+    </motion.div>
   );
 }

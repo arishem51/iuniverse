@@ -1,3 +1,4 @@
+import { AnimatePresence } from "framer-motion";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeLayout from "./Home";
 import HomePage from "./Home/HomePage";
