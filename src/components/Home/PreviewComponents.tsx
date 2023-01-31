@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { MEDIAQUERY } from "../../constants";
@@ -5,7 +6,8 @@ import { useElements } from "../../Context/ElementsContext";
 import { RouteItem } from "../../types";
 import { ButtonContainer, FlexContainer } from "../Base";
 
-const Wrapper = styled(FlexContainer)`
+const Wrapper = styled(motion.div)`
+  display: flex;
   flex-direction: column;
   width: 60%;
   margin: 1rem auto;
@@ -78,7 +80,12 @@ export default function PreviewComponent({ type }: Props) {
   }
 
   return (
-    <Wrapper>
+    <Wrapper
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.4 }}
+      viewport={{ once: true }}
+    >
       <Heading>{type}s</Heading>
       <List>{renderItem()}</List>
       <NavLink to={`/${type}`}>
