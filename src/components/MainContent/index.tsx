@@ -7,11 +7,11 @@ import AnimationWrapper from "../FramerMotion";
 const Flex = styled(AnimationWrapper)`
   display: flex;
   flex: 1;
+  padding: var(--space-s) 0;
+  background: var(--color-dark);
   @media (${MEDIAQUERY.lessThanTablet}) {
     flex-direction: column;
   }
-  padding: var(--space-s) 0;
-  background: var(--color-dark);
 `;
 
 export default function MainContent() {
