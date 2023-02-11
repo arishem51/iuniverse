@@ -4,6 +4,8 @@ import { FlexContainer } from "../Base";
 import { CodePenLink, CssTrickLink, UiVerseLink } from "../ExternalLink";
 import PreviewComponent from "./PreviewComponents";
 import AnimationWrapper from "../FramerMotion";
+import { motion } from "framer-motion";
+import HeadingAnimation from "./HeadingAnimation";
 
 const Wrapper = styled(FlexContainer)`
   background-color: var(--color-dark);
@@ -43,19 +45,23 @@ export default function HomePage() {
     <AnimationWrapper>
       <Wrapper center column>
         <TextWrapper>
-          <FlexTextWrapper center>
-            <Heading>{elements.length}</Heading>
-            <OpacityTitle>UI Elements</OpacityTitle>
-          </FlexTextWrapper>
-          <Title>
-            This website is for learning purposes, inspired and referenced by{" "}
-            <UiVerseLink href="https://uiverse.io/">uiverse</UiVerseLink> ,
-            <CssTrickLink href="https://codepen.io/trending">
-              css-tricks
-            </CssTrickLink>{" "}
-            ,<CodePenLink href="https://css-tricks.com/">codepen</CodePenLink>{" "}
-            ,...
-          </Title>
+          <HeadingAnimation>
+            <FlexTextWrapper center>
+              <Heading>{elements.length}</Heading>
+              <OpacityTitle>UI Elements</OpacityTitle>
+            </FlexTextWrapper>
+          </HeadingAnimation>
+          <HeadingAnimation>
+            <Title>
+              This website is for learning purposes, inspired and referenced by{" "}
+              <UiVerseLink href="https://uiverse.io/">uiverse</UiVerseLink> ,
+              <CssTrickLink href="https://codepen.io/trending">
+                css-tricks
+              </CssTrickLink>{" "}
+              ,<CodePenLink href="https://css-tricks.com/">codepen</CodePenLink>{" "}
+              ,...
+            </Title>
+          </HeadingAnimation>
         </TextWrapper>
         <PreviewComponent type="button" />
         <PreviewComponent type="loader" />
