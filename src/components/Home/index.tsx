@@ -5,26 +5,19 @@ import { FlexContainer } from "../Base";
 import Footer from "../Footer";
 import Header from "../Header";
 
-const FullHeight = styled(FlexContainer)`
-  height: 100%;
-  background: var(--color-dark);
-`;
-
-const Space = styled.div`
-  flex-basis: 5vh;
-  height: 5vh;
-  width: 100%;
+const MinHeight = styled(FlexContainer)`
+  min-height: 100vh;
   background: var(--color-dark);
 `;
 
 export default function Home() {
   return (
     <ElementsContext>
-      <FullHeight column>
+      <MinHeight column>
         <Header />
         <Outlet />
         <Footer />
-      </FullHeight>
+      </MinHeight>
     </ElementsContext>
   );
 }
