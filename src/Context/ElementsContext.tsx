@@ -45,6 +45,7 @@ import Maximinodotpy from "../components/ListComponent/Inputs/Maximinodotpy";
 import Burger from "../components/ListComponent/Checkbox/Burger";
 import Cornerstone from "../components/ListComponent/Loaders/Cornerstone";
 import Carousel from "../components/ListComponent/3DShapes/Carousel";
+import GradientText from "../components/ListComponent/Text/GradientText";
 
 const List: UIItem[] = [
   {
@@ -257,6 +258,10 @@ const List: UIItem[] = [
   {
     component: <Carousel />,
     type: "3dShape",
+  },
+  {
+    component: <GradientText />,
+    type: "text",
   },
 ];
 
