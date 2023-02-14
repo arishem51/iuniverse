@@ -24,6 +24,7 @@ const Text = styled.h1`
 const ListWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(250px, min-content);
   gap: 1rem;
   padding-bottom: 4rem;
   padding: 0 2rem;
@@ -33,7 +34,6 @@ const ListWrapper = styled.div`
 `;
 
 const ListItem = styled(FlexContainer)`
-  min-height: 250px;
   background-color: var(--color-lightDark);
   border-radius: 1rem;
   padding: 3rem 0;
