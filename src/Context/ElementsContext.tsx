@@ -46,6 +46,7 @@ import Burger from "../components/ListComponent/Checkbox/Burger";
 import Cornerstone from "../components/ListComponent/Loaders/Cornerstone";
 import Carousel from "../components/ListComponent/3DShapes/Carousel";
 import GradientText from "../components/ListComponent/Text/GradientText";
+import JaareetInput from "../components/ListComponent/Inputs/JaareetInput";
 
 const List: UIItem[] = [
   {
@@ -262,6 +263,10 @@ const List: UIItem[] = [
   {
     component: <GradientText />,
     type: "text",
+  },
+  {
+    component: <JaareetInput />,
+    type: "input",
   },
 ];
 
