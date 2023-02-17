@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import AnimationWrapper from "../../components/FramerMotion";
+import AnimationLayout from "../../components/AnimationLayout";
 import ListComponent from "../../components/ListComponent";
 import Sidebar from "../../components/Sidebar";
 import { MEDIAQUERY } from "../../constants";
 
-const Flex = styled(AnimationWrapper)`
+const Flex = styled(AnimationLayout)`
   display: flex;
   flex: 1;
   padding: var(--space-s) 0;

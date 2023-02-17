@@ -1,11 +1,11 @@
 import styled from "styled-components";
+import AnimationLayout from "../../components/AnimationLayout";
 import { FlexContainer } from "../../components/Base";
 import {
   CodePenLink,
   CssTrickLink,
   UiVerseLink,
 } from "../../components/ExternalLink";
-import AnimationWrapper from "../../components/FramerMotion";
 import HeadingAnimation from "../../components/HeadingAnimation.tsx";
 import PreviewComponent from "../../components/PreviewComponents.tsx";
 import { useElements } from "../../Context/ElementsContext";
@@ -45,7 +45,7 @@ export default function HomePage() {
   const { elements } = useElements();
 
   return (
-    <AnimationWrapper>
+    <AnimationLayout>
       <Wrapper center column>
         <TextWrapper>
           <HeadingAnimation>
@@ -70,6 +70,6 @@ export default function HomePage() {
         <PreviewComponent type="loader" />
         <PreviewComponent type="card" />
       </Wrapper>
-    </AnimationWrapper>
+    </AnimationLayout>
   );
 }

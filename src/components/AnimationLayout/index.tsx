@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, HTMLAttributes } from "react";
+import React from "react";
 import { motion, MotionProps, Variants } from "framer-motion";
 
 const variants: Variants = {
