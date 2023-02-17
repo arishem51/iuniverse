@@ -1,11 +1,14 @@
 import styled from "styled-components";
+import { FlexContainer } from "../../components/Base";
+import {
+  CodePenLink,
+  CssTrickLink,
+  UiVerseLink,
+} from "../../components/ExternalLink";
+import AnimationWrapper from "../../components/FramerMotion";
+import HeadingAnimation from "../../components/Home/HeadingAnimation";
+import PreviewComponent from "../../components/Home/PreviewComponents";
 import { useElements } from "../../Context/ElementsContext";
-import { FlexContainer } from "../Base";
-import { CodePenLink, CssTrickLink, UiVerseLink } from "../ExternalLink";
-import PreviewComponent from "./PreviewComponents";
-import AnimationWrapper from "../FramerMotion";
-import { motion } from "framer-motion";
-import HeadingAnimation from "./HeadingAnimation";
 
 const Wrapper = styled(FlexContainer)`
   background-color: var(--color-dark);

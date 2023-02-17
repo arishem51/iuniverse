@@ -1,20 +1,22 @@
-import { AnimatePresence } from "framer-motion";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomeLayout from "./Home";
-import HomePage from "./Home/HomePage";
-import MainContent from "./MainContent";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import MainContent from "../components/MainContent";
+import Home from "../routes/Home";
+import HomeLayout from "../routes/Home/HomeLayout";
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomeLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path=":id" element={<MainContent />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+const routes = createRoutesFromElements(
+  <Route path="/" element={<HomeLayout />}>
+    <Route index element={<Home />} />
+    <Route path=":id" element={<MainContent />} />
+  </Route>
+);
+
+const router = createBrowserRouter(routes);
+
+export default function App() {
+  return <RouterProvider router={router} />;
 }
-
-export default App;
