@@ -6,8 +6,8 @@ import {
   UiVerseLink,
 } from "../../components/ExternalLink";
 import AnimationWrapper from "../../components/FramerMotion";
-import HeadingAnimation from "../../components/Home/HeadingAnimation";
-import PreviewComponent from "../../components/Home/PreviewComponents";
+import HeadingAnimation from "../../components/HeadingAnimation.tsx";
+import PreviewComponent from "../../components/PreviewComponents.tsx";
 import { useElements } from "../../Context/ElementsContext";
 
 const Wrapper = styled(FlexContainer)`
