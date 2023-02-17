@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import AnimationLayout from "../../components/AnimationLayout";
 import { FlexContainer } from "../../components/Base";
