@@ -4,14 +4,14 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import MainContent from "../components/MainContent";
 import Home from "../routes/Home";
 import HomeLayout from "../routes/Home/HomeLayout";
+import Main from "../routes/Main";
 
 const routes = createRoutesFromElements(
   <Route path="/" element={<HomeLayout />}>
     <Route index element={<Home />} />
-    <Route path=":id" element={<MainContent />} />
+    <Route path=":id" element={<Main />} />
   </Route>
 );
 

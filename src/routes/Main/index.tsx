@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import AnimationWrapper from "../../components/FramerMotion";
+import ListComponent from "../../components/ListComponent";
+import Sidebar from "../../components/Sidebar";
 import { MEDIAQUERY } from "../../constants";
-import ListComponent from "../ListComponent";
-import Sidebar from "../Sidebar";
-import AnimationWrapper from "../FramerMotion";
 
 const Flex = styled(AnimationWrapper)`
   display: flex;
