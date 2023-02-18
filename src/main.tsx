@@ -87,6 +87,27 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+*::-webkit-scrollbar {
+  width: .5em;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: var(--color-dark); 
+}
+ 
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: var(--color-lightDark);
+  border-radius: .5em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 `;
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
