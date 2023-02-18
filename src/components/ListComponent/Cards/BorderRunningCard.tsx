@@ -22,12 +22,14 @@ const Wrapper = styled.div`
     rgba(255, 0, 254, 1) 0%,
     rgba(0, 255, 244, 1) 100%
   );
+
   position: relative;
   height: 300px;
   width: 200px;
   background: var(--color-bg);
   border-radius: var(--outer-bd);
   overflow: hidden;
+
   ::after {
     content: "";
     position: absolute;
@@ -39,6 +41,7 @@ const Wrapper = styled.div`
     background: var(--gradient);
     animation: ${rotate} 3s linear infinite;
   }
+
   ::before {
     content: "";
     position: absolute;
