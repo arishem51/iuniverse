@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { MEDIAQUERY } from "../../constants";
@@ -94,6 +95,10 @@ const SidebarRouteItem: RouteItem[] = [
   {
     name: "Shapes",
     urlPath: "shape",
+  },
+  {
+    name: "Images",
+    urlPath: "image",
   },
 ];
 

@@ -48,6 +48,7 @@ import Carousel from "../components/ListComponent/3DShapes/Carousel";
 import GradientText from "../components/ListComponent/Text/GradientText";
 import JaareetInput from "../components/ListComponent/Inputs/JaareetInput";
 import BorderRunningCard from "../components/ListComponent/Cards/BorderRunningCard";
+import OutlineImage from "../components/ListComponent/Image/OutlineImage";
 
 const List: UIItem[] = [
   {
@@ -272,6 +273,10 @@ const List: UIItem[] = [
   {
     component: <BorderRunningCard />,
     type: "card",
+  },
+  {
+    component: <OutlineImage />,
+    type: "image",
   },
 ];
 
