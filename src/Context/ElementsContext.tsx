@@ -1,4 +1,4 @@
-import { createContext, PropsWithChildren, useContext } from "react";
+import React, { createContext, PropsWithChildren, useContext } from "react";
 import Hamster from "../components/ListComponent/Animals/Hamster";
 import ExpandButton from "../components/ListComponent/Buttons/ExpandButton";
 import KeyboardButton from "../components/ListComponent/Buttons/KeyboardButton";
@@ -47,6 +47,7 @@ import Cornerstone from "../components/ListComponent/Loaders/Cornerstone";
 import Carousel from "../components/ListComponent/3DShapes/Carousel";
 import GradientText from "../components/ListComponent/Text/GradientText";
 import JaareetInput from "../components/ListComponent/Inputs/JaareetInput";
+import BorderRunningCard from "../components/ListComponent/Cards/BorderRunningCard";
 
 const List: UIItem[] = [
   {
@@ -267,6 +268,10 @@ const List: UIItem[] = [
   {
     component: <JaareetInput />,
     type: "input",
+  },
+  {
+    component: <BorderRunningCard />,
+    type: "card",
   },
 ];
 
