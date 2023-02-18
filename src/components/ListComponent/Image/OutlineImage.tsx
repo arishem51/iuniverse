@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Image = styled.img`
   --at: 1px;
-  --pd: 30px;
   width: 200px;
   padding: 30px;
   background: conic-gradient(
