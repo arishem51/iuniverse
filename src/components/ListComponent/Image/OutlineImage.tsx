@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Image = styled.img`
   --at: 1px;
   width: 200px;
+  aspect-ratio: 1;
   padding: 30px;
   background: conic-gradient(
       from 90deg at var(--at) var(--at),
