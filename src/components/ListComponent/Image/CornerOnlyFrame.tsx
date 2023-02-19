@@ -9,7 +9,7 @@ const Image = styled.img`
   --right: right var(--rotate-position);
   --left: left var(--rotate-position);
 
-  width: 150px;
+  width: 200px;
   aspect-ratio: 1;
   padding: calc(var(--rotate-position) * 2);
   background: conic-gradient(
