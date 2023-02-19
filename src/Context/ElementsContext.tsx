@@ -50,6 +50,7 @@ import JaareetInput from "../components/ListComponent/Inputs/JaareetInput";
 import BorderRunningCard from "../components/ListComponent/Cards/BorderRunningCard";
 import OutlineImage from "../components/ListComponent/Image/OutlineImage";
 import CornerOnlyFrame from "../components/ListComponent/Image/CornerOnlyFrame";
+import CornerOnlyFrameTwo from "../components/ListComponent/Image/CornerOnlyFrameTwo";
 
 const List: UIItem[] = [
   {
@@ -281,6 +282,10 @@ const List: UIItem[] = [
   },
   {
     component: <CornerOnlyFrame />,
+    type: "image",
+  },
+  {
+    component: <CornerOnlyFrameTwo />,
     type: "image",
   },
 ];
