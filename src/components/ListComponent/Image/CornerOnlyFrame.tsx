@@ -2,38 +2,32 @@ import React from "react";
 import styled from "styled-components";
 
 const Image = styled.img`
-  --bg-size: 0.5em;
-  width: 200px;
+  --rotate-position: 0.2em;
+  --color-stop: transparent 25%, var(--color-white) 0;
+  --top: top var(--rotate-position);
+  --bottom: bottom var(--rotate-position);
+  --right: right var(--rotate-position);
+  --left: left var(--rotate-position);
+
+  width: 150px;
   aspect-ratio: 1;
-  padding: calc(var(--bg-size) * 2);
+  padding: calc(var(--rotate-position) * 2);
   background: conic-gradient(
-        from 90deg at top var(--bg-size) left var(--bg-size),
-        transparent 25%,
-        white 0
+        from 90deg at var(--top) var(--left),
+        var(--color-stop)
       )
-      top 0 left 0,
-    conic-gradient(
-        from 0deg at bottom var(--bg-size) left var(--bg-size),
-        transparent 25%,
-        white 0
-      )
-      bottom 0 left 0,
-    conic-gradient(
-        from 270deg at bottom var(--bg-size) right var(--bg-size),
-        transparent 25%,
-        white 0
-      )
-      bottom 0 right 0,
-    conic-gradient(
-        from 180deg at top var(--bg-size) right var(--bg-size),
-        transparent 25%,
-        white 0
-      )
-      top 0 right 0;
-  background-size: 25% 25%;
+      top left,
+    conic-gradient(from 0deg at var(--bottom) var(--left), var(--color-stop))
+      bottom left,
+    conic-gradient(from 270deg at var(--bottom) var(--right), var(--color-stop))
+      bottom right,
+    conic-gradient(from 180deg at var(--top) var(--right), var(--color-stop))
+      top right;
+  background-size: 20% 20%;
   background-repeat: no-repeat;
   cursor: pointer;
-  transition: background-size 0.5s ease-in-out;
+  transition: background-size 0.6s;
+  will-change: background-size;
   :hover {
     background-size: 51% 51%;
   }
