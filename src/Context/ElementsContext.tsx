@@ -49,6 +49,7 @@ import GradientText from "../components/ListComponent/Text/GradientText";
 import JaareetInput from "../components/ListComponent/Inputs/JaareetInput";
 import BorderRunningCard from "../components/ListComponent/Cards/BorderRunningCard";
 import OutlineImage from "../components/ListComponent/Image/OutlineImage";
+import CornerOnlyFrame from "../components/ListComponent/Image/CornerOnlyFrame";
 
 const List: UIItem[] = [
   {
@@ -276,6 +277,10 @@ const List: UIItem[] = [
   },
   {
     component: <OutlineImage />,
+    type: "image",
+  },
+  {
+    component: <CornerOnlyFrame />,
     type: "image",
   },
 ];
