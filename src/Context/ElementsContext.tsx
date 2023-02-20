@@ -51,6 +51,7 @@ import BorderRunningCard from "../components/ListComponent/Cards/BorderRunningCa
 import OutlineImage from "../components/ListComponent/Image/OutlineImage";
 import CornerOnlyFrame from "../components/ListComponent/Image/CornerOnlyFrame";
 import CornerOnlyFrameTwo from "../components/ListComponent/Image/CornerOnlyFrameTwo";
+import ChessBoard from "../components/ListComponent/Image/ChessBoard";
 
 const List: UIItem[] = [
   {
@@ -286,6 +287,10 @@ const List: UIItem[] = [
   },
   {
     component: <CornerOnlyFrameTwo />,
+    type: "image",
+  },
+  {
+    component: <ChessBoard />,
     type: "image",
   },
 ];
