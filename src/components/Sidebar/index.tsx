@@ -100,6 +100,10 @@ const SidebarRouteItem: RouteItem[] = [
     name: "Images",
     urlPath: "image",
   },
+  {
+    name: "Patterns",
+    urlPath: "pattern",
+  },
 ];
 
 export default function Sidebar() {

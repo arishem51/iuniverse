@@ -51,8 +51,8 @@ import BorderRunningCard from "../components/ListComponent/Cards/BorderRunningCa
 import OutlineImage from "../components/ListComponent/Image/OutlineImage";
 import CornerOnlyFrame from "../components/ListComponent/Image/CornerOnlyFrame";
 import CornerOnlyFrameTwo from "../components/ListComponent/Image/CornerOnlyFrameTwo";
-import ChessBoard from "../components/ListComponent/Image/ChessBoard";
-import ZigZac from "../components/ListComponent/Image/ZigZac";
+import ChessBoard from "../components/ListComponent/Patterns/ChessBoard";
+import ZigZac from "../components/ListComponent/Patterns/ZigZac";
 
 const List: UIItem[] = [
   {
@@ -292,11 +292,11 @@ const List: UIItem[] = [
   },
   {
     component: <ChessBoard />,
-    type: "image",
+    type: "pattern",
   },
   {
     component: <ZigZac />,
-    type: "image",
+    type: "pattern",
   },
 ];
 

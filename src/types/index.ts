@@ -15,7 +15,8 @@ type URLPath =
   | "animal"
   | "text"
   | "3dShape"
-  | "image";
+  | "image"
+  | "pattern";
 
 export type RouteItem = {
   name: string;
