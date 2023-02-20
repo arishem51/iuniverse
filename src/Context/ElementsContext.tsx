@@ -52,6 +52,7 @@ import OutlineImage from "../components/ListComponent/Image/OutlineImage";
 import CornerOnlyFrame from "../components/ListComponent/Image/CornerOnlyFrame";
 import CornerOnlyFrameTwo from "../components/ListComponent/Image/CornerOnlyFrameTwo";
 import ChessBoard from "../components/ListComponent/Image/ChessBoard";
+import ZigZac from "../components/ListComponent/Image/ZigZac";
 
 const List: UIItem[] = [
   {
@@ -291,6 +292,10 @@ const List: UIItem[] = [
   },
   {
     component: <ChessBoard />,
+    type: "image",
+  },
+  {
+    component: <ZigZac />,
     type: "image",
   },
 ];
