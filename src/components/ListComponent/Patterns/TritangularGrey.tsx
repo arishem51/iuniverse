@@ -29,8 +29,7 @@ const Tritanular = styled.div`
       #dcdcdc 0 331deg,
       #fafafa 0
     );
-  background-size: 200px 200px;
-  background-repeat: no-repeat;
+  background-size: 115px 200px;
 `;
 
 export default function Component() {
