@@ -54,6 +54,7 @@ import CornerOnlyFrameTwo from "../components/ListComponent/Image/CornerOnlyFram
 import ChessBoard from "../components/ListComponent/Patterns/ChessBoard";
 import ZigZac from "../components/ListComponent/Patterns/ZigZac";
 import Tritangular from "../components/ListComponent/Patterns/Tritangular";
+import TritangularGrey from "../components/ListComponent/Patterns/TritangularGrey";
 
 const List: UIItem[] = [
   {
@@ -301,6 +302,10 @@ const List: UIItem[] = [
   },
   {
     component: <Tritangular />,
+    type: "pattern",
+  },
+  {
+    component: <TritangularGrey />,
     type: "pattern",
   },
 ];
