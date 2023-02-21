@@ -55,6 +55,7 @@ import ChessBoard from "../components/ListComponent/Patterns/ChessBoard";
 import ZigZac from "../components/ListComponent/Patterns/ZigZac";
 import Tritangular from "../components/ListComponent/Patterns/Tritangular";
 import TritangularGrey from "../components/ListComponent/Patterns/TritangularGrey";
+import TextHover from "../components/ListComponent/Text/TextHover";
 
 const List: UIItem[] = [
   {
@@ -307,6 +308,10 @@ const List: UIItem[] = [
   {
     component: <TritangularGrey />,
     type: "pattern",
+  },
+  {
+    component: <TextHover />,
+    type: "text",
   },
 ];
 

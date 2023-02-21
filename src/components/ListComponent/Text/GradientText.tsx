@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { keyframes } from "styled-components";
 
 const bgPosition = keyframes`
@@ -27,5 +28,5 @@ const Text = styled.h1`
 `;
 
 export default function GradientText() {
-  return <Text children="text" />;
+  return <Text>Text</Text>;
 }
