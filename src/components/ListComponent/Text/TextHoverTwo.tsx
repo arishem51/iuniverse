@@ -6,10 +6,11 @@ const Text = styled.h1`
   --bg-position-delay: 0s;
   --color-delay: 0s;
   --bg-size-delay: var(--duration);
+  --color: #1095c1;
   padding: 0 0.1em;
   font-size: 4em;
-  color: var(--color-dark);
-  background: linear-gradient(#1095c1 0 0) no-repeat;
+  color: var(--color);
+  background: linear-gradient(var(--color) 0 0) no-repeat;
   background-position: 0 1.4em;
   background-size: 0 100%;
   transition: background-position var(--duration) var(--bg-position-delay),
