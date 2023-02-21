@@ -56,6 +56,7 @@ import ZigZac from "../components/ListComponent/Patterns/ZigZac";
 import Tritangular from "../components/ListComponent/Patterns/Tritangular";
 import TritangularGrey from "../components/ListComponent/Patterns/TritangularGrey";
 import TextHover from "../components/ListComponent/Text/TextHover";
+import TextHoverTwo from "../components/ListComponent/Text/TextHoverTwo";
 
 const List: UIItem[] = [
   {
@@ -311,6 +312,10 @@ const List: UIItem[] = [
   },
   {
     component: <TextHover />,
+    type: "text",
+  },
+  {
+    component: <TextHoverTwo />,
     type: "text",
   },
 ];
