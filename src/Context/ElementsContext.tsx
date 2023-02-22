@@ -58,6 +58,7 @@ import TritangularGrey from "../components/ListComponent/Patterns/TritangularGre
 import TextHover from "../components/ListComponent/Text/TextHover";
 import TextHoverTwo from "../components/ListComponent/Text/TextHoverTwo";
 import TextHoverThree from "../components/ListComponent/Text/TextHoverThree";
+import Background3D from "../components/ListComponent/Patterns/Background3D";
 
 const List: UIItem[] = [
   {
@@ -322,6 +323,10 @@ const List: UIItem[] = [
   {
     component: <TextHoverThree />,
     type: "text",
+  },
+  {
+    component: <Background3D />,
+    type: "pattern",
   },
 ];
 
