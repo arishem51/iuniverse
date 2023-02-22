@@ -57,6 +57,7 @@ import Tritangular from "../components/ListComponent/Patterns/Tritangular";
 import TritangularGrey from "../components/ListComponent/Patterns/TritangularGrey";
 import TextHover from "../components/ListComponent/Text/TextHover";
 import TextHoverTwo from "../components/ListComponent/Text/TextHoverTwo";
+import TextHoverThree from "../components/ListComponent/Text/TextHoverThree";
 
 const List: UIItem[] = [
   {
@@ -316,6 +317,10 @@ const List: UIItem[] = [
   },
   {
     component: <TextHoverTwo />,
+    type: "text",
+  },
+  {
+    component: <TextHoverThree />,
     type: "text",
   },
 ];
