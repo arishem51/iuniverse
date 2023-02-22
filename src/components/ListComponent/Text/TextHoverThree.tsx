@@ -5,6 +5,8 @@ const Wrapper = styled.div`
   --color: #1095c1;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
+  padding: 0 0.5em;
 `;
 
 const Text = styled.h1`
@@ -12,28 +14,46 @@ const Text = styled.h1`
   z-index: 3;
   color: var(--color);
   font-size: 4em;
-  transition: color 0.3s;
+  transition: color 0.3s 0.1s;
   ${Wrapper}:hover & {
     color: var(--color-white);
   }
 `;
 
-const LeftSide = styled.div`
+const Side = styled.div`
   position: absolute;
-  z-index: 4;
+  z-index: 2;
   inset: 0;
   width: 125%;
   height: 200%;
-  background: conic-gradient(from 210deg, red 120deg, transparent 0 0);
+  translate: 0 -50%;
+  transition: transform 0.3s;
+
+  transform: var(--transform);
+  background: var(--background);
+
+  ${Wrapper}:hover & {
+    transform: translateX(0%);
+    translate: 0 0;
+  }
 `;
 
-const RightSide = styled.div`
-  position: absolute;
-  z-index: 4;
-  inset: 0;
-  width: 125%;
-  height: 200%;
-  background: conic-gradient(from 30deg, green 120deg, transparent 0 0);
+const LeftSide = styled(Side)`
+  --background: conic-gradient(
+    from 210deg,
+    var(--color) 120deg,
+    transparent 0 0
+  );
+  --transform: translateX(-50%);
+`;
+
+const RightSide = styled(Side)`
+  --background: conic-gradient(
+    from -30deg,
+    var(--color) 240deg,
+    transparent 0 0
+  );
+  --transform: translateX(50%);
 `;
 
 export default function Component() {
