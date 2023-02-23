@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { PatternContainer } from "../../Base";
 
-const ZigZac = styled.div`
+const ZigZac = styled(PatternContainer)`
   --color-stop: #eceddc 90deg;
-  --size: 200px;
-  width: var(--size);
-  aspect-ratio: 1;
+
   background: conic-gradient(from -45deg, var(--color-stop), transparent 0),
     conic-gradient(from 135deg, var(--color-stop), #29ab87 0)
       calc(var(--size) / 4) 0;

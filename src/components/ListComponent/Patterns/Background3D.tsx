@@ -1,15 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { PatternContainer } from "../../Base";
 
-const Wrapper = styled.div`
+const Wrapper = styled(PatternContainer)`
   --color-1: #f2f2f2;
   --color-2: #cdcbcc;
   --color-3: #999999;
   --color-stop: 0 120deg, transparent 0;
-  --size: 200px;
-
-  width: var(--size);
-  aspect-ratio: 1;
 
   background: conic-gradient(
       from 0deg at calc(500% / 6) calc(100% / 3),

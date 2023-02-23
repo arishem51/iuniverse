@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { PatternContainer } from "../../Base";
 
-const Tritanular = styled.div`
-  --size: 100px;
-  width: 200px;
-  aspect-ratio: 1;
+const Tritanular = styled(PatternContainer)`
   background: conic-gradient(
         from 75deg,
         #b9b9b9 0 15deg,
@@ -29,7 +27,7 @@ const Tritanular = styled.div`
       #dcdcdc 0 331deg,
       #fafafa 0
     );
-  background-size: 115px 200px;
+  background-size: 115px var(--size);
 `;
 
 export default function Component() {

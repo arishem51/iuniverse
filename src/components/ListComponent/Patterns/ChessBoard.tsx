@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { PatternContainer } from "../../Base";
 
-const CheckBoardWrapper = styled.div`
-  --size: 200px;
+const CheckBoardWrapper = styled(PatternContainer)`
   --bg-size: calc(var(--size) / 5) calc(var(--size) / 5) /* 40px */;
   width: var(--size);
   aspect-ratio: 1;
