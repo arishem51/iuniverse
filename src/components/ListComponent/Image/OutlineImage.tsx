@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { ImageContainer } from "../../Base";
 
-const Image = styled.img`
+const Image = styled(ImageContainer)`
   --at: 1px;
-  width: 200px;
-  aspect-ratio: 1;
+
   padding: 30px;
   background: conic-gradient(
       from 90deg at var(--at) var(--at),
@@ -12,6 +12,7 @@ const Image = styled.img`
       var(--color-white) 25%
     )
     20px 20px / calc(100% - 40px) calc(100% - 40px);
+
   outline: 1px solid white;
   outline-offset: -10px;
 `;

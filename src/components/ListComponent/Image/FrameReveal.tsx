@@ -1,16 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { ImageContainer } from "../../Base";
 
-const Wrapper = styled.img`
+const Wrapper = styled(ImageContainer)`
   --size: 200px;
   --bg-animation: 0%;
   --reverse-bg-animation: calc(100% - var(--bg-animation));
   --color: #fcd703 0 0;
   --offset: 8px;
 
-  width: var(--size);
   padding: calc(var(--size) / 12.5);
-  aspect-ratio: 1;
 
   background: 
     /* Top Linear Gradient */ linear-gradient(var(--color))
@@ -31,5 +30,7 @@ const Wrapper = styled.img`
 `;
 
 export default function Component() {
-  return <Wrapper src="https://picsum.photos/id/42/200" />;
+  return (
+    <Wrapper loading="eager" alt="..." src="https://picsum.photos/id/42/200" />
+  );
 }

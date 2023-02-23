@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { ImageContainer } from "../../Base";
 
-const Image = styled.img`
+const Image = styled(ImageContainer)`
   --rotate-position: 0.2em;
   --color-stop: transparent 25%, var(--color-white) 0;
   --top: top var(--rotate-position);
@@ -9,9 +10,8 @@ const Image = styled.img`
   --right: right var(--rotate-position);
   --left: left var(--rotate-position);
 
-  width: 200px;
-  aspect-ratio: 1;
   padding: calc(var(--rotate-position) * 2);
+
   background: conic-gradient(
         from 90deg at var(--top) var(--left),
         var(--color-stop)
@@ -25,6 +25,7 @@ const Image = styled.img`
       top right;
   background-size: 20% 20%;
   background-repeat: no-repeat;
+
   cursor: pointer;
   transition: background-size 0.6s;
   will-change: background-size;

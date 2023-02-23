@@ -1,15 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import { ImageContainer } from "../../Base";
 
-const Image = styled.img`
+const Image = styled(ImageContainer)`
   --rotate-position: 0.3em;
   --position: 0;
   --color-stop: transparent 25%, #fcd703 0;
   --bg-transition-time: 0.2s;
 
-  width: 200px;
   padding: calc(var(--rotate-position) * 3.5);
-  aspect-ratio: 1;
 
   background: conic-gradient(
         from 90deg at top var(--rotate-position) left var(--rotate-position),

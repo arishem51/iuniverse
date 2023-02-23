@@ -36,6 +36,6 @@ const ImageWrapper = styled.img`
 
 type ImageProps = PropsWithChildren & React.ImgHTMLAttributes<HTMLImageElement>;
 
-export function ImageContainer(props: ImageProps) {
-  return <ImageWrapper {...props} />;
+export function ImageContainer({ loading = "eager", ...props }: ImageProps) {
+  return <ImageWrapper loading={loading} {...props} />;
 }

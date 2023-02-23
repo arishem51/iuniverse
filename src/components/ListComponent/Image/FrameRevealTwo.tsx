@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { ImageContainer } from "../../Base";
 
-const Wrapper = styled.img`
+const Wrapper = styled(ImageContainer)`
   --size: 200px;
   --offset: 8px;
   --bg-animation: calc(var(--size) * -1);
@@ -9,9 +10,7 @@ const Wrapper = styled.img`
   --color-stop: #fcd703 270deg, transparent 0 0;
   --animation-duration: 0.3s;
 
-  width: var(--size);
   padding: calc(var(--offset) * 2);
-  aspect-ratio: 1;
 
   background: conic-gradient(
         from -90deg at top var(--offset) right var(--offset),
