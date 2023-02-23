@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 // Made by @Cevorob --> https://uiverse.io/Cevorob/good-wolverine-51
@@ -48,7 +49,7 @@ const Span = styled.span`
   display: block;
   width: 100%;
   height: 4px;
-  background: var(--color-lightGray);
+  background: var(--color-white);
   border-radius: 10px;
   transition: scale 0.2s, opacity 0.5s, rotate 0.5s, translate 0.3s;
 `;
