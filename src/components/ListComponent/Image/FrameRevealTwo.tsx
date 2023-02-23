@@ -6,7 +6,7 @@ const Wrapper = styled.img`
   --offset: 8px;
   --bg-animation: calc(var(--size) * -1);
   --bg-size: var(--offset);
-  --color-stop: var(--color-white) 270deg, transparent 0 0;
+  --color-stop: #fcd703 270deg, transparent 0 0;
   --animation-duration: 0.3s;
 
   width: var(--size);

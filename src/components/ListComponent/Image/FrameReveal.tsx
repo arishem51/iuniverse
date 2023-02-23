@@ -9,7 +9,7 @@ const Wrapper = styled.img`
   --offset: 8px;
 
   width: var(--size);
-  padding: calc(var(--size) / 10);
+  padding: calc(var(--size) / 12.5);
   aspect-ratio: 1;
 
   background: 
