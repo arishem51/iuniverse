@@ -1,23 +1,27 @@
+import React from "react";
 import styled from "styled-components";
-
-const Text = styled.h3`
-  position: relative;
-`;
 
 const Wrapper = styled.div`
   --scaleTime: 0.3s;
   --translateTime: 0.5s;
+  --size: 0.5em;
+
   position: relative;
-  padding: 12px 24px;
-  cursor: pointer;
+  isolation: isolate;
+  z-index: 2;
+
+  padding: var(--size) calc(var(--size) * 2.5);
   background: transparent;
-  overflow: hidden;
 
   color: white;
-  z-index: 2;
-  transition: color 0.2s var(--scaleTime);
   font-weight: 700;
-  isolation: isolate;
+  font-size: calc(var(--size) * 2.5);
+
+  overflow: hidden;
+  transition: color 0.2s var(--scaleTime);
+
+  cursor: pointer;
+
   ::after {
     content: "";
     position: absolute;
