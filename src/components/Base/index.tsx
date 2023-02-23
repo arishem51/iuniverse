@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react";
+import React, { PropsWithChildren } from "react";
 import styled from "styled-components";
 
 const FlexWrapper = styled.div<{ center?: boolean; column?: boolean }>`
@@ -22,9 +22,20 @@ const ButtonWrapper = styled.button`
   user-select: none;
 `;
 
-type ButtonProps = {} & PropsWithChildren &
+type ButtonProps = PropsWithChildren &
   React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export function ButtonContainer({ ...props }: ButtonProps) {
   return <ButtonWrapper {...props} />;
+}
+
+const ImageWrapper = styled.img`
+  width: 200px;
+  aspect-ratio: 1;
+`;
+
+type ImageProps = PropsWithChildren & React.ImgHTMLAttributes<HTMLImageElement>;
+
+export function ImageContainer(props: ImageProps) {
+  return <ImageWrapper {...props} />;
 }
