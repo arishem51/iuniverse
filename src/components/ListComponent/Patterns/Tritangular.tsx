@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { PatternContainer } from "../../Base";
 
 const Tritangular = styled(PatternContainer)`
-  --bg-size: calc(var(--bg-size) / 2) calc(var(--bg-size) / 2);
+  --bg-size: calc(var(--size) / 2) calc(var(--size) / 2);
   background: conic-gradient(
         from 150deg at 50% 33%,
         #fa6900 60deg,
