@@ -59,6 +59,7 @@ import TextHover from "../components/ListComponent/Text/TextHover";
 import TextHoverTwo from "../components/ListComponent/Text/TextHoverTwo";
 import TextHoverThree from "../components/ListComponent/Text/TextHoverThree";
 import Background3D from "../components/ListComponent/Patterns/Background3D";
+import FrameReveal from "../components/ListComponent/Image/FrameReveal";
 
 const List: UIItem[] = [
   {
@@ -327,6 +328,10 @@ const List: UIItem[] = [
   {
     component: <Background3D />,
     type: "pattern",
+  },
+  {
+    component: <FrameReveal />,
+    type: "image",
   },
 ];
 

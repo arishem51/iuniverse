@@ -8,8 +8,8 @@ const Image = styled.img`
   --bg-transition-time: 0.2s;
 
   width: 200px;
-  aspect-ratio: 1;
   padding: calc(var(--rotate-position) * 3.5);
+  aspect-ratio: 1;
 
   background: conic-gradient(
         from 90deg at top var(--rotate-position) left var(--rotate-position),
