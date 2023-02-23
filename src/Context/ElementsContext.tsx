@@ -60,6 +60,7 @@ import TextHoverTwo from "../components/ListComponent/Text/TextHoverTwo";
 import TextHoverThree from "../components/ListComponent/Text/TextHoverThree";
 import Background3D from "../components/ListComponent/Patterns/Background3D";
 import FrameReveal from "../components/ListComponent/Image/FrameReveal";
+import FrameRevealTwo from "../components/ListComponent/Image/FrameRevealTwo";
 
 const List: UIItem[] = [
   {
@@ -331,6 +332,10 @@ const List: UIItem[] = [
   },
   {
     component: <FrameReveal />,
+    type: "image",
+  },
+  {
+    component: <FrameRevealTwo />,
     type: "image",
   },
 ];
