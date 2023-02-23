@@ -43,3 +43,15 @@ export function ImageContainer({
 }: ImageProps) {
   return <ImageWrapper loading={loading} alt={alt} {...props} />;
 }
+
+const PatternWrapper = styled.div`
+  --size: 200px;
+  aspect-ratio: 1;
+  width: var(--size);
+`;
+
+type PatternProps = PropsWithChildren & React.HTMLAttributes<HTMLDivElement>;
+
+export function PatternContainer(props: PatternProps) {
+  return <PatternWrapper {...props} />;
+}
