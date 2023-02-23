@@ -30,7 +30,5 @@ const Wrapper = styled(ImageContainer)`
 `;
 
 export default function Component() {
-  return (
-    <Wrapper loading="eager" alt="..." src="https://picsum.photos/id/42/200" />
-  );
+  return <Wrapper src="https://picsum.photos/id/42/200" />;
 }
