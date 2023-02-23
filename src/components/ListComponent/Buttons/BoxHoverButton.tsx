@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import { ButtonContainer, FlexContainer } from "../../Base";
 
@@ -71,7 +72,9 @@ export default function BoxHoverButton() {
     <Wrapper>
       <FlexContainer>
         {"hover".split("").map((item) => (
-          <Box key={item} center children={item.toUpperCase()} />
+          <Box key={item} center>
+            {item.toUpperCase()}
+          </Box>
         ))}
       </FlexContainer>
     </Wrapper>
