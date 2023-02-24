@@ -3,18 +3,18 @@ import styled from "styled-components";
 import { ImageContainer } from "../../Base";
 
 const Image = styled(ImageContainer)`
-  --at: 1px;
+  --color-stop: transparent 25%, var(--color-white) 25%;
+  --bg-corner: from 90deg at 1px 1px;
+  --bg-position: 20px 20px;
+  --bg-size: calc(100% - 40px) calc(100% - 40px);
+  --offset: 10px;
 
-  padding: 30px;
-  background: conic-gradient(
-      from 90deg at var(--at) var(--at),
-      transparent 25%,
-      var(--color-white) 25%
-    )
-    20px 20px / calc(100% - 40px) calc(100% - 40px);
+  padding: calc(var(--offset) * 3);
+  background: conic-gradient(var(--bg-corner), var(--color-stop))
+    var(--bg-position) / var(--bg-size);
 
   outline: 1px solid white;
-  outline-offset: -10px;
+  outline-offset: calc(var(--offset) * -1);
   cursor: unset;
 `;
 
