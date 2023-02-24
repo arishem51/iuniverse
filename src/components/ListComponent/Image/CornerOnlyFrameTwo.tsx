@@ -30,7 +30,6 @@ const Image = styled(ImageContainer)`
     background-size calc(var(--bg-transition-time) * 2)
       var(--bg-transition-time);
 
-  cursor: pointer;
   :hover {
     --position: 0.5em;
     --bg-size: calc(100% - var(--position) * 2);

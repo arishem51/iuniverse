@@ -32,6 +32,7 @@ export function ButtonContainer({ ...props }: ButtonProps) {
 const ImageWrapper = styled.img`
   width: 200px;
   aspect-ratio: 1;
+  cursor: pointer;
 `;
 
 type ImageProps = PropsWithChildren & React.ImgHTMLAttributes<HTMLImageElement>;

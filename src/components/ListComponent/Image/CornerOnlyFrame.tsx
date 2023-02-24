@@ -26,7 +26,6 @@ const Image = styled(ImageContainer)`
   background-size: 20% 20%;
   background-repeat: no-repeat;
 
-  cursor: pointer;
   transition: background-size 0.6s;
   will-change: background-size;
   :hover {

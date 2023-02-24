@@ -15,6 +15,7 @@ const Image = styled(ImageContainer)`
 
   outline: 1px solid white;
   outline-offset: -10px;
+  cursor: unset;
 `;
 
 export default function Component() {

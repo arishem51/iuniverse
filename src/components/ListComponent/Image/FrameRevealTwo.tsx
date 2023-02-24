@@ -27,7 +27,6 @@ const Wrapper = styled(ImageContainer)`
   transition: background-position var(--animation-duration)
       var(--animation-duration),
     background-size var(--animation-duration);
-  cursor: pointer;
   :hover {
     --bg-animation: 0px;
     --bg-size: 100%;

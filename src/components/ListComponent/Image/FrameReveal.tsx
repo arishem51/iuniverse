@@ -23,7 +23,6 @@ const Wrapper = styled(ImageContainer)`
   background-repeat: no-repeat;
 
   transition: background-size 0.4s, background-position 0s;
-  cursor: pointer;
   :hover {
     --bg-animation: 100%;
   }
