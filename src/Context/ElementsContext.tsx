@@ -64,6 +64,7 @@ import FrameRevealTwo from "../components/ListComponent/Image/FrameRevealTwo";
 import FrameRevealThree from "../components/ListComponent/Image/FrameRevealThree";
 import Radial from "../components/ListComponent/Patterns/Radial";
 import RadialTwo from "../components/ListComponent/Patterns/RadialTwo";
+import RadialThree from "../components/ListComponent/Patterns/RadialThree";
 
 const List: UIItem[] = [
   {
@@ -351,6 +352,10 @@ const List: UIItem[] = [
   },
   {
     component: <RadialTwo />,
+    type: "pattern",
+  },
+  {
+    component: <RadialThree />,
     type: "pattern",
   },
 ];
