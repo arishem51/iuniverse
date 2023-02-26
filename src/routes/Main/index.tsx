@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import AnimationLayout from "../../components/AnimationLayout";
-import ListComponent from "../../components/ListComponent";
+import ListComponents from "../../components/ListComponents";
 import Sidebar from "../../components/Sidebar";
 import { MEDIAQUERY } from "../../constants";
 
@@ -19,7 +19,7 @@ export default function MainContent() {
   return (
     <Flex>
       <Sidebar />
-      <ListComponent />
+      <ListComponents />
     </Flex>
   );
 }
