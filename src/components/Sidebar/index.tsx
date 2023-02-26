@@ -90,7 +90,7 @@ const SidebarRouteItem: RouteItem[] = [
   },
   {
     name: "Toggle Switches",
-    urlPath: "toogle",
+    urlPath: "toggle",
   },
   {
     name: "Shapes",

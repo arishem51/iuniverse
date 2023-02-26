@@ -8,6 +8,8 @@ import ListImages from "./Images";
 import ListInputs from "./Inputs";
 import ListLoaders from "./Loaders";
 import ListShapes from "./Shapes";
+import ListTexts from "./Texts";
+import ListToggles from "./Toggles";
 
 export const List: UIItem[] = [
   ...ListShapes,
@@ -16,7 +18,9 @@ export const List: UIItem[] = [
   ...ListButtons,
   ...ListCheckbox,
   ...ListInputs,
+  ...ListToggles,
   ...ListLoaders,
   ...ListCards,
+  ...ListTexts,
   ...ListImages,
 ];

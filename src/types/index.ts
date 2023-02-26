@@ -10,7 +10,7 @@ type URLPath =
   | "loader"
   | "card"
   | "checkbox"
-  | "toogle"
+  | "toggle"
   | "input"
   | "animal"
   | "text"
