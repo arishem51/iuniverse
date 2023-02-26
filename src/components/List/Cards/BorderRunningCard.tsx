@@ -62,7 +62,7 @@ const Text = styled.h1`
   color: var(--color-white);
 `;
 
-export default function Component() {
+export function BorderRunningCard() {
   return (
     <Wrapper>
       <Text>Card</Text>

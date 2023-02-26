@@ -37,6 +37,6 @@ const Wrapper = styled.div`
   }
 `;
 
-export default function CardShadowHover() {
+export function CardShadowHover() {
   return <Wrapper />;
 }

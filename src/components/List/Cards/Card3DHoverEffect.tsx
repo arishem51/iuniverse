@@ -78,7 +78,7 @@ type Props = {
   textImg?: string;
 };
 
-export default function Card3DHoverEffect({
+export function Card3DHoverEffect({
   visibleImg = "https://ggayane.github.io/css-experiments/cards/force_mage-character.webp",
   backgroungImg = "https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg",
   textImg = "https://ggayane.github.io/css-experiments/cards/force_mage-title.png",

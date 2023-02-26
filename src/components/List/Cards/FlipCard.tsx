@@ -36,7 +36,7 @@ const HoverContainer = styled.div`
   }
 `;
 
-export default function FlipCard() {
+export function FlipCard() {
   return (
     <HoverContainer>
       <Wrapper>
