@@ -67,7 +67,7 @@ const Wrapper = styled(ButtonContainer)`
   }
 `;
 
-export default function BoxHoverButton() {
+export function BoxHoverButton() {
   return (
     <Wrapper>
       <FlexContainer>

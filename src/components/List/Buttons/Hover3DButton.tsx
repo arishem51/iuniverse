@@ -18,6 +18,6 @@ const Wrapper = styled(ButtonContainer)`
   }
 `;
 
-export default function Button() {
+export function Hover3DButton() {
   return <Wrapper>Button</Wrapper>;
 }

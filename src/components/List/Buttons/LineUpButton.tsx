@@ -45,6 +45,6 @@ const Wrapper = styled.div`
   }
 `;
 
-export default function LineUpButton() {
+export function LineUpButton() {
   return <Wrapper>Hover Me</Wrapper>;
 }

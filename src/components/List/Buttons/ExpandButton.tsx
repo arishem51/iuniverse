@@ -67,7 +67,7 @@ const Wrapper = styled(FlexContainer)`
   }
 `;
 
-export default function ExpandButton() {
+export function ExpandButton() {
   return (
     <Wrapper center>
       <ExpandRadius>

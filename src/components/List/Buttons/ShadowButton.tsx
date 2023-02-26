@@ -19,6 +19,6 @@ const Wrapper = styled(ButtonContainer)`
   }
 `;
 
-export default function Component() {
+export function ShadowButton() {
   return <Wrapper>Hover Me</Wrapper>;
 }

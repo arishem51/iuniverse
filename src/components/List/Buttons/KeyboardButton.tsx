@@ -23,6 +23,6 @@ const Wrapper = styled(FlexContainer)`
   }
 `;
 
-export default function KeyboardButton() {
+export function KeyboardButton() {
   return <Wrapper as="button">Click Me</Wrapper>;
 }

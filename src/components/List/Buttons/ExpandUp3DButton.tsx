@@ -52,7 +52,7 @@ const Wrapper = styled(ButtonContainer)`
   }
 `;
 
-export default function ExpandUp3DButton() {
+export function ExpandUp3DButton() {
   return (
     <Wrapper>
       <Overlay
