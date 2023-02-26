@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import AnimationLayout from "../../components/AnimationLayout";
 import ListComponent from "../../components/ListComponent";
