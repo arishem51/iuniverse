@@ -21,7 +21,7 @@ const Items: RouteItem["urlPath"][] = [
   "loader",
   "shape",
   "text",
-  "toogle",
+  "toggle",
 ];
 
 export function checkRouteId(id: string | undefined = "", func: () => void) {
