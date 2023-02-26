@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { keyframes } from "styled-components";
 import { FlexContainer } from "../../Base";
 
@@ -49,7 +50,7 @@ const Wrapper = styled(FlexContainer)`
   }
 `;
 
-export default function Component() {
+export function NewtonsCardleDot() {
   return (
     <Wrapper>
       <Dot center />

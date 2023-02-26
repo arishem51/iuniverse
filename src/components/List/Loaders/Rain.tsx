@@ -68,7 +68,7 @@ function renderItem() {
   });
 }
 
-export default function Rain() {
+export function Rain() {
   return (
     <Wrapper>
       <Cloud>{renderItem()}</Cloud>

@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { keyframes } from "styled-components";
 import { FlexContainer } from "../../Base";
 
@@ -25,7 +26,7 @@ const Dot = styled.div`
     calc(var(--index) * 100ms);
 `;
 
-export default function DotWave() {
+export function DotWave() {
   function renderItem() {
     return new Array(4).fill("").map((_, index) => {
       const styles = { "--index": index } as React.CSSProperties;

@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { keyframes } from "styled-components";
 
 /*
@@ -90,6 +91,6 @@ function renderItem() {
   });
 }
 
-export default function Navarog21() {
+export function Navarog21() {
   return <Wrapper>{renderItem()}</Wrapper>;
 }
