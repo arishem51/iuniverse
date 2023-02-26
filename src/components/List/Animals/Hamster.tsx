@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // Made by @Nawsome --> https://uiverse.io/Nawsome/wet-mayfly-23
@@ -205,7 +206,7 @@ const Tail = styled.div`
   animation: ${TailAnim} 1s linear infinite;
 `;
 
-export default function Hamster() {
+export function Hamster() {
   return (
     <Wrapper>
       <Body />
