@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -15,7 +16,7 @@ const Bottom = styled.div`
   border: 1px solid white;
 `;
 
-export default function Cone() {
+export function Cone() {
   return (
     <Wrapper>
       <Bottom />

@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { keyframes } from "styled-components";
 import { getTanFromDegrees } from "../../../helpers";
 import { FlexContainer } from "../../Base";
@@ -50,7 +51,7 @@ function renderItem() {
     ));
 }
 
-export default function Carousel() {
+export function Carousel() {
   return (
     <Wrapper center>
       <CarouselWrapper>{renderItem()}</CarouselWrapper>

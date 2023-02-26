@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { keyframes } from "styled-components";
 import { FlexContainer } from "../../Base";
 
@@ -57,7 +58,7 @@ const BottomSide = styled(Side)`
   transform: rotateX(-90deg) translateZ(50px);
 `;
 
-export default function Cube() {
+export function Cube() {
   return (
     <Container center>
       <WrapCube>
