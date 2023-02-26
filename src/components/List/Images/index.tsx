@@ -9,6 +9,10 @@ import { OutlineImage } from "./OutlineImage";
 
 const List: UIItem[] = [
   {
+    component: <OutlineImage />,
+    type: "image",
+  },
+  {
     component: <CornerOnlyFrame />,
     type: "image",
   },
@@ -26,10 +30,6 @@ const List: UIItem[] = [
   },
   {
     component: <FrameRevealThree />,
-    type: "image",
-  },
-  {
-    component: <OutlineImage />,
     type: "image",
   },
 ];

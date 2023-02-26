@@ -10,6 +10,7 @@ import ListLoaders from "./Loaders";
 import ListShapes from "./Shapes";
 import ListTexts from "./Texts";
 import ListToggles from "./Toggles";
+import ListPatterns from "./Patterns";
 
 export const List: UIItem[] = [
   ...ListShapes,
@@ -22,5 +23,6 @@ export const List: UIItem[] = [
   ...ListLoaders,
   ...ListCards,
   ...ListTexts,
+  ...ListPatterns,
   ...ListImages,
 ];
