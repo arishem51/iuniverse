@@ -54,7 +54,7 @@ const Span = styled.span`
   transition: scale 0.2s, opacity 0.5s, rotate 0.5s, translate 0.3s;
 `;
 
-export default function Component() {
+export function Burger() {
   return (
     <Wrapper htmlFor="burger">
       <Input type="checkbox" id="burger" />
