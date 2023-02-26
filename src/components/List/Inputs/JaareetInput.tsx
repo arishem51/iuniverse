@@ -26,6 +26,6 @@ const StyledInput = styled.input`
   }
 `;
 
-export default function Component() {
+export function JaareetInput() {
   return <StyledInput placeholder="Write a message" />;
 }

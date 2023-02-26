@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 // Made by -@Maximinodotpy --> https://uiverse.io/Maximinodotpy/thin-sheep-13
@@ -44,7 +45,7 @@ const Input = styled.input`
   }
 `;
 
-export default function Component() {
+export function Maximinodotpy() {
   return (
     <Wrapper>
       <Input type="text" required />

@@ -18,6 +18,6 @@ const Image = styled(ImageContainer)`
   cursor: unset;
 `;
 
-export default function Component() {
+export function OutlineImage() {
   return <Image src="https://picsum.photos/id/16/200" />;
 }

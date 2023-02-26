@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { keyframes } from "styled-components";
 import { FlexContainer } from "../../Base";
 
@@ -82,7 +83,7 @@ const Wrapper = styled(FlexContainer)`
   }
 `;
 
-export default function BouncingBall() {
+export function BouncingBall() {
   return (
     <Wrapper>
       <Ball />

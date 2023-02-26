@@ -37,6 +37,6 @@ const Image = styled(ImageContainer)`
   }
 `;
 
-export default function Component() {
+export function CornerOnlyFrameTwo() {
   return <Image src="https://picsum.photos/id/133/200/200" />;
 }

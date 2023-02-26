@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // Made by @alexruix --> https://uiverse.io/alexruix/white-cat-50
@@ -57,6 +58,6 @@ const Wrapper = styled.div`
   }
 `;
 
-export default function BoxRotate() {
+export function BoxRotate() {
   return <Wrapper />;
 }

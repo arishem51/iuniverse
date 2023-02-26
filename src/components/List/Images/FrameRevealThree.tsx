@@ -28,6 +28,6 @@ const Image = styled(ImageContainer)`
   }
 `;
 
-export default function Component() {
+export function FrameRevealThree() {
   return <Image src="https://picsum.photos/id/40/200" />;
 }

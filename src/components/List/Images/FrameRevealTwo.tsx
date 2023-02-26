@@ -35,6 +35,6 @@ const Wrapper = styled(ImageContainer)`
   }
 `;
 
-export default function Component() {
+export function FrameRevealTwo() {
   return <Wrapper src="https://picsum.photos/id/48/200" />;
 }
