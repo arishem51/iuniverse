@@ -2,6 +2,7 @@ import React from "react";
 import { UIItem } from "../../../types";
 import Background3D from "./Background3D";
 import Radial from "./Radial";
+import RadialFive from "./RadialFive";
 import RadialFour from "./RadialFour";
 import RadialThree from "./RadialThree";
 import RadialTwo from "./RadialTwo";
@@ -40,6 +41,10 @@ const List: UIItem[] = [
   },
   {
     component: <ZigZac />,
+    type: "pattern",
+  },
+  {
+    component: <RadialFive />,
     type: "pattern",
   },
 ];
