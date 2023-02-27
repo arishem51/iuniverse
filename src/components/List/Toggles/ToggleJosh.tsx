@@ -34,6 +34,7 @@ const Slide = styled.div`
 const Ball = styled.div`
   --border-size: 3px;
   --size: 2.5em;
+  --transition-time: 0.3s;
 
   position: absolute;
   top: 0;
@@ -47,11 +48,13 @@ const Ball = styled.div`
   outline: var(--border-size) solid var(--color-dark);
   outline-offset: calc(var(--border-size) * -1.8);
 
-  background: white;
-  transition: transform 0.3s 0.05s;
+  background: var(--color-white);
+  transition: transform var(--transition-time) 0.05s,
+    background var(--transition-time);
 
   ${Input}:checked ~ & {
     transform: translateX(100%);
+    background: hsl(140deg 100% 70%);
   }
 `;
 
