@@ -4,6 +4,7 @@ import Background3D from "./Background3D";
 import Radial from "./Radial";
 import RadialFive from "./RadialFive";
 import RadialFour from "./RadialFour";
+import RadialSeven from "./RadialSeven";
 import RadialSix from "./RadialSix";
 import RadialThree from "./RadialThree";
 import RadialTwo from "./RadialTwo";
@@ -50,6 +51,10 @@ const List: UIItem[] = [
   },
   {
     component: <RadialSix />,
+    type: "pattern",
+  },
+  {
+    component: <RadialSeven />,
     type: "pattern",
   },
 ];
