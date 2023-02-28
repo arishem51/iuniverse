@@ -14,8 +14,7 @@ const Wrapper = styled(PatternContainer)`
     ),
     radial-gradient(var(--bg-corner) at right, var(--color-stop-2));
 
-  background-size: 50px 50px;
-  background-position: 25px 0;
+  background-size: 100px 100px;
 `;
 
 export default function Component() {
