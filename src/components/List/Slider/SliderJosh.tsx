@@ -21,12 +21,15 @@ const Input = styled.input`
   }
 
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
     --size: 1.75em;
+    -webkit-appearance: none;
+
     width: var(--size);
     height: var(--size);
+
     border-radius: 50%;
     border: 0.25em solid var(--color-lightDark);
+
     background: var(--color-handle);
     cursor: grab;
   }
