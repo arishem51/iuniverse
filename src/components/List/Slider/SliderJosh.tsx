@@ -22,8 +22,9 @@ const Input = styled.input`
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 1.75rem;
-    height: 1.75rem;
+    --size: 1.75em;
+    width: var(--size);
+    height: var(--size);
     border-radius: 50%;
     border: 0.25em solid var(--color-lightDark);
     background: var(--color-handle);
