@@ -97,6 +97,10 @@ const SidebarRouteItem: RouteItem[] = [
     urlPath: "shape",
   },
   {
+    name: "Sliders",
+    urlPath: "slider",
+  },
+  {
     name: "Images",
     urlPath: "image",
   },
