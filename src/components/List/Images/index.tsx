@@ -6,6 +6,7 @@ import { FrameReveal } from "./FrameReveal";
 import { FrameRevealThree } from "./FrameRevealThree";
 import { FrameRevealTwo } from "./FrameRevealTwo";
 import { OutlineImage } from "./OutlineImage";
+import PostageStamp from "./PostageStamp";
 
 const List: UIItem[] = [
   {
@@ -30,6 +31,10 @@ const List: UIItem[] = [
   },
   {
     component: <FrameRevealThree />,
+    type: "image",
+  },
+  {
+    component: <PostageStamp />,
     type: "image",
   },
 ];
