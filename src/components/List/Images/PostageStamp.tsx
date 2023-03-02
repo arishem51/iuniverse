@@ -9,7 +9,6 @@ const Image = styled(ImageContainer)`
 
   width: var(--size);
   height: calc(var(--size) - 50px);
-
   padding: 1em;
 
   background: radial-gradient(
@@ -18,7 +17,7 @@ const Image = styled(ImageContainer)`
         var(--color-white)
       )
       round var(--bg-pos) / var(--bg-size),
-    linear-gradient(to right, white 0 0) no-repeat;
+    linear-gradient(to right, var(--color-white) 0 0) no-repeat;
 
   filter: grayscale(0.4);
   cursor: unset;
