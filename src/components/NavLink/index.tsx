@@ -1,4 +1,5 @@
-import { Link, LinkProps, useParams } from "react-router-dom";
+import React from "react";
+import { Link, LinkProps } from "react-router-dom";
 import styled from "styled-components";
 
 const Wrapper = styled(Link)`
