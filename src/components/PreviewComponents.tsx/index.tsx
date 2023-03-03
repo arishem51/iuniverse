@@ -10,9 +10,11 @@ import { ButtonContainer, FlexContainer } from "../Base";
 const Wrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+
   width: 60%;
   margin: 1rem auto;
-  flex-wrap: wrap;
+
   @media (${MEDIAQUERY.lessThanTablet}) {
     width: 80%;
   }
@@ -28,8 +30,10 @@ const Heading = styled.h2`
 
 const Child = styled(FlexContainer)`
   flex: 1;
+
   min-height: 250px;
   padding: 3rem 0;
+
   background-color: var(--color-lightDark);
   border-radius: 1rem;
   @media (${MEDIAQUERY.lessThanTablet}) {
@@ -38,14 +42,16 @@ const Child = styled(FlexContainer)`
 `;
 const List = styled(FlexContainer)`
   gap: 2rem;
-  margin: 2rem 0;
   flex-wrap: wrap;
+
+  margin: 2rem 0;
 `;
 
 const Button = styled(ButtonContainer)`
   padding: 12px 24px;
-  border-radius: 30px;
   background: var(--color-lightDark);
+  border-radius: 30px;
+
   color: var(--color-white);
   font-weight: 700;
 `;
@@ -82,9 +88,9 @@ export default function PreviewComponent({ type }: Props) {
 
   return (
     <Wrapper
-      initial={{ opacity: 0, scale: 0 }}
+      initial={{ opacity: 0, scale: 0.5 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
       <Heading>{type}s</Heading>
