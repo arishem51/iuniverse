@@ -71,6 +71,7 @@ type Props = {
 
 export default function PreviewComponent({ type }: Props) {
   const { elements } = useElements();
+
   if (type === "all" || elements.length === 0) {
     return null;
   }
