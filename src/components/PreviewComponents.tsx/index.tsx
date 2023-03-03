@@ -70,21 +70,18 @@ type Props = {
 };
 
 export default function PreviewComponent({ type }: Props) {
-  const { elements } = useElements();
+  const { previewElements } = useElements({ type });
 
-  if (type === "all" || elements.length === 0) {
+  if (type === "all" || previewElements.length === 0) {
     return null;
   }
 
   function renderItem() {
-    return elements
-      .filter((item) => item.type === type)
-      .slice(0, 4)
-      .map((item, index) => (
-        <Child key={index} center>
-          {item.component}
-        </Child>
-      ));
+    return previewElements.map((item, index) => (
+      <Child key={index} center>
+        {item.component}
+      </Child>
+    ));
   }
 
   return (

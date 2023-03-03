@@ -1,7 +1,7 @@
 import React, { createContext, PropsWithChildren, useContext } from "react";
 import { List } from "../components/List";
 import { sortShapeElements } from "../helpers";
-import { UIItem } from "../types";
+import { RouteItem, UIItem } from "../types";
 
 const Context = createContext<{ elements: UIItem[] }>({ elements: [] });
 
@@ -12,10 +12,23 @@ export default function ElementsContext({ children }: Props) {
   return <Context.Provider value={{ elements }}>{children}</Context.Provider>;
 }
 
-export function useElements() {
+type ElementType = {
+  type: RouteItem["urlPath"];
+};
+
+export function useElements(props?: ElementType) {
   const value = useContext(Context);
+
   if (value.elements.length === 0) {
     throw new Error("useElements must be use under Elements Provider");
   }
-  return value;
+
+  const newValue = {
+    elements: value.elements,
+    previewElements: props?.type
+      ? value.elements.filter((item) => item.type === props.type).slice(0, 4)
+      : [],
+  };
+
+  return newValue;
 }
