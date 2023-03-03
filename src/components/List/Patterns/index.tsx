@@ -1,6 +1,7 @@
 import React from "react";
 import { UIItem } from "../../../types";
 import Background3D from "./Background3D";
+import PostageStampPattern from "./PostageStampPattern";
 import Radial from "./Radial";
 import RadialFive from "./RadialFive";
 import RadialFour from "./RadialFour";
@@ -55,6 +56,10 @@ const List: UIItem[] = [
   },
   {
     component: <RadialSeven />,
+    type: "pattern",
+  },
+  {
+    component: <PostageStampPattern />,
     type: "pattern",
   },
 ];
