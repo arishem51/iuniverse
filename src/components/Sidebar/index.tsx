@@ -6,10 +6,14 @@ import { RouteItem } from "../../types";
 import { FlexContainer } from "../Base";
 
 const SidebarWrapper = styled(FlexContainer)`
-  position: relative;
-  padding: 1rem;
-  background: var(--color-dark);
+  position: sticky;
+  top: 1rem;
+
   gap: 0.5rem;
+  height: min-content;
+  padding: 1rem;
+
+  background: var(--color-dark);
   @media (${MEDIAQUERY.lessThanTablet}) {
     width: 100%;
     flex-wrap: nowrap;
@@ -22,8 +26,10 @@ const SidebarWrapper = styled(FlexContainer)`
 
 const SidebarItem = styled.div`
   position: relative;
+
   width: 200px;
   padding: 0.7rem 1.5rem;
+
   cursor: pointer;
   ::after {
     content: "";
@@ -40,14 +46,16 @@ const SidebarItem = styled.div`
 const SidebarItemText = styled.h6`
   position: relative;
   z-index: 2;
+
   color: var(--color-white);
   font-weight: 700;
   font-size: 18px;
   text-transform: capitalize;
   letter-spacing: 0.5px;
   white-space: nowrap;
-  overflow: hidden;
+
   text-overflow: ellipsis;
+  overflow: hidden;
 `;
 
 const SidebarLink = styled(Link)`
