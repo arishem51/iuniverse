@@ -67,9 +67,9 @@ export default function HomePage() {
             </Title>
           </HeadingAnimation>
         </TextWrapper>
-        <PreviewComponent type="button" />
-        <PreviewComponent type="loader" />
         <PreviewComponent type="card" />
+        <PreviewComponent type="loader" />
+        <PreviewComponent type="button" />
       </Wrapper>
     </AnimationLayout>
   );
