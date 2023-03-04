@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from "react";
 import styled from "styled-components";
+import defaultImage from "../../assets/default-image.jpg";
 
 const FlexWrapper = styled.div<{ center?: boolean; column?: boolean }>`
   display: flex;
@@ -37,18 +38,24 @@ const ImageWrapper = styled.img`
 
 type ImageProps = PropsWithChildren & React.ImgHTMLAttributes<HTMLImageElement>;
 
-export function ImageContainer({
-  loading = "eager",
-  alt = "...",
-  ...props
-}: ImageProps) {
+export function ImageContainer({ alt = "...", ...props }: ImageProps) {
+  const [source, setSource] = React.useState(defaultImage);
+
+  function onLoad() {
+    if (!props.src) {
+      return;
+    }
+    setSource(props.src);
+  }
+
   return (
     <ImageWrapper
-      loading={loading}
       alt={alt}
       width={200}
       height={200}
+      onLoad={onLoad}
       {...props}
+      src={source}
     />
   );
 }
