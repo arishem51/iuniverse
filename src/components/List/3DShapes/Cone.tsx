@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 
 const Bottom = styled.div`
   width: 100px;
-  height: 100px;
+  aspect-ratio: 1;
   border-radius: 50%;
   background: #304ffe;
   transform: skewX(20deg) skewY(20deg);
