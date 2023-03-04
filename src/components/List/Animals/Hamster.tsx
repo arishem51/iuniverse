@@ -4,6 +4,9 @@ import styled, { keyframes } from "styled-components";
 // Made by @Nawsome --> https://uiverse.io/Nawsome/wet-mayfly-23
 
 const Wrapper = styled.div`
+  --legLeft: linear-gradient(#fce6cf 80%, #fbb6b6 80%);
+  --legRight: linear-gradient(#facc9e 80%, #f98686 80%);
+
   width: 110px;
   height: 60px;
   position: relative;
@@ -126,7 +129,7 @@ const FrontRightAnim = keyframes`
 `;
 
 const LegFrontRight = styled(LegFront)`
-  background: linear-gradient(#facc9e 80%, #f98686 80%);
+  background: var(--legRight);
   animation: ${FrontRightAnim} 1s linear infinite;
 `;
 
@@ -140,7 +143,7 @@ const FrontLeftAnim = keyframes`
 `;
 
 const LegFrontLeft = styled(LegFront)`
-  background: linear-gradient(#fce6cf 80%, #fbb6b6 80%);
+  background: var(--legLeft);
   translate: 0 0 1px;
   animation: ${FrontLeftAnim} 1s linear infinite;
 `;
@@ -165,7 +168,7 @@ const BackRightAnim = keyframes`
 `;
 
 const LegBackRight = styled(LegBack)`
-  background: linear-gradient(#facc9e 80%, #f98686 80%);
+  background: var(--legRight);
   animation: ${BackRightAnim} 1s linear infinite;
 `;
 
@@ -179,7 +182,7 @@ const BackLeftAnim = keyframes`
 `;
 
 const LegBackLeft = styled(LegBack)`
-  background: linear-gradient(#fce6cf 80%, #fbb6b6 80%);
+  background: var(--legLeft);
   translate: 0 0 1px;
   animation: ${BackLeftAnim} 1s linear infinite;
 `;
