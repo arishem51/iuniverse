@@ -42,7 +42,15 @@ export function ImageContainer({
   alt = "...",
   ...props
 }: ImageProps) {
-  return <ImageWrapper loading={loading} alt={alt} {...props} />;
+  return (
+    <ImageWrapper
+      loading={loading}
+      alt={alt}
+      width={200}
+      height={200}
+      {...props}
+    />
+  );
 }
 
 const PatternWrapper = styled.div`
