@@ -9,7 +9,7 @@ import {
 } from "../../components/ExternalLink";
 import HeadingAnimation from "../../components/HeadingAnimation.tsx";
 import PreviewComponent from "../../components/PreviewComponents.tsx";
-import { useElements } from "../../Context/ElementsContext";
+import { useElements } from "../../Context/ElementsProvider";
 
 const Wrapper = styled(FlexContainer)`
   background-color: var(--color-dark);
