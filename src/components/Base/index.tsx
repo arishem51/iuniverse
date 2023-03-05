@@ -41,22 +41,8 @@ type ImageProps = PropsWithChildren & React.ImgHTMLAttributes<HTMLImageElement>;
 export function ImageContainer({ alt = "...", ...props }: ImageProps) {
   const [source, setSource] = React.useState(defaultImage);
 
-  function onLoad() {
-    if (!props.src) {
-      return;
-    }
-    setSource(props.src);
-  }
-
   return (
-    <ImageWrapper
-      alt={alt}
-      width={200}
-      height={200}
-      onLoad={onLoad}
-      {...props}
-      src={source}
-    />
+    <ImageWrapper alt={alt} width={200} height={200} {...props} src={source} />
   );
 }
 
