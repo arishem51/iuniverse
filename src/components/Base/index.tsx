@@ -1,3 +1,4 @@
+import { useQueryClient } from "@tanstack/react-query";
 import React, { PropsWithChildren } from "react";
 import styled from "styled-components";
 import defaultImage from "../../assets/default-image.jpg";
@@ -36,13 +37,40 @@ const ImageWrapper = styled.img`
   cursor: pointer;
 `;
 
-type ImageProps = PropsWithChildren & React.ImgHTMLAttributes<HTMLImageElement>;
+type ImageProps = { srcId: number } & PropsWithChildren &
+  React.ImgHTMLAttributes<HTMLImageElement>;
 
-export function ImageContainer({ alt = "...", ...props }: ImageProps) {
-  const [source, setSource] = React.useState(defaultImage);
+export function ImageContainer({ alt = "...", srcId, ...props }: ImageProps) {
+  const queryClient = useQueryClient();
+
+  const [source, setSource] = React.useState(() => {
+    return (
+      queryClient.getQueryData<string | undefined>(
+        ["list-components", "images", srcId],
+        {
+          exact: true,
+        }
+      ) || defaultImage
+    );
+  });
+
+  function onLoad() {
+    if (!props.src || source !== defaultImage) {
+      return;
+    }
+    queryClient.setQueryData(["list-components", "images", srcId], props.src);
+    setSource(props.src);
+  }
 
   return (
-    <ImageWrapper alt={alt} width={200} height={200} {...props} src={source} />
+    <ImageWrapper
+      alt={alt}
+      width={200}
+      height={200}
+      {...props}
+      src={source}
+      onLoad={onLoad}
+    />
   );
 }
 
