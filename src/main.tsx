@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createGlobalStyle } from "styled-components";
 import App from "./components/App";
 import { COLORS } from "./constants";
+import QueryProvider from "./Context/QueryProvider";
 import { generateCSSVarColor } from "./utils";
 
 const GlobalStyles = createGlobalStyle`
@@ -113,6 +114,8 @@ p, h1, h2, h3, h4, h5, h6 {
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <GlobalStyles />
-    <App />
+    <QueryProvider>
+      <App />
+    </QueryProvider>
   </React.StrictMode>
 );
