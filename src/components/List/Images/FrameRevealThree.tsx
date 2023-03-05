@@ -29,5 +29,5 @@ const Image = styled(ImageContainer)`
 `;
 
 export function FrameRevealThree() {
-  return <Image src="https://picsum.photos/id/40/200" />;
+  return <Image srcId={40} src="https://picsum.photos/id/40/200" />;
 }

@@ -24,5 +24,5 @@ const Image = styled(ImageContainer)`
 `;
 
 export default function Component() {
-  return <Image src="https://picsum.photos/id/345/200" />;
+  return <Image srcId={345} src="https://picsum.photos/id/345/200" />;
 }

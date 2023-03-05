@@ -38,5 +38,5 @@ const Image = styled(ImageContainer)`
 `;
 
 export function CornerOnlyFrameTwo() {
-  return <Image src="https://picsum.photos/id/133/200/200" />;
+  return <Image srcId={133} src="https://picsum.photos/id/133/200/200" />;
 }

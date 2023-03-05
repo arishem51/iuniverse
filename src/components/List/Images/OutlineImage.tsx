@@ -19,5 +19,5 @@ const Image = styled(ImageContainer)`
 `;
 
 export function OutlineImage() {
-  return <Image src="https://picsum.photos/id/16/200" />;
+  return <Image srcId={16} src="https://picsum.photos/id/16/200" />;
 }
