@@ -1,7 +1,7 @@
-import { useQueryClient } from "@tanstack/react-query";
 import React, { PropsWithChildren } from "react";
 import styled from "styled-components";
 import defaultImage from "../../assets/default-image.jpg";
+import { useDefaultImage } from "../../hooks/useDefaultImage";
 
 const FlexWrapper = styled.div<{ center?: boolean; column?: boolean }>`
   display: flex;
@@ -40,27 +40,16 @@ const ImageWrapper = styled.img`
 type ImageProps = { srcId: number } & PropsWithChildren &
   React.ImgHTMLAttributes<HTMLImageElement>;
 
-export function ImageContainer({ alt = "...", srcId, ...props }: ImageProps) {
-  const queryClient = useQueryClient();
-
-  const [source, setSource] = React.useState(() => {
-    return (
-      queryClient.getQueryData<string | undefined>(
-        ["list-components", "images", srcId],
-        {
-          exact: true,
-        }
-      ) || defaultImage
-    );
+export function ImageContainer({
+  alt = "...",
+  srcId: id,
+  ...props
+}: ImageProps) {
+  const { source, onLoad } = useDefaultImage({
+    id,
+    defaultSource: defaultImage,
+    newSource: props.src,
   });
-
-  function onLoad() {
-    if (!props.src || source !== defaultImage) {
-      return;
-    }
-    queryClient.setQueryData(["list-components", "images", srcId], props.src);
-    setSource(props.src);
-  }
 
   return (
     <ImageWrapper
