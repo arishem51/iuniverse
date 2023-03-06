@@ -86,7 +86,7 @@ export default function PreviewComponent({ type }: Props) {
 
   return (
     <Wrapper
-      initial={{ opacity: 0, scale: 0.5 }}
+      initial={{ opacity: 0.5, scale: 0.7 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
