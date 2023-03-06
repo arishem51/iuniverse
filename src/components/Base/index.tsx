@@ -13,6 +13,7 @@ const FlexWrapper = styled.div<{ center?: boolean; column?: boolean }>`
 type FlexProps = {
   center?: boolean;
   wrap?: boolean;
+  column?: boolean;
 } & PropsWithChildren &
   React.HTMLAttributes<HTMLDivElement>;
 
