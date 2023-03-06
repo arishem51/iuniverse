@@ -68,7 +68,7 @@ const CardContent = styled.div`
   transition: background-position 350ms ease;
 
   ${Wrapper}:hover & {
-    background-position: -2em 0.35em;
+    background-position: -2.15em 0.35em;
   }
 `;
 
