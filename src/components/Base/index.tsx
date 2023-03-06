@@ -10,7 +10,10 @@ const FlexWrapper = styled.div<{ center?: boolean; column?: boolean }>`
   flex-direction: ${(props) => (props.column ? "column" : "row")};
 `;
 
-type FlexProps = { center?: boolean; column?: boolean } & PropsWithChildren &
+type FlexProps = {
+  center?: boolean;
+  wrap?: boolean;
+} & PropsWithChildren &
   React.HTMLAttributes<HTMLDivElement>;
 
 export function FlexContainer({ ...props }: FlexProps) {

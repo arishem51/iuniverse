@@ -4,16 +4,22 @@ import { BorderRunningCard } from "./BorderRunningCard";
 import { Card3DHoverEffect } from "./Card3DHoverEffect";
 import { CardShadowHover } from "./CardShadowHover";
 import { FlipCard } from "./FlipCard";
+import HolyGrailCard from "./HolyGrailCard";
 
 const List: UIItem[] = [
   {
-    component: <BorderRunningCard />,
+    component: <FlipCard />,
     type: "card",
   },
   {
     component: <Card3DHoverEffect />,
     type: "card",
   },
+  {
+    component: <BorderRunningCard />,
+    type: "card",
+  },
+
   {
     component: (
       <Card3DHoverEffect
@@ -28,8 +34,9 @@ const List: UIItem[] = [
     component: <CardShadowHover />,
     type: "card",
   },
+
   {
-    component: <FlipCard />,
+    component: <HolyGrailCard />,
     type: "card",
   },
 ];
