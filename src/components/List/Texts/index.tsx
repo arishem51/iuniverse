@@ -1,5 +1,6 @@
 import React from "react";
 import { UIItem } from "../../../types";
+import CountUp from "./CountUp";
 import Glitch from "./Glitch";
 import GradientText from "./GradientText";
 import TextHover from "./TextHover";
@@ -25,6 +26,10 @@ const List: UIItem[] = [
   },
   {
     component: <TextHoverTwo />,
+    type: "text",
+  },
+  {
+    component: <CountUp />,
     type: "text",
   },
 ];
