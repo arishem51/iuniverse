@@ -17,6 +17,10 @@ const Wrapper = styled.div`
 const Text = styled.h1`
   margin-bottom: 3rem;
   color: var(--color-white);
+
+  user-select: none;
+  cursor: pointer;
+
   @media (${MEDIAQUERY.lessThanTablet}) {
     text-align: center;
   }
