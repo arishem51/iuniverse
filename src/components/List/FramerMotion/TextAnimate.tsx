@@ -65,7 +65,6 @@ export default function Component() {
           onAnimationComplete={(def) =>
             handleLastItemAnimationEnd(def as VariantLabels, index)
           }
-          layout
           key={item + index}
         >
           {item}
