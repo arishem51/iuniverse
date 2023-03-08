@@ -12,6 +12,7 @@ import ListTexts from "./Texts";
 import ListToggles from "./Toggles";
 import ListPatterns from "./Patterns";
 import ListSliders from "./Slider";
+import ListFramerMotion from "./FramerMotion";
 
 export const List: UIItem[] = [
   ...ListShapes,
@@ -27,4 +28,5 @@ export const List: UIItem[] = [
   ...ListPatterns,
   ...ListImages,
   ...ListSliders,
+  ...ListFramerMotion,
 ];
