@@ -17,7 +17,8 @@ type URLPath =
   | "3dShape"
   | "image"
   | "pattern"
-  | "slider";
+  | "slider"
+  | "framer";
 
 export type RouteItem = {
   name: string;

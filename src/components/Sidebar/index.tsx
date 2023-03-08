@@ -116,6 +116,10 @@ const SidebarRouteItem: RouteItem[] = [
     name: "Patterns",
     urlPath: "pattern",
   },
+  {
+    name: "Framer Motion",
+    urlPath: "framer",
+  },
 ];
 
 export default function Sidebar() {
