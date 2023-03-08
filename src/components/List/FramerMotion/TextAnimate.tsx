@@ -12,18 +12,21 @@ const TextItem = styled(motion.span)`
 `;
 
 const variants: Variants = {
-  init: {
+  init: (index) => ({
     y: "40%",
     opacity: 0,
-  },
-  enter: {
+    transition: { duration: 0.5, delay: index * 0.25 },
+  }),
+  enter: (index) => ({
     y: 0,
     opacity: 1,
-  },
-  exit: {
+    transition: { duration: 0.5, delay: index * 0.25 },
+  }),
+  exit: (index) => ({
     y: "-40%",
     opacity: 0,
-  },
+    transition: { duration: 0.5, delay: index * 0.25 },
+  }),
 };
 
 export default function Component() {
@@ -39,8 +42,9 @@ export default function Component() {
           initial="init"
           animate="enter"
           exit="exit"
+          custom={index}
           variants={variants}
-          transition={{ duration: 0.5, delay: index * 0.25 }}
+          //   transition={{ duration: 0.5, delay: index * 0.25 }}
           onAnimationComplete={(def) => {
             if (index === state.length - 1 && def === "enter") {
               setTimeout(() => {
