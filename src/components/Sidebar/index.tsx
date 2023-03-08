@@ -53,6 +53,7 @@ const SidebarItemText = styled.h6`
   text-transform: capitalize;
   letter-spacing: 0.5px;
   white-space: nowrap;
+  user-select: none;
 
   text-overflow: ellipsis;
   overflow: hidden;
