@@ -1,5 +1,10 @@
 import React from "react";
-import { AnimatePresence, motion, Variants } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  VariantLabels,
+  Variants,
+} from "framer-motion";
 import styled from "styled-components";
 
 const Text = styled(motion.h1)`
@@ -32,6 +37,19 @@ const variants: Variants = {
 export default function Component() {
   const [state, setState] = React.useState("Hello World");
 
+  function handleLastItemAnimationEnd(def: VariantLabels, index: number) {
+    if (index === state.length - 1 && def === "enter") {
+      setTimeout(() => {
+        setState((prev) => {
+          if (prev === "Arishemm") {
+            return "Hello World";
+          }
+          return "Arishemm";
+        });
+      }, 1200);
+    }
+  }
+
   function renderItem() {
     return state.split("").map((item, index) => {
       if (item === " ") {
@@ -44,19 +62,9 @@ export default function Component() {
           exit="exit"
           custom={index}
           variants={variants}
-          //   transition={{ duration: 0.5, delay: index * 0.25 }}
-          onAnimationComplete={(def) => {
-            if (index === state.length - 1 && def === "enter") {
-              setTimeout(() => {
-                setState((prev) => {
-                  if (prev === "Arishemm") {
-                    return "Hello World";
-                  }
-                  return "Arishemm";
-                });
-              }, 1200);
-            }
-          }}
+          onAnimationComplete={(def) =>
+            handleLastItemAnimationEnd(def as VariantLabels, index)
+          }
           layout
           key={item + index}
         >
