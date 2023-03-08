@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { MEDIAQUERY } from "../../constants";
@@ -31,13 +32,7 @@ const SidebarItem = styled.div`
   padding: 0.7rem 1.5rem;
 
   cursor: pointer;
-  ::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 30px;
-    background: var(--color-bg);
-  }
+
   @media (${MEDIAQUERY.lessThanTablet}) {
     width: 150px;
   }
@@ -61,6 +56,13 @@ const SidebarItemText = styled.h6`
 
 const SidebarLink = styled(Link)`
   text-decoration: none;
+`;
+
+const SidebarOverlay = styled(motion.div)`
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  background: var(--color-lightDark);
 `;
 
 const SidebarRouteItem: RouteItem[] = [
@@ -125,17 +127,14 @@ const SidebarRouteItem: RouteItem[] = [
 
 export default function Sidebar() {
   const { id } = useParams();
+
   const renderItem = () => {
     return SidebarRouteItem.map((item) => {
-      const styles = {
-        "--color-bg":
-          id === item.urlPath ? "var(--color-lightDark)" : "transparent",
-      } as React.CSSProperties;
-
       return (
         <SidebarLink to={`/${item.urlPath}`} key={item.name}>
-          <SidebarItem style={styles}>
+          <SidebarItem>
             <SidebarItemText>{item.name}</SidebarItemText>
+            {item.urlPath === id && <SidebarOverlay layoutId="overlay" />}
           </SidebarItem>
         </SidebarLink>
       );
