@@ -1,4 +1,3 @@
-import React from "react";
 import { UIItem } from "../../../types";
 import { CornerOnlyFrame } from "./CornerOnlyFrame";
 import { CornerOnlyFrameTwo } from "./CornerOnlyFrameTwo";
@@ -7,6 +6,7 @@ import { FrameRevealThree } from "./FrameRevealThree";
 import { FrameRevealTwo } from "./FrameRevealTwo";
 import { OutlineImage } from "./OutlineImage";
 import PostageStamp from "./PostageStamp";
+import TheRoundedFrame from "./TheRoundedFrame";
 
 const List: UIItem[] = [
   {
@@ -35,6 +35,10 @@ const List: UIItem[] = [
   },
   {
     component: <PostageStamp />,
+    type: "image",
+  },
+  {
+    component: <TheRoundedFrame />,
     type: "image",
   },
 ];

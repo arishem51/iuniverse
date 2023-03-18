@@ -1,4 +1,3 @@
-import React from "react";
 import { UIItem } from "../../../types";
 import SwitchButton from "./SwitchButton";
 import TextAnimate from "./TextAnimate";
