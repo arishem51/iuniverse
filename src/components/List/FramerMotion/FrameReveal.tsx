@@ -15,7 +15,7 @@ const BottomStack = styled(motion.div)`
   bottom: 0;
 
   background: var(--color-white);
-  height: 2px;
+  height: 5px;
   width: 100%;
   transform-origin: center center;
 `;
@@ -26,7 +26,7 @@ const LeftStack = styled(motion.div)`
   top: 0;
 
   background: var(--color-white);
-  width: 2px;
+  width: 5px;
   height: 100%;
 `;
 
@@ -36,7 +36,7 @@ const RightStack = styled(motion.div)`
   top: 0;
 
   background: var(--color-white);
-  width: 2px;
+  width: 5px;
   height: 100%;
 `;
 
@@ -79,7 +79,7 @@ const TopStack = styled(motion.div)`
   top: 0;
 
   background: var(--color-white);
-  height: 2px;
+  height: 5px;
   width: 100%;
 `;
 
