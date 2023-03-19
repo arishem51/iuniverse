@@ -1,5 +1,7 @@
 import { UIItem } from "../../../types";
 import FrameRevealTwo from "./FrameRevealTwo";
+import FrameRevealThree from "./FrameRevealThree";
+
 import FrameReveal from "./FrameReveal";
 import SwitchButton from "./SwitchButton";
 import TextAnimate from "./TextAnimate";
@@ -19,6 +21,11 @@ const List: UIItem[] = [
   },
   {
     component: <FrameRevealTwo />,
+    type: "framer",
+  },
+
+  {
+    component: <FrameRevealThree />,
     type: "framer",
   },
 ];
