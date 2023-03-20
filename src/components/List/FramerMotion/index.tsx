@@ -5,6 +5,7 @@ import FrameRevealThree from "./FrameRevealThree";
 import FrameReveal from "./FrameReveal";
 import SwitchButton from "./SwitchButton";
 import TextAnimate from "./TextAnimate";
+import BorderAnimation from "./BorderAnimation";
 
 const List: UIItem[] = [
   {
@@ -26,6 +27,10 @@ const List: UIItem[] = [
 
   {
     component: <FrameRevealThree />,
+    type: "framer",
+  },
+  {
+    component: <BorderAnimation />,
     type: "framer",
   },
 ];
