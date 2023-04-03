@@ -6,6 +6,7 @@ import FrameReveal from "./FrameReveal";
 import SwitchButton from "./SwitchButton";
 import TextAnimate from "./TextAnimate";
 import BorderAnimation from "./BorderAnimation";
+import Gesture from "./Gestures";
 
 const List: UIItem[] = [
   {
@@ -31,6 +32,10 @@ const List: UIItem[] = [
   },
   {
     component: <BorderAnimation />,
+    type: "framer",
+  },
+  {
+    component: <Gesture />,
     type: "framer",
   },
 ];
