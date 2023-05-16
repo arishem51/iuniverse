@@ -6,6 +6,7 @@ import GradientText from "./GradientText";
 import TextHover from "./TextHover";
 import TextHoverThree from "./TextHoverThree";
 import TextHoverTwo from "./TextHoverTwo";
+import Breathe from "./Breathe";
 
 const List: UIItem[] = [
   {
@@ -30,6 +31,10 @@ const List: UIItem[] = [
   },
   {
     component: <CountUp />,
+    type: "text",
+  },
+  {
+    component: <Breathe>Text Animation</Breathe>,
     type: "text",
   },
 ];
