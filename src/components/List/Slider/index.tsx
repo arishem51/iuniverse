@@ -1,4 +1,3 @@
-import React from "react";
 import { UIItem } from "../../../types";
 import SliderJosh from "./SliderJosh";
 
