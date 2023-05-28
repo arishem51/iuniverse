@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PatternContainer } from "../../Base";
+import { PatternContainer } from "@components";
 
 const ZigZac = styled(PatternContainer)`
   --color-stop: #eceddc 90deg;

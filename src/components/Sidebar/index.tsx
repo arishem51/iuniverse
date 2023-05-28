@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { MEDIAQUERY } from "../../constants";
 import { RouteItem } from "../../types";
-import { FlexContainer } from "../Base";
+import { FlexContainer } from "@components";
 
 const SidebarWrapper = styled(FlexContainer)`
   position: sticky;

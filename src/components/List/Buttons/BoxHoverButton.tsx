@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonContainer, FlexContainer } from "../../Base";
+import { ButtonContainer, FlexContainer } from "@components";
 
 const Box = styled(FlexContainer)`
   position: relative;

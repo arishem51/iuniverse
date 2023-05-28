@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { GoMarkGithub } from "react-icons/go";
 import { FaTwitter, FaLinkedin } from "react-icons/fa";
-import { FlexContainer } from "../Base";
+import { FlexContainer } from "@components";
 
 const Wrapper = styled.footer`
   width: 100%;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { getTanFromDegrees } from "../../../helper";
-import { FlexContainer } from "../../Base";
+import { getTanFromDegrees } from "@helper";
+import { FlexContainer } from "@components";
 
 const Wrapper = styled(FlexContainer)`
   --width: 140px;

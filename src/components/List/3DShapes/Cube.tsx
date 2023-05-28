@@ -1,6 +1,5 @@
-import React from "react";
 import styled, { keyframes } from "styled-components";
-import { FlexContainer } from "../../Base";
+import { FlexContainer } from "@components";
 
 const Rotate = keyframes`
     from { transform: rotateY(0) rotateX(0) rotateZ(0); }

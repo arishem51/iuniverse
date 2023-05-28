@@ -1,4 +1,3 @@
-import React from "react";
 import { UIItem } from "../../../types";
 import { Carousel } from "./Carousel";
 import { Cone } from "./Cone";

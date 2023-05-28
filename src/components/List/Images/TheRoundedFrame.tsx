@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ImageContainer } from "../../Base";
+import { ImageContainer } from "@components";
 
 const Wrapper = styled(ImageContainer)`
   --color: #fa6900;

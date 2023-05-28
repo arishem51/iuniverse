@@ -1,7 +1,6 @@
-import React from "react";
 import styled, { keyframes } from "styled-components";
-import { getTanFromDegrees } from "../../../helper";
-import { FlexContainer } from "../../Base";
+import { getTanFromDegrees } from "@helper";
+import { FlexContainer } from "@components";
 
 const NUM = Array.from(Array(9).keys());
 

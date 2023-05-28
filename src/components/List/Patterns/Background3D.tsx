@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PatternContainer } from "../../Base";
+import { PatternContainer } from "@components";
 
 const Wrapper = styled(PatternContainer)`
   --color-1: #f2f2f2;

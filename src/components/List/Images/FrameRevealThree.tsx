@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ImageContainer } from "../../Base";
+import { ImageContainer } from "@components";
 
 const Image = styled(ImageContainer)`
   --offset: 0.5em;

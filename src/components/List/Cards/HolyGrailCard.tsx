@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FlexContainer } from "../../Base";
+import { FlexContainer } from "@components";
 
 // Inspiration from Hyperplexed --> https://codepen.io/Hyperplexed/pen/QWQRGdO
 

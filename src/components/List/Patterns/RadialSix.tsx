@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PatternContainer } from "../../Base";
+import { PatternContainer } from "@components";
 
 const Wrapper = styled(PatternContainer)`
   --bg-size: 100px 100px;
