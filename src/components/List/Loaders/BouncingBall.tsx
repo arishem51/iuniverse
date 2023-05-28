@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { FlexContainer } from "../../Base";
+import { FlexContainer } from "@components";
 
 // Made by @mobinkakei --> https://uiverse.io/mobinkakei/grumpy-turtle-41
 

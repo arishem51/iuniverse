@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { MEDIAQUERY } from "../../constants";
 import { useElements } from "../../Context/ElementsProvider";
 import { RouteItem } from "../../types";
-import { ButtonContainer, FlexContainer } from "../Base";
+import { ButtonContainer, FlexContainer } from "@components";
 
 const Wrapper = styled(motion.div)`
   display: flex;

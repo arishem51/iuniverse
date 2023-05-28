@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PatternContainer } from "../../Base";
+import { PatternContainer } from "@components";
 
 const Tritangular = styled(PatternContainer)`
   --bg-size: calc(var(--size) / 2) calc(var(--size) / 2);

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ImageContainer } from "../../Base";
+import { ImageContainer } from "@components";
 
 const Image = styled(ImageContainer)`
   --color-stop: transparent 25%, var(--color-white) 25%;

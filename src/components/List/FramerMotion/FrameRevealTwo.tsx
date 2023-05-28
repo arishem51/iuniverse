@@ -1,6 +1,6 @@
 import { motion, Transition, Variants } from "framer-motion";
 import styled from "styled-components";
-import { ImageContainer } from "../../Base";
+import { ImageContainer } from "@components";
 
 const Wrapper = styled(motion.div)`
   position: relative;

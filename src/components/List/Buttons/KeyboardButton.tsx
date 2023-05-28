@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FlexContainer } from "../../Base";
+import { FlexContainer } from "@components";
 
 const Wrapper = styled(FlexContainer)`
   --color: #a29bfe;

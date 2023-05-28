@@ -1,4 +1,4 @@
-import { ImageContainer } from "../../Base";
+import { ImageContainer } from "@components";
 import styled from "styled-components";
 import { motion, Transition, Variants } from "framer-motion";
 

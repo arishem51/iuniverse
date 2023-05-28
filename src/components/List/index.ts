@@ -1,4 +1,4 @@
-import { UIItem } from "../../types";
+import { UIItem } from "@types";
 import List3DShapes from "./3DShapes";
 import ListAnimals from "./Animals";
 import ListButtons from "./Buttons";

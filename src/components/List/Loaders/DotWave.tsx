@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { FlexContainer } from "../../Base";
+import { FlexContainer } from "@components";
 
 // Made by @G4b4131 --> https://uiverse.io/G4b413l/jolly-kangaroo-36
 

@@ -1,6 +1,13 @@
-import { defineConfig } from "vite";
+import { AliasOptions, defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+
+function createAlias(list: string[]): AliasOptions {
+  return list.map((item) => ({
+    find: `@${item}`,
+    replacement: path.resolve(__dirname, `./src/${item}`),
+  }));
+}
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,8 +16,6 @@ export default defineConfig({
     port: 3000,
   },
   resolve: {
-    alias: {
-      "@helper": path.resolve(__dirname, "./src/helper"),
-    },
+    alias: createAlias(["helper", "components"]),
   },
 });

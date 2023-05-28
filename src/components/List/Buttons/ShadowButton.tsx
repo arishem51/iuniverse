@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonContainer } from "../../Base";
+import { ButtonContainer } from "@components";
 
 const Wrapper = styled(ButtonContainer)`
   --color: rgb(0, 140, 255);

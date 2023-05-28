@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexContainer } from "../Base";
+import { FlexContainer } from "@components";
 import NavLink from "../NavLink";
 
 const Wrapper = styled(FlexContainer)`
