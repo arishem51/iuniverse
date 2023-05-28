@@ -5,7 +5,7 @@ import TextHover from "./TextHover";
 import TextHoverThree from "./TextHoverThree";
 import TextHoverTwo from "./TextHoverTwo";
 import Breathe from "./Breathe";
-import { createList } from "../../../helpers";
+import { createList } from "@helper";
 
 const List = [
   {

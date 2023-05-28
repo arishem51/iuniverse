@@ -1,4 +1,4 @@
-import { RouteItem, UIItem } from "../types";
+import { RouteItem, UIItem } from "@types";
 
 export function sortShapeElements(elements: UIItem[]) {
   const newArr = [...elements];
