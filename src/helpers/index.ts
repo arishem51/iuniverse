@@ -39,3 +39,10 @@ export function checkRouteId(id: string | undefined = "", func: () => void) {
 export function getTanFromDegrees(degrees: number) {
   return Math.tan((degrees * Math.PI) / 180);
 }
+
+export function createList(
+  list: { component: React.ReactElement }[],
+  type: UIItem["type"]
+): UIItem[] {
+  return list.map((item) => ({ component: item.component, type }));
+}
