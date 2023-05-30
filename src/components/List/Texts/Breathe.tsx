@@ -36,7 +36,7 @@ const Breathe = ({ children }: PropsWithChildren) => {
           "--index": index,
         } as CSSProperties;
         return (
-          <Span key={item} style={style}>
+          <Span key={item + index} style={style}>
             {item}
           </Span>
         );

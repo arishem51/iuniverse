@@ -13,10 +13,11 @@ const List: UIItem[] = [
     component: <SwitchButton />,
     type: "framer",
   },
-  {
-    component: <TextAnimate />,
-    type: "framer",
-  },
+  // FIXME: Please fix this component
+  // {
+  //   component: <TextAnimate />,
+  //   type: "framer",
+  // },
   {
     component: <FrameReveal />,
     type: "framer",
