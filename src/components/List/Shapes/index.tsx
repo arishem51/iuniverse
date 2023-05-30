@@ -19,68 +19,60 @@ import Star from "./Star";
 import TrapezoidShape from "./TrapezoidShape";
 import TriangleShape from "./TriangleShape";
 import YinYangShape from "./YinYangShape";
+import { createList } from "@helper";
+import Spiral from "./Spiral";
 
-const List: UIItem[] = [
+const List = [
   {
     component: <BurstShape />,
-    type: "shape",
   },
   {
     component: <CurvedTailArrowShape />,
-    type: "shape",
   },
   {
     component: <DiamondNarrowShape />,
-    type: "shape",
   },
   {
     component: <EggShape />,
-    type: "shape",
   },
   {
     component: <HeartShape />,
-    type: "shape",
   },
   {
     component: <InfinityShape />,
-    type: "shape",
   },
   {
     component: <Moustache />,
-    type: "shape",
   },
   {
     component: <PacManShape />,
-    type: "shape",
   },
   {
     component: <OvalShape />,
-    type: "shape",
   },
   {
     component: <OctagonShape />,
-    type: "shape",
   },
   {
     component: <HexagonShape />,
-    type: "shape",
   },
-  { component: <ParallelogramShape />, type: "shape" },
-  { component: <PentagonShape />, type: "shape" },
-  { component: <RectangleShape />, type: "shape" },
-  { component: <SquareShape />, type: "shape" },
-  { component: <Star.FivePoints />, type: "shape" },
-  { component: <Star.SixPoints />, type: "shape" },
-  { component: <TrapezoidShape />, type: "shape" },
-  { component: <TriangleShape.BottomLeft />, type: "shape" },
-  { component: <TriangleShape.BottomRight />, type: "shape" },
-  { component: <TriangleShape.TopLeft />, type: "shape" },
-  { component: <TriangleShape.TopRight />, type: "shape" },
-  { component: <TriangleShape.Left />, type: "shape" },
-  { component: <TriangleShape.Down />, type: "shape" },
-  { component: <TriangleShape.Right />, type: "shape" },
-  { component: <TriangleShape.Up />, type: "shape" },
-  { component: <YinYangShape />, type: "shape" },
+  { component: <ParallelogramShape /> },
+  { component: <PentagonShape /> },
+  { component: <RectangleShape /> },
+  { component: <SquareShape /> },
+  { component: <Star.FivePoints /> },
+  { component: <Star.SixPoints /> },
+  { component: <TrapezoidShape /> },
+  { component: <TriangleShape.BottomLeft /> },
+  { component: <TriangleShape.BottomRight /> },
+  { component: <TriangleShape.TopLeft /> },
+  { component: <TriangleShape.TopRight /> },
+  { component: <TriangleShape.Left /> },
+  { component: <TriangleShape.Down /> },
+  { component: <TriangleShape.Right /> },
+  { component: <TriangleShape.Up /> },
+  { component: <YinYangShape /> },
+  { component: <Spiral /> },
 ];
 
-export default List;
+export default createList(List, "shape");
