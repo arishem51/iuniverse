@@ -1,5 +1,3 @@
-import React from "react";
-import { UIItem } from "../../../types";
 import BurstShape from "./BurstShape";
 import CurvedTailArrowShape from "./CurvedTailArrowShape";
 import DiamondNarrowShape from "./DiamondNarrowShape";
