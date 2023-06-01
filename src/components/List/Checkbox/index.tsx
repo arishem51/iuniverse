@@ -1,12 +1,10 @@
-import React from "react";
-import { UIItem } from "../../../types";
 import { Burger } from "./Burger";
+import { createComponentList } from "@helper";
 
-const List: UIItem[] = [
+const List = [
   {
     component: <Burger />,
-    type: "checkbox",
   },
 ];
 
-export default List;
+export default createComponentList(List, "checkbox");
