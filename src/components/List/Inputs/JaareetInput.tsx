@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 // Made by @Jaareet - https://uiverse.io/Jaareet/serious-lionfish-75

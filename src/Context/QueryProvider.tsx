@@ -1,5 +1,4 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import React from "react";
 
 const FIVE_MINTUES = 5 * 60 * 1000; //  5 minutues
 

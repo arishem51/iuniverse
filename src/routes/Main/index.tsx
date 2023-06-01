@@ -1,9 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 import AnimationLayout from "../../components/AnimationLayout";
 import ListComponents from "../../components/ListComponents";
 import Sidebar from "../../components/Sidebar";
-import { MEDIAQUERY } from "../../constants";
+import { MEDIAQUERY } from "../../constant";
 
 const Flex = styled(AnimationLayout)`
   display: flex;

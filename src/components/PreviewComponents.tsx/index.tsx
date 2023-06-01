@@ -1,9 +1,8 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { MEDIAQUERY } from "../../constants";
-import { useElements } from "../../Context/ElementsProvider";
+import { MEDIAQUERY } from "../../constant";
+import { useElements } from "../../context/ElementsProvider";
 import { RouteItem } from "../../types";
 import { ButtonContainer, FlexContainer } from "@components";
 

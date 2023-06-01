@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 // Made by -@Maximinodotpy --> https://uiverse.io/Maximinodotpy/thin-sheep-13

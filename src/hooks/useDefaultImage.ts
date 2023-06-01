@@ -1,5 +1,5 @@
-import React from "react";
 import { useQueryClient } from "@tanstack/react-query";
+import { useState } from "react";
 
 type Props = {
   id: number;
@@ -10,7 +10,7 @@ type Props = {
 export function useDefaultImage({ id, defaultSource, newSource }: Props) {
   const queryClient = useQueryClient();
 
-  const [source, setSource] = React.useState(() => {
+  const [source, setSource] = useState(() => {
     return (
       queryClient.getQueryData<string | undefined>(
         ["list-components", "images", id],

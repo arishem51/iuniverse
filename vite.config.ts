@@ -16,6 +16,6 @@ export default defineConfig({
     port: 3000,
   },
   resolve: {
-    alias: createAlias(["helper", "components"]),
+    alias: createAlias(["helper", "components", "constant", "context"]),
   },
 });

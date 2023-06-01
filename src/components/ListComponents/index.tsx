@@ -1,8 +1,7 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
-import { MEDIAQUERY } from "../../constants";
-import { useElements } from "../../Context/ElementsProvider";
+import { MEDIAQUERY } from "@constant";
+import { useElements } from "@context/ElementsProvider";
 import { FlexContainer } from "@components";
 
 const Wrapper = styled.div`

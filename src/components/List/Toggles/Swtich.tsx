@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // Made by @namecho --> https://uiverse.io/namecho/quiet-panther-93

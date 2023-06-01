@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // Made by @Cornerstone-04 --> https://uiverse.io/Cornerstone-04/chilly-fish-82

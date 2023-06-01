@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // Made by @Nawsome --> https://uiverse.io/Nawsome/wet-mayfly-23

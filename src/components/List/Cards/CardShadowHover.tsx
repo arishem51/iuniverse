@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 // Made by @Tiagoadag --> https://uiverse.io/Tiagoadag/cuddly-catfish-6

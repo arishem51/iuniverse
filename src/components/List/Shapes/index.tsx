@@ -21,39 +21,17 @@ import { createComponentList } from "@helper";
 import Spiral from "./Spiral";
 
 const List = [
-  {
-    component: <BurstShape />,
-  },
-  {
-    component: <CurvedTailArrowShape />,
-  },
-  {
-    component: <DiamondNarrowShape />,
-  },
-  {
-    component: <EggShape />,
-  },
-  {
-    component: <HeartShape />,
-  },
-  {
-    component: <InfinityShape />,
-  },
-  {
-    component: <Moustache />,
-  },
-  {
-    component: <PacManShape />,
-  },
-  {
-    component: <OvalShape />,
-  },
-  {
-    component: <OctagonShape />,
-  },
-  {
-    component: <HexagonShape />,
-  },
+  { component: <BurstShape /> },
+  { component: <CurvedTailArrowShape /> },
+  { component: <DiamondNarrowShape /> },
+  { component: <EggShape /> },
+  { component: <HeartShape /> },
+  { component: <InfinityShape /> },
+  { component: <Moustache /> },
+  { component: <PacManShape /> },
+  { component: <OvalShape /> },
+  { component: <OctagonShape /> },
+  { component: <HexagonShape /> },
   { component: <ParallelogramShape /> },
   { component: <PentagonShape /> },
   { component: <RectangleShape /> },

@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // Made by @bhaveshxrawat --> https://uiverse.io/bhaveshxrawat/dangerous-quail-58

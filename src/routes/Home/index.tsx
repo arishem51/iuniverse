@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import AnimationLayout from "../../components/AnimationLayout";
 import { FlexContainer } from "../../components/Base";
@@ -9,7 +8,7 @@ import {
 } from "../../components/ExternalLink";
 import HeadingAnimation from "../../components/HeadingAnimation.tsx";
 import PreviewComponent from "../../components/PreviewComponents.tsx";
-import { useElements } from "../../Context/ElementsProvider";
+import { useElements } from "../../context/ElementsProvider";
 
 const Wrapper = styled(FlexContainer)`
   background-color: var(--color-dark);

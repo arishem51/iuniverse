@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import React from "react";
+import { CSSProperties, useState } from "react";
+
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -39,7 +40,7 @@ const spring = {
 };
 
 export default function Component() {
-  const [isActive, setIsActive] = React.useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   function handleClick() {
     setIsActive(!isActive);
@@ -48,9 +49,7 @@ export default function Component() {
   return (
     <Wrapper
       onClick={handleClick}
-      style={
-        { "--position": isActive ? "right" : "left" } as React.CSSProperties
-      }
+      style={{ "--position": isActive ? "right" : "left" } as CSSProperties}
     >
       <Input type="checkbox" />
       <Handle layout transition={spring} />
