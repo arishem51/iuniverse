@@ -1,17 +1,14 @@
-import React from "react";
-import { UIItem } from "../../../types";
+import { createComponentList } from "@helper";
 import Switch from "./Swtich";
 import ToggleJosh from "./ToggleJosh";
 
-const List: UIItem[] = [
+const List = [
   {
     component: <Switch />,
-    type: "toggle",
   },
   {
     component: <ToggleJosh />,
-    type: "toggle",
   },
 ];
 
-export default List;
+export default createComponentList(List, "toggle");

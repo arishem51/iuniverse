@@ -1,5 +1,4 @@
-import React from "react";
-import { UIItem } from "../../../types";
+import { createComponentList } from "@helper";
 import Background3D from "./Background3D";
 import PostageStampPattern from "./PostageStampPattern";
 import Radial from "./Radial";
@@ -13,55 +12,43 @@ import Tritangular from "./Tritangular";
 import TritangularGrey from "./TritangularGrey";
 import ZigZac from "./ZigZac";
 
-const List: UIItem[] = [
+const List = [
   {
     component: <Background3D />,
-    type: "pattern",
   },
   {
     component: <Radial />,
-    type: "pattern",
   },
   {
     component: <RadialFour />,
-    type: "pattern",
   },
   {
     component: <RadialThree />,
-    type: "pattern",
   },
   {
     component: <RadialTwo />,
-    type: "pattern",
   },
   {
     component: <Tritangular />,
-    type: "pattern",
   },
   {
     component: <TritangularGrey />,
-    type: "pattern",
   },
   {
     component: <ZigZac />,
-    type: "pattern",
   },
   {
     component: <RadialFive />,
-    type: "pattern",
   },
   {
     component: <RadialSix />,
-    type: "pattern",
   },
   {
     component: <RadialSeven />,
-    type: "pattern",
   },
   {
     component: <PostageStampPattern />,
-    type: "pattern",
   },
 ];
 
-export default List;
+export default createComponentList(List, "pattern");

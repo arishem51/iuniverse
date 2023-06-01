@@ -1,21 +1,18 @@
-import { UIItem } from "../../../types";
+import { createComponentList } from "@helper";
 import { Carousel } from "./Carousel";
 import { Cone } from "./Cone";
 import { Cube } from "./Cube";
 
-const List: UIItem[] = [
+const List = [
   {
     component: <Carousel />,
-    type: "3dShape",
   },
   {
     component: <Cone />,
-    type: "3dShape",
   },
   {
     component: <Cube />,
-    type: "3dShape",
   },
 ];
 
-export default List;
+export default createComponentList(List, "3dShape");

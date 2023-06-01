@@ -1,4 +1,4 @@
-import { UIItem } from "../../../types";
+import { createComponentList } from "@helper";
 import { CornerOnlyFrame } from "./CornerOnlyFrame";
 import { CornerOnlyFrameTwo } from "./CornerOnlyFrameTwo";
 import { FrameReveal } from "./FrameReveal";
@@ -8,39 +8,31 @@ import { OutlineImage } from "./OutlineImage";
 import PostageStamp from "./PostageStamp";
 import TheRoundedFrame from "./TheRoundedFrame";
 
-const List: UIItem[] = [
+const List = [
   {
     component: <OutlineImage />,
-    type: "image",
   },
   {
     component: <CornerOnlyFrame />,
-    type: "image",
   },
   {
     component: <CornerOnlyFrameTwo />,
-    type: "image",
   },
   {
     component: <FrameReveal />,
-    type: "image",
   },
   {
     component: <FrameRevealTwo />,
-    type: "image",
   },
   {
     component: <FrameRevealThree />,
-    type: "image",
   },
   {
     component: <PostageStamp />,
-    type: "image",
   },
   {
     component: <TheRoundedFrame />,
-    type: "image",
   },
 ];
 
-export default List;
+export default createComponentList(List, "image");

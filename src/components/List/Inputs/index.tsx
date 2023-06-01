@@ -1,17 +1,14 @@
-import React from "react";
-import { UIItem } from "../../../types";
 import { Maximinodotpy } from "./Maximinodotpy";
 import { JaareetInput } from "./JaareetInput";
+import { createComponentList } from "@helper";
 
-const List: UIItem[] = [
+const List = [
   {
     component: <JaareetInput />,
-    type: "input",
   },
   {
     component: <Maximinodotpy />,
-    type: "input",
   },
 ];
 
-export default List;
+export default createComponentList(List, "input");

@@ -1,23 +1,19 @@
-import React from "react";
-import { UIItem } from "../../../types";
+import { createComponentList } from "@helper";
 import { BorderRunningCard } from "./BorderRunningCard";
 import { Card3DHoverEffect } from "./Card3DHoverEffect";
 import { CardShadowHover } from "./CardShadowHover";
 import { FlipCard } from "./FlipCard";
 import HolyGrailCard from "./HolyGrailCard";
 
-const List: UIItem[] = [
+const List = [
   {
     component: <FlipCard />,
-    type: "card",
   },
   {
     component: <Card3DHoverEffect />,
-    type: "card",
   },
   {
     component: <BorderRunningCard />,
-    type: "card",
   },
 
   {
@@ -28,17 +24,14 @@ const List: UIItem[] = [
         textImg="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png"
       />
     ),
-    type: "card",
   },
   {
     component: <CardShadowHover />,
-    type: "card",
   },
 
   {
     component: <HolyGrailCard />,
-    type: "card",
   },
 ];
 
-export default List;
+export default createComponentList(List, "card");

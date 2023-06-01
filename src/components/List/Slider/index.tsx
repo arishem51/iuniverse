@@ -1,11 +1,10 @@
-import { UIItem } from "../../../types";
+import { createComponentList } from "@helper";
 import SliderJosh from "./SliderJosh";
 
-const List: UIItem[] = [
+const List = [
   {
     component: <SliderJosh />,
-    type: "slider",
   },
 ];
 
-export default List;
+export default createComponentList(List, "slider");

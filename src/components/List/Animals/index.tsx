@@ -1,12 +1,10 @@
-import React from "react";
-import { UIItem } from "../../../types";
+import { createComponentList } from "@helper";
 import { Hamster } from "./Hamster";
 
-const List: UIItem[] = [
+const List = [
   {
     component: <Hamster />,
-    type: "animal",
   },
 ];
 
-export default List;
+export default createComponentList(List, "animal");
