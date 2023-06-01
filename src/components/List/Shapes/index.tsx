@@ -19,7 +19,7 @@ import Star from "./Star";
 import TrapezoidShape from "./TrapezoidShape";
 import TriangleShape from "./TriangleShape";
 import YinYangShape from "./YinYangShape";
-import { createList } from "@helper";
+import { createComponentList } from "@helper";
 import Spiral from "./Spiral";
 
 const List = [
@@ -75,4 +75,4 @@ const List = [
   { component: <Spiral /> },
 ];
 
-export default createList(List, "shape");
+export default createComponentList(List, "shape");

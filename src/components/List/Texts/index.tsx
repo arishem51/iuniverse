@@ -5,7 +5,7 @@ import TextHover from "./TextHover";
 import TextHoverThree from "./TextHoverThree";
 import TextHoverTwo from "./TextHoverTwo";
 import Breathe from "./Breathe";
-import { createList } from "@helper";
+import { createComponentList } from "@helper";
 
 const List = [
   {
@@ -31,4 +31,4 @@ const List = [
   },
 ];
 
-export default createList(List, "text");
+export default createComponentList(List, "text");

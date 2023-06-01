@@ -40,7 +40,7 @@ export function getTanFromDegrees(degrees: number) {
   return Math.tan((degrees * Math.PI) / 180);
 }
 
-export function createList(
+export function createComponentList(
   list: { component: React.ReactElement }[],
   type: UIItem["type"]
 ): UIItem[] {
