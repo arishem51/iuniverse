@@ -18,7 +18,8 @@ type URLPath =
   | "image"
   | "pattern"
   | "slider"
-  | "framer";
+  | "framer"
+  | "svg";
 
 export type RouteItem = {
   name: string;

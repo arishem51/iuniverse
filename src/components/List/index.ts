@@ -13,6 +13,7 @@ import ListToggles from "./Toggles";
 import ListPatterns from "./Patterns";
 import ListSliders from "./Slider";
 import ListFramerMotion from "./FramerMotion";
+import ListSVG from "./SVGComponent";
 
 export const List: UIItem[] = [
   ...ListShapes,
@@ -29,4 +30,5 @@ export const List: UIItem[] = [
   ...ListImages,
   ...ListSliders,
   ...ListFramerMotion,
+  ...ListSVG,
 ];

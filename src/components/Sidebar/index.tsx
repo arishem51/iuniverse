@@ -81,6 +81,7 @@ const SidebarRouteItem: RouteItem[] = [
     name: "Animals",
     urlPath: "animal",
   },
+  { name: "SVG", urlPath: "svg" },
   {
     name: "Checkboxes",
     urlPath: "checkbox",
