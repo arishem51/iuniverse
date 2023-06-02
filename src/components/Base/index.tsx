@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren, Suspense, lazy } from "react";
 import styled from "styled-components";
 import defaultImage from "../../assets/default-image.jpg";
 import { useDefaultImage } from "../../hooks/useDefaultImage";
