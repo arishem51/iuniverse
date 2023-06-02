@@ -10,10 +10,13 @@ const SidebarWrapper = styled(FlexContainer)`
   top: 1rem;
 
   gap: 0.5rem;
-  height: min-content;
+  height: 100%;
   padding: 1rem;
 
   background: var(--color-dark);
+
+  overflow-y: scroll;
+
   @media (${MEDIAQUERY.lessThanTablet}) {
     width: 100%;
     flex-wrap: nowrap;
