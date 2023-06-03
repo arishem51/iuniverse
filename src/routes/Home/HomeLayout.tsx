@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 import { Footer, Header, FlexContainer } from "@components";
-import { ElementProvider } from "../../context";
+import { ElementProvider } from "../../contexts";
 
 const MinHeight = styled(FlexContainer)`
   min-height: 100vh;
