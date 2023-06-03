@@ -7,6 +7,7 @@ import { Navarog21 } from "./Navarog21";
 import { NewtonsCardleDot } from "./NewtonsCardleDot";
 import { Rain } from "./Rain";
 import { ThreeDotAround } from "./ThreeDotAround";
+import Line from "./Line";
 
 const List = [
   {
@@ -32,6 +33,9 @@ const List = [
   },
   {
     component: <ThreeDotAround />,
+  },
+  {
+    component: <Line />,
   },
 ];
 
