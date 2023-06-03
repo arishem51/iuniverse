@@ -20,7 +20,7 @@ export default defineConfig({
       "helper",
       "components",
       "constant",
-      "context",
+      "contexts",
       "routes",
     ]),
   },
