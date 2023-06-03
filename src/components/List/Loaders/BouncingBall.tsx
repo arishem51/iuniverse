@@ -31,7 +31,7 @@ const Ball = styled.div`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: var(--color-lightGray);
+  background-color: var(--color-lgihtGrey);
   animation: ${bouncing} 0.5s linear alternate infinite;
   animation-timing-function: cubic-bezier(0.5, 0, 0.62, 0.78);
   animation-delay: calc((var(--index) - 1) * 0.1s);

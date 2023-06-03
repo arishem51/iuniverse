@@ -11,7 +11,7 @@ export default styled.div`
     width: inherit;
     height: inherit;
     position: absolute;
-    background-color: var(--color-lightGray);
+    background-color: var(--color-lgihtGrey);
     rotate: 20deg;
   }
   ::before {
@@ -19,7 +19,7 @@ export default styled.div`
     width: inherit;
     height: inherit;
     position: absolute;
-    background-color: var(--color-lightGray);
+    background-color: var(--color-lgihtGrey);
     rotate: 155deg;
   }
 `;

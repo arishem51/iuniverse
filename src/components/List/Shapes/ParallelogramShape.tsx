@@ -7,6 +7,6 @@ export default styled.div`
   height: 100px;
   position: relative;
   left: 30px;
-  background-color: var(--color-lightGray);
+  background-color: var(--color-lgihtGrey);
   transform: skewX(30deg);
 `;

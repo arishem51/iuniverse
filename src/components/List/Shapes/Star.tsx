@@ -8,7 +8,7 @@ const SixPoints = styled.div`
   position: relative;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 100px solid var(--color-lightGray);
+  border-bottom: 100px solid var(--color-lgihtGrey);
   top: -15px;
   ::after {
     content: "";
@@ -17,7 +17,7 @@ const SixPoints = styled.div`
     position: absolute;
     border-left: inherit;
     border-right: inherit;
-    border-top: 100px solid var(--color-lightGray);
+    border-top: 100px solid var(--color-lgihtGrey);
     top: 30px;
     left: -50px;
   }
@@ -29,7 +29,7 @@ const FivePoints = styled.div`
   top: -100px;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 60px solid var(--color-lightGray);
+  border-bottom: 60px solid var(--color-lgihtGrey);
   ::after {
     content: "";
     position: absolute;
@@ -39,7 +39,7 @@ const FivePoints = styled.div`
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 60px solid var(--color-lightGray);
+    border-bottom: 60px solid var(--color-lgihtGrey);
     rotate: 32deg;
   }
   ::before {
@@ -51,7 +51,7 @@ const FivePoints = styled.div`
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 60px solid var(--color-lightGray);
+    border-bottom: 60px solid var(--color-lgihtGrey);
     rotate: -32deg;
   }
 `;

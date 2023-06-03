@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   height: 100px;
   width: 200px;
-  background-color: var(--color-lightGray);
+  background-color: var(--color-lgihtGrey);
 `;
 
 export default function RectangleShape() {

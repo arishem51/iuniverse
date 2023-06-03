@@ -4,7 +4,7 @@ import { FlexContainer } from "@components";
 const Side = styled(FlexContainer)`
   position: absolute;
   inset: 0;
-  background-color: var(--color-lightGray);
+  background-color: var(--color-lgihtGrey);
   font-size: 32px;
   backface-visibility: hidden;
 `;

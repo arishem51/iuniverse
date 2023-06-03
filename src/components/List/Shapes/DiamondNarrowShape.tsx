@@ -11,7 +11,7 @@ export default styled.div`
     position: absolute;
     width: 0;
     height: 0;
-    border-top: 70px solid var(--color-lightGray);
+    border-top: 70px solid var(--color-lgihtGrey);
     border-left: 45px solid transparent;
     border-right: 45px solid transparent;
     top: 50%;
@@ -21,7 +21,7 @@ export default styled.div`
     position: absolute;
     width: 0;
     height: 0;
-    border-bottom: 70px solid var(--color-lightGray);
+    border-bottom: 70px solid var(--color-lgihtGrey);
     border-left: 45px solid transparent;
     border-right: 45px solid transparent;
     top: -20%;

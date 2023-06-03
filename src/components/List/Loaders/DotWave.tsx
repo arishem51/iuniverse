@@ -19,7 +19,7 @@ const up = keyframes`
 const Dot = styled.div`
   width: 10px;
   height: 10px;
-  background-color: var(--color-lightGray);
+  background-color: var(--color-lgihtGrey);
   border-radius: 50%;
   animation: ${up} 300ms alternate ease-in-out infinite
     calc(var(--index) * 100ms);

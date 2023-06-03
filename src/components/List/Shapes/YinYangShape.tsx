@@ -19,7 +19,7 @@ export default styled.div`
     position: absolute;
     border-radius: 50%;
     background-color: black;
-    border: 20px solid var(--color-lightGray);
+    border: 20px solid var(--color-lgihtGrey);
     top: 50%;
     right: 0px;
   }
@@ -30,7 +30,7 @@ export default styled.div`
     height: var(--size-sm);
     position: absolute;
     border-radius: 50%;
-    background-color: var(--color-lightGray);
+    background-color: var(--color-lgihtGrey);
     border: 20px solid black;
     top: 50%;
   }

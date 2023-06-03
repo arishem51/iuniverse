@@ -56,7 +56,7 @@ const Dot = styled.div`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--color-lightGray);
+  background-color: var(--color-lgihtGrey);
 
   :first-child {
     left: -15px;
