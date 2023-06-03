@@ -2,9 +2,9 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import ReactDOM from "react-dom/client";
 import { createGlobalStyle } from "styled-components";
-import App from "./components/App";
-import { COLORS } from "./constant";
-import QueryProvider from "./context/QueryProvider";
+import App from "@components/App";
+import { COLORS } from "@constant";
+import QueryProvider from "@context/QueryProvider";
 import { generateCSSVarColor } from "./utils";
 import { StrictMode } from "react";
 

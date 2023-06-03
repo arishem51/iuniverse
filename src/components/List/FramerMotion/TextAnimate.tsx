@@ -4,6 +4,7 @@ import {
   VariantLabels,
   Variants,
 } from "framer-motion";
+import { useState } from "react";
 import styled from "styled-components";
 
 const Text = styled(motion.h1)`
@@ -34,7 +35,7 @@ const variants: Variants = {
 };
 
 export default function Component() {
-  const [state, setState] = React.useState("Hello World");
+  const [state, setState] = useState("Hello World");
 
   function handleLastItemAnimationEnd(def: VariantLabels, index: number) {
     if (index === state.length - 1 && def === "enter") {

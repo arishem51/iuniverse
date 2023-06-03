@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import AnimationLayout from "../../components/AnimationLayout";
-import { FlexContainer } from "../../components/Base";
 import {
-  CodePenLink,
+  AnimationLayout,
+  HeadingAnimation,
+  PreviewComponents,
+  FlexContainer,
   CssTrickLink,
   UiVerseLink,
-} from "../../components/ExternalLink";
-import HeadingAnimation from "../../components/HeadingAnimation.tsx";
-import PreviewComponent from "../../components/PreviewComponents.tsx";
-import { useElements } from "../../context/ElementsProvider";
+  CodePenLink,
+} from "@components";
+import { useElements } from "@context/ElementsProvider";
 
 const Wrapper = styled(FlexContainer)`
   background-color: var(--color-dark);
@@ -66,9 +66,9 @@ export default function HomePage() {
             </Title>
           </HeadingAnimation>
         </TextWrapper>
-        <PreviewComponent type="card" />
-        <PreviewComponent type="loader" />
-        <PreviewComponent type="button" />
+        <PreviewComponents type="card" />
+        <PreviewComponents type="loader" />
+        <PreviewComponents type="button" />
       </Wrapper>
     </AnimationLayout>
   );

@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-const FIVE_MINTUES = 5 * 60 * 1000; //  5 minutues
+const FIVE_MINUTES = 5 * 60 * 1000; //  5 minutes
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -8,8 +8,8 @@ const queryClient = new QueryClient({
       refetchOnMount: false,
       refetchOnReconnect: false,
       refetchOnWindowFocus: false,
-      staleTime: FIVE_MINTUES,
-      cacheTime: FIVE_MINTUES,
+      staleTime: FIVE_MINUTES,
+      cacheTime: FIVE_MINUTES,
     },
   },
 });

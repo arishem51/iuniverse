@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { MEDIAQUERY } from "../../constant";
-import { useElements } from "../../context/ElementsProvider";
-import { RouteItem } from "../../types";
+import { MEDIAQUERY } from "@constant";
+import { useElements } from "@context/ElementsProvider";
+import { RouteItem } from "@types";
 import { ButtonContainer, FlexContainer } from "@components";
 
 const Wrapper = styled(motion.div)`
