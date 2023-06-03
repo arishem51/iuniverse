@@ -8,7 +8,7 @@ import {
   UiVerseLink,
   CodePenLink,
 } from "@components";
-import { useElements } from "@context/ElementsProvider";
+import { useElements } from "@context";
 
 const Wrapper = styled(FlexContainer)`
   background-color: var(--color-dark);

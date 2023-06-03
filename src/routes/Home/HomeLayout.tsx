@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 import { Footer, Header, FlexContainer } from "@components";
-import ElementsProvider from "@context/ElementsProvider";
+import { ElementProvider } from "@context";
 
 const MinHeight = styled(FlexContainer)`
   min-height: 100vh;
@@ -10,12 +10,12 @@ const MinHeight = styled(FlexContainer)`
 
 export default function HomeLayout() {
   return (
-    <ElementsProvider>
+    <ElementProvider>
       <MinHeight column>
         <Header />
         <Outlet />
         <Footer />
       </MinHeight>
-    </ElementsProvider>
+    </ElementProvider>
   );
 }

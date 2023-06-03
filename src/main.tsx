@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import { createGlobalStyle } from "styled-components";
 import App from "@components/App";
 import { COLORS } from "@constant";
-import QueryProvider from "@context/QueryProvider";
+import { QueryProvider } from "@context";
 import { generateCSSVarColor } from "./utils";
 import { StrictMode } from "react";
 

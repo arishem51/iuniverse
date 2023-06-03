@@ -7,7 +7,7 @@ const Context = createContext<{ elements: UIItem[] }>({ elements: [] });
 
 type Props = PropsWithChildren;
 
-export default function ElementsContext({ children }: Props) {
+export default function ElementProvider({ children }: Props) {
   const elements = sortShapeElements(List);
   return <Context.Provider value={{ elements }}>{children}</Context.Provider>;
 }
