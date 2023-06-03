@@ -14,7 +14,7 @@ const Label = styled.label`
   left: 0;
   padding: 0 4px;
   translate: 8px -50%;
-  color: var(--color-lgihtGrey);
+  color: var(--color-lightGrey);
   transition: translate 0.3s, scale 0.3s;
   background: var(--color-lightDark);
   pointer-events: none;
@@ -30,7 +30,7 @@ const Input = styled.input`
   background: transparent;
   border: 2px solid var(--color-bg);
   caret-color: var(--color-bg);
-  color: var(--color-lgihtGrey);
+  color: var(--color-lightGrey);
   outline: none;
   transition: border-color 0.3s;
   :focus,

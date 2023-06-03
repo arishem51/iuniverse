@@ -6,7 +6,7 @@ export default styled.div`
   width: 50px;
   height: 50px;
   position: relative;
-  background-color: var(--color-lgihtGrey);
+  background-color: var(--color-lightGrey);
   rotate: 45deg;
   ::after {
     content: "";

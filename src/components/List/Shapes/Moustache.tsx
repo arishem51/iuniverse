@@ -27,8 +27,8 @@ export default styled.div`
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: -20px 50px 0 0 var(--color-lgihtGrey),
-    20px 50px 0 0 var(--color-lgihtGrey);
+  box-shadow: -20px 50px 0 0 var(--color-lightGrey),
+    20px 50px 0 0 var(--color-lightGrey);
   ::after {
     content: "";
     position: absolute;
@@ -36,7 +36,7 @@ export default styled.div`
     right: 35px;
     width: 100px;
     height: 100px;
-    border-bottom: 50px solid var(--color-lgihtGrey);
+    border-bottom: 50px solid var(--color-lightGrey);
     border-radius: 0 0 0 100%;
     transform-origin: right 100px;
     animation: ${left} 750ms ease-in-out infinite alternate;
@@ -50,7 +50,7 @@ export default styled.div`
     width: 100px;
     height: 100px;
     border-radius: 0 0 100% 0;
-    border-bottom: 50px solid var(--color-lgihtGrey);
+    border-bottom: 50px solid var(--color-lightGrey);
     transform-origin: left 100px;
     animation: ${right} 750ms ease-in-out infinite alternate;
   }

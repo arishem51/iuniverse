@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   --size: 100px;
   width: var(--size);
   height: var(--size);
-  background-color: var(--color-lgihtGrey);
+  background-color: var(--color-lightGrey);
 `;
 
 export default function SquareShape() {

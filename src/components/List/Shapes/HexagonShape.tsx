@@ -7,13 +7,13 @@ export default styled.div`
   width: var(--width);
   height: 50px;
   position: relative;
-  background-color: var(--color-lgihtGrey);
+  background-color: var(--color-lightGrey);
   ::after {
     content: "";
     position: absolute;
     border-left: calc(var(--width) / 2) solid transparent;
     border-right: calc(var(--width) / 2) solid transparent;
-    border-bottom: 25px solid var(--color-lgihtGrey);
+    border-bottom: 25px solid var(--color-lightGrey);
     top: -26px;
   }
   ::before {
@@ -21,7 +21,7 @@ export default styled.div`
     position: absolute;
     border-left: calc(var(--width) / 2) solid transparent;
     border-right: calc(var(--width) / 2) solid transparent;
-    border-top: 25px solid var(--color-lgihtGrey);
+    border-top: 25px solid var(--color-lightGrey);
     top: 51px;
   }
 `;

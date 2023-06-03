@@ -11,7 +11,7 @@ export default styled.div`
     position: absolute;
     width: inherit;
     height: inherit;
-    border: 20px solid var(--color-lgihtGrey);
+    border: 20px solid var(--color-lightGrey);
     left: -60%;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
@@ -23,7 +23,7 @@ export default styled.div`
     position: absolute;
     width: inherit;
     height: inherit;
-    border: 20px solid var(--color-lgihtGrey);
+    border: 20px solid var(--color-lightGrey);
     left: 60%;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
