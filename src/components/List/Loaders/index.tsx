@@ -8,6 +8,7 @@ import { NewtonsCardleDot } from "./NewtonsCardleDot";
 import { Rain } from "./Rain";
 import { ThreeDotAround } from "./ThreeDotAround";
 import Line from "./Line";
+import IphoneLoading from "./IphoneLoading";
 
 const List = [
   {
@@ -36,6 +37,9 @@ const List = [
   },
   {
     component: <Line />,
+  },
+  {
+    component: <IphoneLoading />,
   },
 ];
 
