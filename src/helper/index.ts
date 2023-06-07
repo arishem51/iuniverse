@@ -1,4 +1,5 @@
 import { RouteItem, UIItem } from "@types";
+import { randomId } from "@utils";
 
 export function sortShapeElements(elements: UIItem[]) {
   const newArr = [...elements];
@@ -45,4 +46,17 @@ export function createComponentList(
   type: UIItem["type"]
 ): UIItem[] {
   return list.map((item) => ({ component: item.component, type }));
+}
+
+function createMapId() {
+  return {
+    id: randomId(),
+  };
+}
+
+export function createArray(
+  num: number,
+  renderFunction: (item: { id: string }) => JSX.Element
+) {
+  return new Array(num).fill("_").map(createMapId).map(renderFunction);
 }

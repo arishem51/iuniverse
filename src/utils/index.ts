@@ -9,3 +9,7 @@ export function generateCSSVarColor(colors: CSSColors) {
   }
   return string;
 }
+
+export function randomId() {
+  return Math.random().toString(36);
+}

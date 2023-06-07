@@ -22,6 +22,7 @@ export default defineConfig({
       "constant",
       "contexts",
       "routes",
+      "utils",
     ]),
   },
 });
