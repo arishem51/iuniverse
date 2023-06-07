@@ -48,15 +48,23 @@ export function createComponentList(
   return list.map((item) => ({ component: item.component, type }));
 }
 
-function createMapId() {
+type ArrayItem = {
+  id: string;
+};
+
+function createMapId(): ArrayItem {
   return {
     id: randomId(),
   };
 }
 
-export function createArray(
+export function createArray(num: number) {
+  return new Array(num).fill("_").map(createMapId);
+}
+
+export function renderArray(
   num: number,
-  renderFunction: (item: { id: string }) => JSX.Element
+  renderItem: (item: ArrayItem, index: number) => JSX.Element
 ) {
-  return new Array(num).fill("_").map(createMapId).map(renderFunction);
+  return createArray(num).map(renderItem);
 }
