@@ -1,16 +1,17 @@
 import styled, { keyframes } from "styled-components";
 import { FlexContainer } from "@components";
+import { renderArray } from "@helper";
 
 const rain = keyframes`
     0%{
         translate: 0 0;
     
     }35%{
-        scale:1 1
+        scale: 1 1
     }
     100%{
         translate: 0 100px;
-        scale:0 0
+        scale: 0 0
     }
 `;
 
@@ -57,12 +58,9 @@ const Wrapper = styled.div`
 `;
 
 function renderItem() {
-  return new Array(24).fill(" ").map((_, index) => {
+  return renderArray(24, ({ id }, index) => {
     return (
-      <Raindrops
-        key={index}
-        style={{ "--index": index } as React.CSSProperties}
-      />
+      <Raindrops key={id} style={{ "--index": index } as React.CSSProperties} />
     );
   });
 }

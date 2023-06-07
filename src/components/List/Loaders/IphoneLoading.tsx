@@ -1,3 +1,4 @@
+import { renderArray } from "@helper";
 import { CSSProperties } from "react";
 import styled, { keyframes } from "styled-components";
 
@@ -31,14 +32,13 @@ const Line = styled.div`
 
 const LINE_COUNT = 12;
 
+const renderItem = () =>
+  renderArray(LINE_COUNT, ({ id }, index) => (
+    <Line key={id} style={{ "--index": index } as CSSProperties} />
+  ));
+
 const IphoneLoading = () => {
-  return (
-    <Container>
-      {new Array(LINE_COUNT).fill("_").map((_, index) => (
-        <Line key={index} style={{ "--index": index } as CSSProperties} />
-      ))}
-    </Container>
-  );
+  return <Container>{renderItem()}</Container>;
 };
 
 export default IphoneLoading;

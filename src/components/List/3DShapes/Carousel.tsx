@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { getTanFromDegrees } from "@helper";
+import { getTanFromDegrees, renderArray } from "@helper";
 import { FlexContainer } from "@components";
 
 const Wrapper = styled(FlexContainer)`
@@ -28,27 +28,24 @@ const CarouselItem = styled.div`
   --size: calc(100% - 20px);
   --rotateY: calc(var(--index) * 72deg); // 72 = 360deg / 5 items
   --color-bg: hsla(var(--rotateY), 100%, 50%, 0.7);
-  --transalteZ: calc(
-    (var(--width) / 2) / ${getTanFromDegrees(36)}
-  ); // 36 = 72deg / 2
+  --z: calc((var(--width) / 2) / ${getTanFromDegrees(36)}); // 36 = 72deg / 2
   position: absolute;
   width: var(--size);
   height: var(--size);
   background: var(--color-bg);
   border-radius: 10px;
-  transform: rotateY(var(--rotateY)) translateZ(var(--transalteZ));
+  transform: rotateY(var(--rotateY)) translateZ(var(--z));
 `;
 
-function renderItem() {
-  return new Array(5)
-    .fill(".")
-    .map((_, index) => (
+const renderItem = () =>
+  renderArray(5, ({ id }, index) => {
+    return (
       <CarouselItem
-        key={index + _}
+        key={id}
         style={{ "--index": index } as React.CSSProperties}
       />
-    ));
-}
+    );
+  });
 
 export function Carousel() {
   return (

@@ -1,5 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { FlexContainer } from "@components";
+import { renderArray } from "@helper";
+import { CSSProperties } from "react";
 
 // Made by @G4b4131 --> https://uiverse.io/G4b413l/jolly-kangaroo-36
 
@@ -25,13 +27,11 @@ const Dot = styled.div`
     calc(var(--index) * 100ms);
 `;
 
-export function DotWave() {
-  function renderItem() {
-    return new Array(4).fill("").map((_, index) => {
-      const styles = { "--index": index } as React.CSSProperties;
-      return <Dot style={styles} key={index} />;
-    });
-  }
+const renderItem = () =>
+  renderArray(4, ({ id }, index) => (
+    <Dot key={id} style={{ "--index": index } as CSSProperties} />
+  ));
 
+export function DotWave() {
   return <Wrapper>{renderItem()}</Wrapper>;
 }

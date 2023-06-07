@@ -1,3 +1,4 @@
+import { renderArray } from "@helper";
 import styled, { keyframes } from "styled-components";
 
 /*
@@ -75,10 +76,10 @@ const Wrapper = styled.div`
 const TranslateYObj = ["-300%", "-300%", "300%", "300%"];
 
 function renderItem() {
-  return new Array(4).fill(" ").map((_, index) => {
+  return renderArray(4, ({ id }, index) => {
     return (
       <Child
-        key={index}
+        key={id}
         style={
           {
             "--index": index + 1,
