@@ -4,6 +4,7 @@ import { Card3DHoverEffect } from "./Card3DHoverEffect";
 import { CardShadowHover } from "./CardShadowHover";
 import { FlipCard } from "./FlipCard";
 import HolyGrailCard from "./HolyGrailCard";
+import Card3DHoverEffect3D2 from "./Card3DHoverEffect2";
 
 const List = [
   {
@@ -28,9 +29,11 @@ const List = [
   {
     component: <CardShadowHover />,
   },
-
   {
     component: <HolyGrailCard />,
+  },
+  {
+    component: <Card3DHoverEffect3D2 />,
   },
 ];
 
