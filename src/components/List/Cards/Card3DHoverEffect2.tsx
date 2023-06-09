@@ -15,8 +15,6 @@ const Container = styled.div`
   transition-timing-function: linear;
 
   position: relative;
-
-  perspective: 1000px;
 `;
 
 const Text = styled.span`
@@ -26,6 +24,10 @@ const Text = styled.span`
   right: var(--fs);
   font-size: var(--fs);
   font-weight: bold;
+`;
+
+const Perspective = styled.div`
+  perspective: 1000px;
 `;
 
 export default function Card3DHoverEffect3D() {
@@ -87,8 +89,10 @@ export default function Card3DHoverEffect3D() {
   }, []);
 
   return (
-    <Container ref={cardRef}>
-      <Text>3D Card</Text>
-    </Container>
+    <Perspective>
+      <Container ref={cardRef}>
+        <Text>3D Card</Text>
+      </Container>
+    </Perspective>
   );
 }
