@@ -6,6 +6,7 @@ import { Hover3DButton } from "./Hover3DButton";
 import { KeyboardButton } from "./KeyboardButton";
 import { LineUpButton } from "./LineUpButton";
 import { ShadowButton } from "./ShadowButton";
+import HoverButton from "./HoverButton";
 
 const List = [
   {
@@ -28,6 +29,9 @@ const List = [
   },
   {
     component: <ShadowButton />,
+  },
+  {
+    component: <HoverButton />,
   },
 ];
 
