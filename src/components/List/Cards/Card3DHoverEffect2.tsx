@@ -47,9 +47,7 @@ export default function Card3DHoverEffect3D() {
 
     const totalCenter = center.x + center.y;
 
-    const handleMouseMove = (e: MouseEvent) => {
-      const { clientX, clientY } = e;
-
+    function calculateTransform(clientX: number, clientY: number) {
       const leftX = clientX - x;
       const topY = clientY - y;
 
@@ -61,6 +59,15 @@ export default function Card3DHoverEffect3D() {
 
       const rotateX = (topY - center.y) / CONSTANT;
       const rotateY = ((leftX - center.x) / CONSTANT) * -1;
+
+      return { rotateX, rotateY, degree };
+    }
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const { degree, rotateX, rotateY } = calculateTransform(
+        e.clientX,
+        e.clientY
+      );
 
       const scaleTransform = `scale3d(${scaleNum},${scaleNum},${scaleNum})`;
       const rotateTransform = `rotate3d(${rotateX},${rotateY},${rotateZ},${degree})`;
