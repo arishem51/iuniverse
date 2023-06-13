@@ -30,15 +30,16 @@ const Perspective = styled.div`
   perspective: 1000px;
 `;
 
+const scaleNum = 1.07;
+const rotateZ = 0;
+const CONSTANT = 100;
+
 export default function Card3DHoverEffect3D() {
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const cardEl = cardRef?.current as HTMLDivElement;
     const { x, y, width, height } = cardEl.getBoundingClientRect();
-    const scaleNum = 1.15;
-    const rotateZ = 0;
-    const CONSTANT = 80;
 
     const center = {
       x: width / 2,
@@ -47,7 +48,7 @@ export default function Card3DHoverEffect3D() {
 
     const totalCenter = center.x + center.y;
 
-    function calculateTransform(clientX: number, clientY: number) {
+    const calculateTransform = (clientX: number, clientY: number) => {
       const leftX = clientX - x;
       const topY = clientY - y;
 
@@ -60,22 +61,42 @@ export default function Card3DHoverEffect3D() {
       const rotateX = (topY - center.y) / CONSTANT;
       const rotateY = ((leftX - center.x) / CONSTANT) * -1;
 
-      return { rotateX, rotateY, degree };
-    }
-
-    const handleMouseMove = (e: MouseEvent) => {
-      const { degree, rotateX, rotateY } = calculateTransform(
-        e.clientX,
-        e.clientY
-      );
-
       const scaleTransform = `scale3d(${scaleNum},${scaleNum},${scaleNum})`;
       const rotateTransform = `rotate3d(${rotateX},${rotateY},${rotateZ},${degree})`;
 
+      return { scaleTransform, rotateTransform };
+    };
+
+    const handleTransformCard = (
+      scaleTransform: string,
+      rotateTransform: string
+    ) => {
       cardEl.style.transform = `
         ${scaleTransform}
         ${rotateTransform}
       `;
+    };
+
+    const createHandleAnimateCard = (clientX: number, clientY: number) => {
+      const { scaleTransform, rotateTransform } = calculateTransform(
+        clientX,
+        clientY
+      );
+
+      const handleAnimateCard = () =>
+        handleTransformCard(scaleTransform, rotateTransform);
+
+      return {
+        handleAnimateCard,
+      };
+    };
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const { handleAnimateCard } = createHandleAnimateCard(
+        e.clientX,
+        e.clientY
+      );
+      requestAnimationFrame(handleAnimateCard);
     };
 
     const handleMouseEnter = () => {
