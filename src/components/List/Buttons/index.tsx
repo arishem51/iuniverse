@@ -8,6 +8,7 @@ import { LineUpButton } from "./LineUpButton";
 import { ShadowButton } from "./ShadowButton";
 import HoverButton from "./HoverButton";
 import HoverButton2 from "./HoverButton-2";
+import HoverBallButton from "./HoverBallButton";
 
 const List = [
   {
@@ -36,6 +37,9 @@ const List = [
   },
   {
     component: <HoverButton2 />,
+  },
+  {
+    component: <HoverBallButton />,
   },
 ];
 
