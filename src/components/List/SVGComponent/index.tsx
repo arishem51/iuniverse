@@ -1,6 +1,7 @@
 import { createComponentList } from "@helper";
 import FirstSVG from "./FirstSVG";
 import CheckBoxSVG from "./CheckboxSVG";
+import Bomb from "./Bomb";
 
 const List = [
   {
@@ -8,6 +9,9 @@ const List = [
   },
   {
     component: <CheckBoxSVG />,
+  },
+  {
+    component: <Bomb />,
   },
 ];
 
